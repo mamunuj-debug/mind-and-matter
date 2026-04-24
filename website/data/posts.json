@@ -2,6 +2,66 @@
   "posts": [
     {
       "published": true,
+      "title": "Inside a Black Hole: What Physics Actually Says",
+      "tag": "Space",
+      "date": "Apr 24, 2026",
+      "readTime": "6 min",
+      "emoji": "🕳️",
+      "tagColor": "#a78bfa",
+      "background": "linear-gradient(135deg,#1a0a2e,#2d1a5e)",
+      "preview": "Black holes are not vacuum cleaners. They are the universe's most extreme laboratories — where space, time, and information collide.",
+      "content": "A black hole forms when a massive star exhausts its nuclear fuel and its core collapses under gravity. If the remaining mass exceeds roughly 3 times the mass of our Sun, nothing — not even neutron degeneracy pressure — can halt the collapse.\n\nThe result is a singularity: a point of infinite density, wrapped inside an event horizon.\n\nThe Event Horizon\nThe event horizon is not a physical surface. It is a mathematical boundary — the radius at which the escape velocity exceeds the speed of light. Cross it and no signal, no matter, no information can ever return.\n\nFor a non-rotating black hole (Schwarzschild), this radius is:\nr_s = 2GM / c²\n\nFor the Sun, that radius would be about 3 km. For Earth, just 9 mm.\n\nTime Dilation at the Edge\nTime slows near strong gravitational fields — a prediction of General Relativity confirmed by GPS satellites and precision clocks. Near a black hole, an outside observer would see a falling astronaut freeze and redden at the horizon — never quite crossing it. The astronaut, however, would cross freely, feeling nothing unusual.\n\nHawking Radiation\nIn 1974, Stephen Hawking showed that black holes are not entirely black. Quantum effects near the event horizon cause black holes to slowly emit thermal radiation, losing mass over astronomical timescales. A stellar black hole would take longer than the age of the universe to evaporate — but a primordial micro black hole could pop out of existence in a flash of gamma rays.\n\nThe Information Paradox\nIf all information about infalling matter is destroyed — which Hawking's original calculation implied — it violates a core principle of quantum mechanics. Decades later, this paradox remains one of the deepest open problems in physics, with competing resolutions involving firewalls, fuzzballs, and holography.\n\nBlack holes are not endpoints. They are windows into physics we don't yet fully understand."
+    },
+    {
+      "published": true,
+      "title": "How Semiconductor Chips Are Actually Made",
+      "tag": "Engineering",
+      "date": "Apr 24, 2026",
+      "readTime": "7 min",
+      "emoji": "⚙️",
+      "tagColor": "#34d399",
+      "background": "linear-gradient(135deg,#0a2318,#0f3d28)",
+      "preview": "A modern chip starts as sand and ends as a trillion-transistor machine. Here's the full journey from raw silicon to finished processor.",
+      "content": "Modern integrated circuits are among the most complex objects humans have ever built. A leading-edge chip contains over 100 billion transistors in an area smaller than a fingernail. Here is how it gets made.\n\n1. Starting with Silicon\nSilica — silicon dioxide from quartz sand — is chemically reduced to produce nearly pure silicon. It is then melted at 1,414°C and slowly grown into a single-crystal ingot using the Czochralski process. This ingot is sliced into thin wafers, polished to atomic flatness.\n\n2. Photolithography\nThe circuit pattern is transferred onto the wafer using light. A photosensitive material called photoresist is coated onto the wafer. A mask — containing the circuit layout — blocks UV or EUV light in precise patterns. Where light hits, the resist changes chemically, allowing etching below.\n\nEUV (Extreme Ultraviolet) lithography uses 13.5 nm wavelength light, enabling features as small as 2–3 nm. ASML is currently the only company that makes EUV scanners.\n\n3. Doping\nPure silicon is a poor conductor. To make it useful, impurities (dopants) are implanted using ion beams. Phosphorus or arsenic create n-type regions (extra electrons). Boron creates p-type regions (holes). Together they form transistors — the basic switching element.\n\n4. Deposition and Etching\nThin films of metals (copper, tungsten), insulators (silicon dioxide, hafnium oxide), and semiconductors are deposited using CVD or ALD processes — some just a few atoms thick. Between each layer, plasma etching removes material with nanometer precision.\n\n5. Interconnects\nTransistors are connected by up to 15 metal layers, each separated by insulating dielectrics. The routing problem — connecting billions of transistors with minimal resistance and crosstalk — is solved by EDA software running for weeks on server farms.\n\n6. Testing and Packaging\nEvery die on the wafer is electrically tested. Failing dies are marked and discarded. Good dies are cut, bonded to substrates, underfilled with epoxy, and packaged. Advanced 3D packages like TSMC's CoWoS or Intel's Foveros stack chips vertically for density and bandwidth.\n\nThe entire process takes 3–4 months and involves over 1,000 individual manufacturing steps."
+    },
+    {
+      "published": true,
+      "title": "The James Webb Space Telescope: One Year of Discoveries",
+      "tag": "Space",
+      "date": "Apr 23, 2026",
+      "readTime": "5 min",
+      "emoji": "🔭",
+      "tagColor": "#f59e0b",
+      "background": "linear-gradient(135deg,#1f1000,#3d2200)",
+      "preview": "JWST has redefined our picture of early galaxies, exoplanet atmospheres, and even challenged parts of the standard cosmological model.",
+      "content": "Launched on Christmas Day 2021, the James Webb Space Telescope began science operations in mid-2022. What followed has reshaped multiple areas of astrophysics.\n\nEarly Universe Galaxies\nJWST was designed to see the first galaxies forming after the Big Bang. What it found surprised everyone: galaxies that appear too massive, too bright, and too well-formed for the early universe — some at redshifts above z=10, just 300–400 million years after the Big Bang.\n\nThese objects challenge galaxy formation models that assumed early structures grew slowly from small seeds. Theorists are now revising simulations and debating whether dark matter dynamics, star formation efficiency, or entirely new physics could explain the observations.\n\nExoplanet Atmospheres\nJWST's Near Infrared Spectrograph (NIRSpec) and Mid-Infrared Instrument (MIRI) have analyzed the chemical fingerprints of exoplanet atmospheres in unprecedented detail.\n\nWASP-39b showed carbon dioxide, sulfur dioxide, water, and for the first time, photochemical reactions driven by starlight — essentially weather chemistry on another world.\n\nIn 2023, observations of K2-18b showed a tentative signal for dimethyl sulfide — a molecule on Earth produced only by living organisms. The claim remains uncertain and highly debated.\n\nOur Own Solar System\nJWST has also imaged Jupiter's auroras, tracked storms in unprecedented detail, and mapped Titan's methane lakes. Images of Neptune's rings are the clearest since Voyager 2 flew past in 1989.\n\nThe Hubble Tension\nNew JWST Cepheid measurements have sharpened the Hubble Tension — the discrepancy between two ways of measuring the universe's expansion rate. Rather than resolving it, JWST confirms it is real, pointing toward possible new physics beyond the Standard Model of cosmology.\n\nWebb is expected to operate through at least 2041. The first year was only a preview."
+    },
+    {
+      "published": true,
+      "title": "Nuclear Fusion: Why 2024 Was Different",
+      "tag": "Science",
+      "date": "Apr 22, 2026",
+      "readTime": "5 min",
+      "emoji": "⚡",
+      "tagColor": "#f97316",
+      "background": "linear-gradient(135deg,#1f0a00,#3d1a00)",
+      "preview": "For decades, fusion energy was always 30 years away. Recent breakthroughs at NIF and private startups suggest the timeline may finally be compressing.",
+      "content": "Nuclear fusion — the same process that powers the Sun — has been a scientific goal since the 1950s. Fuse hydrogen isotopes, release enormous energy, produce no long-lived radioactive waste, and use seawater as fuel. The physics has always been sound. The engineering challenge has been immense.\n\nThe NIF Milestone\nIn December 2022, the National Ignition Facility at Lawrence Livermore fired 192 laser beams at a target smaller than a pea. The result: 3.15 megajoules of fusion energy from 2.05 MJ of laser energy — ignition, for the first time in history.\n\nBy 2024, NIF repeated and improved on the result. These experiments use inertial confinement fusion (ICF): extreme compression and heating of a deuterium-tritium pellet until fusion begins.\n\nThe caveat: those 2 MJ of laser light required ~300 MJ of grid electricity to produce. Wall-plug efficiency remains the central engineering problem.\n\nTokamaks and ITER\nThe other main approach — magnetic confinement in a donut-shaped tokamak — reached a milestone in 2022 when JET (Joint European Torus) set a world record: 59 megajoules of sustained fusion energy over 5 seconds.\n\nITER, the international fusion experiment under construction in France, is 10x larger than JET. First plasma is targeted for 2025. ITER is not designed to generate electricity — it is designed to demonstrate Q>10 (10x energy out vs. in).\n\nPrivate Fusion Companies\nOver 40 private fusion startups have attracted billions in investment. Commonwealth Fusion Systems aims to use high-temperature superconducting magnets to build a compact tokamak (SPARC) by 2027. TAE Technologies pursues a field-reversed configuration. Helion Energy — backed by Sam Altman — has a signed power purchase agreement with Microsoft.\n\nFusion is no longer just a government science project. Whether it will deliver grid power in the 2030s remains genuinely uncertain — but the gap between physics and engineering has never been smaller."
+    },
+    {
+      "published": true,
+      "title": "What Is Quantum Computing and Why Does It Matter?",
+      "tag": "Science",
+      "date": "Apr 21, 2026",
+      "readTime": "6 min",
+      "emoji": "🔬",
+      "tagColor": "#38bdf8",
+      "background": "linear-gradient(135deg,#001f3f,#003366)",
+      "preview": "Quantum computers are not faster classical computers. They are a fundamentally different model of computation — and for certain problems, exponentially more powerful.",
+      "content": "Classical computers store information as bits — 0 or 1. Quantum computers use qubits, which exploit two quantum mechanical phenomena: superposition and entanglement.\n\nSuperposition\nA qubit in superposition is not 0 or 1 — it is a probability distribution over both states simultaneously. Only when measured does it collapse to a definite value. This means a quantum processor with n qubits can represent 2ⁿ states at once.\n\nEntanglement\nTwo entangled qubits share a correlated quantum state. Measuring one instantly determines the state of the other, regardless of distance. This non-classical correlation is what allows quantum algorithms to process certain problems in ways no classical system can replicate.\n\nWhat Can It Actually Do?\nQuantum computers are not universally faster. For most everyday tasks — browsing the web, running Excel — a classical chip is faster, cheaper, and more practical.\n\nQuantum advantage is real for specific problem classes:\n- Factoring large integers (Shor's algorithm) — threatens RSA encryption\n- Searching unsorted databases (Grover's algorithm) — quadratic speedup\n- Simulating quantum systems (chemistry, materials) — exponential speedup\n- Optimization problems — potential but less proven speedup\n\nWhere Are We Now?\nIn 2019, Google claimed quantum supremacy on a specific sampling problem. IBM, IonQ, and Quantinuum have since built systems with 100–1000+ qubits. But raw qubit count is misleading — error rates matter more. Today's systems are NISQ (Noisy Intermediate-Scale Quantum) devices. Fault-tolerant quantum computing, which requires error correction and millions of physical qubits per logical qubit, is still years away.\n\nThe Threat to Encryption\nPost-quantum cryptography is already being standardized by NIST. Governments and companies are upgrading encryption protocols now — before large-scale quantum computers exist — because adversaries can harvest encrypted data today and decrypt it later.\n\nQuantum computing will not replace classical computing. But for chemistry simulation, optimization, and cryptography, it will be transformative."
+    },
+    {
+      "published": true,
       "title": "How I Pick Topics for Mind & Matter",
       "tag": "Editorial",
       "date": "Apr 23, 2026",
