@@ -1,0 +1,16 @@
+{
+  "posts": [
+    {
+      "published": true,
+      "title": "How I Pick Topics for Mind & Matter",
+      "tag": "Editorial",
+      "date": "Apr 23, 2026",
+      "readTime": "4 min",
+      "emoji": "📝",
+      "tagColor": "#38bdf8",
+      "background": "linear-gradient(135deg,#10233f,#1b3a60)",
+      "preview": "A quick behind-the-scenes look at how I select science and technology stories for this site.",
+      "content": "I focus on topics where science intersects with real engineering impact, especially semiconductors, AI infrastructure, energy systems, and space technology.\n\nEach post starts with one key question: what changed recently, and why should a reader care now?\n\nThen I map the technical context, remove jargon, and keep only the details that improve understanding without overwhelming the reader."
+    }
+  ]
+}

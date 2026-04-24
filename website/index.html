@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mind &amp; Matter — Science, Chips &amp; Future Tech</title>
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data:; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'; object-src 'none'; upgrade-insecure-requests" />
+  <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin" />
+  <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=(), browsing-topics=(), interest-cohort=()" />
+  <meta name="color-scheme" content="dark" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500;600&family=Space+Mono&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <!-- Particle canvas background -->
+  <canvas id="particles"></canvas>
+
+  <!-- ── NAVBAR ── -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">
+      <span class="logo-icon">⬡</span>
+      <span class="logo-text">Mind <strong>&amp; Matter</strong></span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#featured">Featured</a></li>
+      <li><a href="#topics">Topics</a></li>
+      <li><a href="#articles">Articles</a></li>
+      <li><a href="#newsletter">Newsletter</a></li>
+    </ul>
+    <a class="nav-cta" href="#articles">Read Posts ↗</a>
+    <div class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- ── HERO ── -->
+  <section class="hero" id="home">
+    <div class="hero-badge">🔬 Md Mamunuj Zaman's notebook on science, semiconductors, and future systems</div>
+    <h1 class="hero-title">
+      From silicon to space,<br/>
+      <span class="gradient-text glitch" data-text="I decode tomorrow">I decode tomorrow</span><br/>
+      in plain language
+    </h1>
+    <p class="hero-sub">
+      I publish sharp, visual explainers on chip design, AI, materials science,
+      space systems, energy, and breakthrough research that matters to engineers and curious minds.
+    </p>
+    <div class="hero-actions">
+      <a href="#featured" class="btn-primary">Start Exploring</a>
+      <a href="#about" class="btn-ghost">Meet the Author →</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat"><span class="stat-num" data-target="18">0</span><span class="stat-label">Published Essays</span></div>
+      <div class="stat-divider"></div>
+      <div class="stat"><span class="stat-num" data-target="6200">0</span><span class="stat-label">Monthly Readers</span></div>
+      <div class="stat-divider"></div>
+      <div class="stat"><span class="stat-num" data-target="7">0</span><span class="stat-label">Core Topics</span></div>
+    </div>
+  </section>
+
+  <section class="section about-section" id="about">
+    <div class="section-header">
+      <span class="section-tag">About the Author</span>
+      <h2 class="section-title">Hi, I'm <span class="gradient-text">Md Mamunuj Zaman</span></h2>
+    </div>
+    <div class="about-grid">
+      <div class="about-card card-glow">
+        <div class="about-orbit"></div>
+        <div class="about-avatar">M</div>
+        <h3>Md Mamunuj Zaman</h3>
+        <p class="about-role">Science communicator · Semiconductor and advanced technology enthusiast</p>
+        <p>
+          I write about the ideas shaping the next decade: chip design, AI systems, quantum computing,
+          materials, climate tech, and space exploration. My goal is simple — turn difficult technical
+          breakthroughs into clear, engaging stories without losing the engineering depth.
+        </p>
+      </div>
+      <div class="about-panel">
+        <div class="about-highlights">
+          <div class="highlight-box">
+            <span class="highlight-label">Writing lens</span>
+            <h4>Engineer-friendly, reader-first</h4>
+            <p>Concise explainers, visual metaphors, and solid technical context.</p>
+          </div>
+          <div class="highlight-box">
+            <span class="highlight-label">Favorite beats</span>
+            <h4>Semiconductors, AI, energy, space</h4>
+            <p>Especially where deep research becomes practical technology.</p>
+          </div>
+          <div class="highlight-box">
+            <span class="highlight-label">Mission</span>
+            <h4>Make hard science feel exciting</h4>
+            <p>Each post is designed to feel cinematic, useful, and memorable.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── TICKER ── -->
+  <div class="ticker-wrap">
+    <div class="ticker">
+      <span>● EUV lithography pushes below 2 nm with high-NA optics</span>
+      <span>● NASA's Europa Clipper begins subsurface habitability scans</span>
+      <span>● Solid-state batteries cross fast-charge durability milestone</span>
+      <span>● AI copilots move from chat to autonomous scientific workflows</span>
+      <span>● Fusion startups race from plasma control to grid economics</span>
+      <span>● Photonic interconnects reshape the future of AI servers</span>
+      <span>● Quantum error correction reaches practical threshold gains</span>
+      <span>● Biomanufacturing turns microbes into programmable factories</span>
+      <span>● EUV lithography pushes below 2 nm with high-NA optics</span>
+      <span>● NASA's Europa Clipper begins subsurface habitability scans</span>
+    </div>
+  </div>
+
+  <!-- ── FEATURED ── -->
+  <section class="section" id="featured">
+    <div class="section-header">
+      <span class="section-tag">Featured Story</span>
+      <h2 class="section-title">This Week's <span class="gradient-text">Spotlight</span></h2>
+    </div>
+    <div class="featured-grid">
+      <div class="featured-main card-glow" data-article-index="0" role="button" tabindex="0" aria-label="Open featured article about high-NA EUV">
+        <div class="featured-img feat-img-1">
+          <div class="feat-overlay">
+            <span class="feat-tag">Semiconductors</span>
+          </div>
+        </div>
+        <div class="card-body">
+          <h3>High-NA EUV Is Rewriting the Physics and Economics of Advanced Chips</h3>
+          <p>As fabs move below 2 nm, the lithography stack is no longer just a manufacturing detail. It is becoming the main character in how performance, power, and cost are balanced.</p>
+          <div class="card-meta">
+            <span class="author-dot ai"></span> Chips &amp; Manufacturing · 9 min read
+          </div>
+        </div>
+      </div>
+      <div class="featured-side">
+        <div class="side-card card-glow" data-article-index="1" role="button" tabindex="0" aria-label="Open article about photonic interconnects">
+          <div class="side-img feat-img-2"></div>
+          <div class="side-body">
+            <span class="feat-tag sm">AI Infrastructure</span>
+            <h4>Why Photonic Interconnects Could Save the AI Datacenter</h4>
+            <p class="side-meta">Compute Systems · 6 min read</p>
+          </div>
+        </div>
+        <div class="side-card card-glow" data-article-index="2" role="button" tabindex="0" aria-label="Open article about solid-state batteries">
+          <div class="side-img feat-img-3"></div>
+          <div class="side-body">
+            <span class="feat-tag sm">Energy</span>
+            <h4>Solid-State Batteries Are Moving from Lab Curiosity to Product Strategy</h4>
+            <p class="side-meta">Energy Storage · 7 min read</p>
+          </div>
+        </div>
+        <div class="side-card card-glow" data-article-index="3" role="button" tabindex="0" aria-label="Open article about Europa Clipper">
+          <div class="side-img feat-img-4"></div>
+          <div class="side-body">
+            <span class="feat-tag sm">Space Science</span>
+            <h4>Europa Clipper Could Change How We Search for Life Beyond Earth</h4>
+            <p class="side-meta">Planetary Science · 8 min read</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── TOPICS ── -->
+  <section class="section dark-section" id="topics">
+    <div class="section-header">
+      <span class="section-tag">Explore by Domain</span>
+      <h2 class="section-title">Pick Your <span class="gradient-text">Universe</span></h2>
+    </div>
+    <div class="topics-grid">
+      <div class="topic-card" data-color="#7c3aed">
+        <div class="topic-icon">🖥️</div>
+        <h3>AI &amp; Compute</h3>
+        <p>Foundation models, accelerators, datacenter design, and the future of machine reasoning.</p>
+        <span class="topic-count">29 essays</span>
+        <div class="topic-bar" style="--c:#7c3aed"></div>
+      </div>
+      <div class="topic-card" data-color="#0ea5e9">
+        <div class="topic-icon">🛰️</div>
+        <h3>Space Systems</h3>
+        <p>Planetary missions, satellite engineering, observatories, and the science of exploration.</p>
+        <span class="topic-count">17 essays</span>
+        <div class="topic-bar" style="--c:#0ea5e9"></div>
+      </div>
+      <div class="topic-card" data-color="#10b981">
+        <div class="topic-icon">🧪</div>
+        <h3>Materials &amp; Physics</h3>
+        <p>Quantum effects, novel materials, photonics, and the science behind advanced devices.</p>
+        <span class="topic-count">15 essays</span>
+        <div class="topic-bar" style="--c:#10b981"></div>
+      </div>
+      <div class="topic-card" data-color="#f59e0b">
+        <div class="topic-icon">🧬</div>
+        <h3>Bioengineering</h3>
+        <p>CRISPR, computational biology, diagnostics, and the technologies remaking healthcare.</p>
+        <span class="topic-count">11 essays</span>
+        <div class="topic-bar" style="--c:#f59e0b"></div>
+      </div>
+      <div class="topic-card" data-color="#ef4444">
+        <div class="topic-icon">⚡</div>
+        <h3>Energy &amp; Climate</h3>
+        <p>Fusion, batteries, grids, decarbonization, and pragmatic climate engineering.</p>
+        <span class="topic-count">13 essays</span>
+        <div class="topic-bar" style="--c:#ef4444"></div>
+      </div>
+      <div class="topic-card" data-color="#8b5cf6">
+        <div class="topic-icon">🧠</div>
+        <h3>Semiconductors</h3>
+        <p>Process nodes, packaging, memory, EDA, and why chips remain the foundation of modern progress.</p>
+        <span class="topic-count">22 essays</span>
+        <div class="topic-bar" style="--c:#8b5cf6"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── ARTICLES ── -->
+  <section class="section" id="articles">
+    <div class="section-header">
+      <span class="section-tag">Latest Posts</span>
+      <h2 class="section-title">Fresh from <span class="gradient-text">Mind &amp; Matter</span></h2>
+    </div>
+    <div class="articles-grid" id="articles-grid">
+      <!-- populated by JS -->
+    </div>
+    <div class="load-more-wrap">
+      <button class="btn-primary" id="load-more">Load More Articles</button>
+    </div>
+  </section>
+
+  <!-- ── QUOTE ── -->
+  <section class="quote-section">
+    <div class="quote-inner">
+      <div class="quote-mark">"</div>
+      <blockquote id="rotating-quote">
+        The universe is under no obligation to make sense to you.
+      </blockquote>
+      <cite id="rotating-author">— Neil deGrasse Tyson</cite>
+      <div class="quote-dots" id="quote-dots"></div>
+    </div>
+  </section>
+
+  <!-- ── NEWSLETTER ── -->
+  <section class="newsletter-section" id="newsletter">
+    <div class="nl-inner">
+      <div class="nl-left">
+        <span class="section-tag">Stay Updated</span>
+        <h2>Get Mind &amp; Matter updates<br/><span class="gradient-text">every Tuesday.</span></h2>
+        <ul class="nl-perks">
+          <li>✓ One original deep-dive article per week</li>
+          <li>✓ Research summaries on chips, AI, space, and energy</li>
+          <li>✓ Concise, visual, and zero hype</li>
+        </ul>
+      </div>
+      <div class="nl-right">
+        <div class="nl-form">
+          <input type="text" placeholder="Your name" id="nl-name" />
+          <input type="email" placeholder="your@email.com" id="nl-email" />
+          <button class="btn-primary" id="subscribe-btn" type="button">Subscribe Free →</button>
+          <p class="nl-note" id="nl-msg"></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <span class="logo-icon">⬡</span>
+        <span class="logo-text small">Mind <strong>&amp; Matter</strong></span>
+        <p>Independent science and technology writing by Md Mamunuj Zaman.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Topics</h4>
+        <ul>
+          <li>Semiconductors</li>
+          <li>AI &amp; Compute</li>
+          <li>Energy Systems</li>
+          <li>Space Science</li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>About</h4>
+        <ul>
+          <li>About Md Mamunuj Zaman</li>
+          <li>Editorial Notes</li>
+          <li>Contact</li>
+          <li>RSS Feed</li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Connect</h4>
+        <div class="social-links">
+          <a class="social-btn" href="#">𝕏</a>
+          <a class="social-btn" href="#">in</a>
+          <a class="social-btn" href="#">▶</a>
+          <a class="social-btn" href="#">✉</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Mind &amp; Matter · Built with curiosity</span>
+      <span>Made by Md Mamunuj Zaman · Science for all 🔬</span>
+    </div>
+  </footer>
+
+  <!-- ── ARTICLE MODAL ── -->
+  <div class="modal-overlay" id="modal-overlay">
+    <div class="modal" id="modal">
+      <button class="modal-close" id="modal-close" type="button" aria-label="Close article dialog">✕</button>
+      <div class="modal-content" id="modal-content"></div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

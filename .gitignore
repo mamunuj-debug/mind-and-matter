@@ -1,0 +1,8 @@
+.venv/
+.cth_logs/
+.cth_setup_files/
+.config/
+.mozilla/
+.setup_r2g/
+*.pyc
+__pycache__/

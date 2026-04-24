@@ -1,0 +1,35 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "website/uploads"
+public_folder: "/uploads"
+
+site_url: "https://mindandmatter.netlify.app"
+display_url: "https://mindandmatter.netlify.app"
+logo_url: "/favicon.ico"
+
+collections:
+  - name: "content"
+    label: "Site Content"
+    files:
+      - label: "Blog Posts"
+        name: "posts"
+        file: "website/data/posts.json"
+        format: "json"
+        fields:
+          - label: "Posts"
+            name: "posts"
+            widget: "list"
+            summary: "{{fields.title}}"
+            fields:
+              - { label: "Published", name: "published", widget: "boolean", default: true }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Tag", name: "tag", widget: "string", default: "Science" }
+              - { label: "Date", name: "date", widget: "string", hint: "Example: Apr 24, 2026" }
+              - { label: "Read Time", name: "readTime", widget: "string", default: "5 min" }
+              - { label: "Emoji", name: "emoji", widget: "string", default: "🧪" }
+              - { label: "Tag Color", name: "tagColor", widget: "string", default: "#38bdf8" }
+              - { label: "Card Background", name: "background", widget: "string", default: "linear-gradient(135deg,#0d1a2b,#143a62)" }
+              - { label: "Preview", name: "preview", widget: "text" }
+              - { label: "Content", name: "content", widget: "text", hint: "Use a blank line between paragraphs." }
