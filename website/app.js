@@ -88,6 +88,44 @@ window.addEventListener('scroll', () => {
   document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 60);
 });
 
+function setupMobileMenu () {
+  const hamburger = document.getElementById('hamburger');
+  const navLinks = document.getElementById('nav-links');
+  const navCta = document.querySelector('.nav-cta');
+
+  if (!hamburger || !navLinks || !navCta) {
+    return;
+  }
+
+  function closeMenu () {
+    navLinks.classList.remove('open');
+    navCta.classList.remove('open');
+    hamburger.classList.remove('active');
+    hamburger.setAttribute('aria-expanded', 'false');
+  }
+
+  function toggleMenu () {
+    const isOpen = navLinks.classList.toggle('open');
+    navCta.classList.toggle('open', isOpen);
+    hamburger.classList.toggle('active', isOpen);
+    hamburger.setAttribute('aria-expanded', String(isOpen));
+  }
+
+  hamburger.addEventListener('click', toggleMenu);
+
+  navLinks.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', closeMenu);
+  });
+
+  navCta.addEventListener('click', closeMenu);
+
+  window.addEventListener('resize', () => {
+    if (window.innerWidth > 600) {
+      closeMenu();
+    }
+  });
+}
+
 // ── Animated counter ─────────────────────────────────
 function animateCounters () {
   document.querySelectorAll('.stat-num').forEach(el => {
@@ -343,6 +381,56 @@ requestAnimationFrame(() => {
   addReveal('.section-header');
 });
 
+const topicMatcherMap = {
+  'ai-compute': ['ai', 'compute', 'infrastructure'],
+  space: ['space', 'planetary', 'europa'],
+  materials: ['materials', 'physics', 'quantum', 'photonics'],
+  bioengineering: ['bioengineering', 'crispr', 'biology'],
+  energy: ['energy', 'climate', 'battery', 'fusion'],
+  semiconductors: ['semiconductors', 'chip', 'packaging']
+};
+
+function findTopicArticleIndex (topicKey) {
+  const terms = topicMatcherMap[topicKey] || [];
+  if (!terms.length) {
+    return -1;
+  }
+
+  const offset = FEATURED_COUNT;
+  const localIndex = articleData.findIndex(article => {
+    const haystack = `${article.tag} ${article.title} ${article.preview}`.toLowerCase();
+    return terms.some(term => haystack.includes(term));
+  });
+
+  return localIndex >= 0 ? localIndex + offset : -1;
+}
+
+function setupTopicCards () {
+  const articleSection = document.getElementById('articles');
+  if (!articleSection) {
+    return;
+  }
+
+  document.querySelectorAll('.topic-card').forEach(card => {
+    const openTopic = () => {
+      articleSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      const topicKey = card.dataset.topic;
+      const articleIndex = findTopicArticleIndex(topicKey);
+      if (articleIndex >= 0) {
+        setTimeout(() => openArticle(articleIndex), 350);
+      }
+    };
+
+    card.addEventListener('click', openTopic);
+    card.addEventListener('keydown', event => {
+      if (event.key === 'Enter' || event.key === ' ') {
+        event.preventDefault();
+        openTopic();
+      }
+    });
+  });
+}
+
 // ── Article modal ─────────────────────────────────────
 const featuredArticles = [
   {
@@ -399,6 +487,8 @@ document.querySelectorAll('[data-article-index]').forEach(card => {
 document.getElementById('subscribe-btn').addEventListener('click', subscribe);
 document.getElementById('modal-close').addEventListener('click', closeArticle);
 document.getElementById('modal-overlay').addEventListener('click', closeModal);
+setupMobileMenu();
+setupTopicCards();
 
 function openArticle (i) {
   const art = allArticles[i];
@@ -482,6 +572,7 @@ function subscribe () {
   const name  = document.getElementById('nl-name').value.trim();
   const email = document.getElementById('nl-email').value.trim();
   const msg   = document.getElementById('nl-msg');
+  const key = 'mind_and_matter_subscribers';
 
   if (!name || !email) {
     msg.textContent = 'Please fill in both fields.';
@@ -493,10 +584,54 @@ function subscribe () {
     msg.style.color = '#ef4444';
     return;
   }
-  msg.textContent = `Welcome aboard, ${name}. The next Mind & Matter deep-dive lands Tuesday.`;
+
+  let subscribers = [];
+  try {
+    const raw = localStorage.getItem(key);
+    subscribers = raw ? JSON.parse(raw) : [];
+  } catch (error) {
+    subscribers = [];
+  }
+
+  const normalizedEmail = email.toLowerCase();
+  const alreadySubscribed = subscribers.some(subscriber => subscriber.email === normalizedEmail);
+
+  if (alreadySubscribed) {
+    msg.textContent = 'This email is already subscribed.';
+    msg.style.color = '#f59e0b';
+    return;
+  }
+
+  subscribers.push({
+    name,
+    email: normalizedEmail,
+    subscribedAt: new Date().toISOString()
+  });
+
+  try {
+    localStorage.setItem(key, JSON.stringify(subscribers));
+  } catch (error) {
+    console.error('Unable to save subscriber locally:', error);
+  }
+
+  msg.textContent = `Welcome aboard, ${name}. You're subscribed successfully.`;
   msg.style.color = '#10b981';
   document.getElementById('nl-name').value = '';
   document.getElementById('nl-email').value = '';
 }
+
+document.getElementById('nl-email').addEventListener('keydown', event => {
+  if (event.key === 'Enter') {
+    event.preventDefault();
+    subscribe();
+  }
+});
+
+document.getElementById('nl-name').addEventListener('keydown', event => {
+  if (event.key === 'Enter') {
+    event.preventDefault();
+    subscribe();
+  }
+});
 
 // ── Expose to HTML onclick ───────────────────────────

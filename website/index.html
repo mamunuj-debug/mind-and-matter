@@ -24,7 +24,7 @@
       <span class="logo-icon">⬡</span>
       <span class="logo-text">Mind <strong>&amp; Matter</strong></span>
     </div>
-    <ul class="nav-links">
+    <ul class="nav-links" id="nav-links">
       <li><a href="#home">Home</a></li>
       <li><a href="#about">About</a></li>
       <li><a href="#featured">Featured</a></li>
@@ -33,9 +33,9 @@
       <li><a href="#newsletter">Newsletter</a></li>
     </ul>
     <a class="nav-cta" href="#articles">Read Posts ↗</a>
-    <div class="hamburger" id="hamburger">
+    <button class="hamburger" id="hamburger" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-links">
       <span></span><span></span><span></span>
-    </div>
+    </button>
   </nav>
 
   <!-- ── HERO ── -->
@@ -175,42 +175,42 @@
       <h2 class="section-title">Pick Your <span class="gradient-text">Universe</span></h2>
     </div>
     <div class="topics-grid">
-      <div class="topic-card" data-color="#7c3aed">
+      <div class="topic-card" data-color="#7c3aed" data-topic="ai-compute" role="button" tabindex="0" aria-label="Open AI and Compute articles">
         <div class="topic-icon">🖥️</div>
         <h3>AI &amp; Compute</h3>
         <p>Foundation models, accelerators, datacenter design, and the future of machine reasoning.</p>
         <span class="topic-count">29 essays</span>
         <div class="topic-bar" style="--c:#7c3aed"></div>
       </div>
-      <div class="topic-card" data-color="#0ea5e9">
+      <div class="topic-card" data-color="#0ea5e9" data-topic="space" role="button" tabindex="0" aria-label="Open Space Systems articles">
         <div class="topic-icon">🛰️</div>
         <h3>Space Systems</h3>
         <p>Planetary missions, satellite engineering, observatories, and the science of exploration.</p>
         <span class="topic-count">17 essays</span>
         <div class="topic-bar" style="--c:#0ea5e9"></div>
       </div>
-      <div class="topic-card" data-color="#10b981">
+      <div class="topic-card" data-color="#10b981" data-topic="materials" role="button" tabindex="0" aria-label="Open Materials and Physics articles">
         <div class="topic-icon">🧪</div>
         <h3>Materials &amp; Physics</h3>
         <p>Quantum effects, novel materials, photonics, and the science behind advanced devices.</p>
         <span class="topic-count">15 essays</span>
         <div class="topic-bar" style="--c:#10b981"></div>
       </div>
-      <div class="topic-card" data-color="#f59e0b">
+      <div class="topic-card" data-color="#f59e0b" data-topic="bioengineering" role="button" tabindex="0" aria-label="Open Bioengineering articles">
         <div class="topic-icon">🧬</div>
         <h3>Bioengineering</h3>
         <p>CRISPR, computational biology, diagnostics, and the technologies remaking healthcare.</p>
         <span class="topic-count">11 essays</span>
         <div class="topic-bar" style="--c:#f59e0b"></div>
       </div>
-      <div class="topic-card" data-color="#ef4444">
+      <div class="topic-card" data-color="#ef4444" data-topic="energy" role="button" tabindex="0" aria-label="Open Energy and Climate articles">
         <div class="topic-icon">⚡</div>
         <h3>Energy &amp; Climate</h3>
         <p>Fusion, batteries, grids, decarbonization, and pragmatic climate engineering.</p>
         <span class="topic-count">13 essays</span>
         <div class="topic-bar" style="--c:#ef4444"></div>
       </div>
-      <div class="topic-card" data-color="#8b5cf6">
+      <div class="topic-card" data-color="#8b5cf6" data-topic="semiconductors" role="button" tabindex="0" aria-label="Open Semiconductors articles">
         <div class="topic-icon">🧠</div>
         <h3>Semiconductors</h3>
         <p>Process nodes, packaging, memory, EDA, and why chips remain the foundation of modern progress.</p>
@@ -298,10 +298,10 @@
       <div class="footer-col">
         <h4>Connect</h4>
         <div class="social-links">
-          <a class="social-btn" href="#">𝕏</a>
-          <a class="social-btn" href="#">in</a>
-          <a class="social-btn" href="#">▶</a>
-          <a class="social-btn" href="#">✉</a>
+          <a class="social-btn" href="https://x.com/intent/tweet?text=Exploring%20science%2C%20engineering%20and%20space%20at%20Mind%20%26%20Matter" target="_blank" rel="noopener noreferrer" aria-label="Share on X">𝕏</a>
+          <a class="social-btn" href="https://www.linkedin.com/sharing/share-offsite/?url=https://mind-and-matter-mamunuj.netlify.app" target="_blank" rel="noopener noreferrer" aria-label="Share on LinkedIn">in</a>
+          <a class="social-btn" href="https://www.youtube.com/results?search_query=mind+and+matter+science+engineering" target="_blank" rel="noopener noreferrer" aria-label="Open YouTube">▶</a>
+          <a class="social-btn" href="mailto:mamunuj@gmail.com?subject=Mind%20%26%20Matter%20-%20Newsletter%20and%20Posts" aria-label="Email Mind and Matter">✉</a>
         </div>
       </div>
     </div>
