@@ -567,12 +567,29 @@ function setQuote (i) {
 renderDots();
 setInterval(() => setQuote((qIndex + 1) % quotes.length), 5500);
 
+// ── EmailJS config ────────────────────────────────────
+// Replace these three values after setting up EmailJS (emailjs.com):
+//   1. Sign up → Email Services → Add Gmail or Outlook → copy Service ID
+//   2. Email Templates → Create template → copy Template ID
+//   3. Account → API Keys → copy Public Key
+const EMAILJS_SERVICE_ID  = 'YOUR_SERVICE_ID';   // e.g. 'service_abc123'
+const EMAILJS_TEMPLATE_ID = 'YOUR_TEMPLATE_ID';  // e.g. 'template_xyz789'
+const EMAILJS_PUBLIC_KEY  = 'YOUR_PUBLIC_KEY';   // e.g. 'aBcDeFgHiJkLmNoP'
+
+function initEmailJS () {
+  if (window.emailjs && EMAILJS_PUBLIC_KEY !== 'YOUR_PUBLIC_KEY') {
+    window.emailjs.init({ publicKey: EMAILJS_PUBLIC_KEY });
+  }
+}
+initEmailJS();
+
 // ── Newsletter subscribe ─────────────────────────────
-function subscribe () {
+async function subscribe () {
   const name  = document.getElementById('nl-name').value.trim();
   const email = document.getElementById('nl-email').value.trim();
   const msg   = document.getElementById('nl-msg');
-  const key = 'mind_and_matter_subscribers';
+  const btn   = document.getElementById('subscribe-btn');
+  const key   = 'mind_and_matter_subscribers';
 
   if (!name || !email) {
     msg.textContent = 'Please fill in both fields.';
@@ -589,35 +606,75 @@ function subscribe () {
   try {
     const raw = localStorage.getItem(key);
     subscribers = raw ? JSON.parse(raw) : [];
-  } catch (error) {
+  } catch (storageError) {
     subscribers = [];
   }
 
   const normalizedEmail = email.toLowerCase();
-  const alreadySubscribed = subscribers.some(subscriber => subscriber.email === normalizedEmail);
-
-  if (alreadySubscribed) {
+  if (subscribers.some(s => s.email === normalizedEmail)) {
     msg.textContent = 'This email is already subscribed.';
     msg.style.color = '#f59e0b';
     return;
   }
 
-  subscribers.push({
-    name,
-    email: normalizedEmail,
-    subscribedAt: new Date().toISOString()
-  });
+  btn.disabled = true;
+  btn.textContent = 'Subscribing…';
+  msg.textContent = '';
 
+  // ── Step 1: Submit to Netlify Forms ──────────────────
+  let netlifyOk = false;
   try {
-    localStorage.setItem(key, JSON.stringify(subscribers));
-  } catch (error) {
-    console.error('Unable to save subscriber locally:', error);
+    const formData = new URLSearchParams({ 'form-name': 'newsletter', name, email });
+    const response = await fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: formData.toString()
+    });
+    netlifyOk = response.ok;
+  } catch (netErr) {
+    console.warn('Netlify form submission failed:', netErr);
   }
 
-  msg.textContent = `Welcome aboard, ${name}. You're subscribed successfully.`;
+  // ── Step 2: Send confirmation email via EmailJS ───────
+  let emailSent = false;
+  if (
+    window.emailjs &&
+    EMAILJS_PUBLIC_KEY  !== 'YOUR_PUBLIC_KEY' &&
+    EMAILJS_SERVICE_ID  !== 'YOUR_SERVICE_ID' &&
+    EMAILJS_TEMPLATE_ID !== 'YOUR_TEMPLATE_ID'
+  ) {
+    try {
+      await window.emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, {
+        to_name:  name,
+        to_email: email,
+        from_name: 'Mind & Matter',
+        reply_to:  'mamunuj@gmail.com',
+        site_url:  window.location.origin
+      });
+      emailSent = true;
+    } catch (ejsErr) {
+      console.warn('EmailJS send failed:', ejsErr);
+    }
+  }
+
+  // ── Step 3: Save locally ────────────────────────────
+  subscribers.push({ name, email: normalizedEmail, subscribedAt: new Date().toISOString() });
+  try { localStorage.setItem(key, JSON.stringify(subscribers)); } catch (_) {}
+
+  // ── Step 4: Show result ─────────────────────────────
+  if (emailSent) {
+    msg.textContent = `Welcome aboard, ${name}! A confirmation email has been sent to ${email}.`;
+  } else if (netlifyOk) {
+    msg.textContent = `Welcome aboard, ${name}! Subscription confirmed — check your inbox soon.`;
+  } else {
+    msg.textContent = `Welcome aboard, ${name}! You're subscribed successfully.`;
+  }
   msg.style.color = '#10b981';
+
   document.getElementById('nl-name').value = '';
   document.getElementById('nl-email').value = '';
+  btn.disabled = false;
+  btn.textContent = 'Subscribe Free →';
 }
 
 document.getElementById('nl-email').addEventListener('keydown', event => {

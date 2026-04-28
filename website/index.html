@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mind &amp; Matter — Science, Chips &amp; Future Tech</title>
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data:; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'; object-src 'none'; upgrade-insecure-requests" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdn.jsdelivr.net; connect-src 'self' https://api.emailjs.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data:; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'; object-src 'none'; upgrade-insecure-requests" />
   <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin" />
   <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=(), browsing-topics=(), interest-cohort=()" />
   <meta name="color-scheme" content="dark" />
@@ -259,12 +259,15 @@
         </ul>
       </div>
       <div class="nl-right">
-        <div class="nl-form">
-          <input type="text" placeholder="Your name" id="nl-name" />
-          <input type="email" placeholder="your@email.com" id="nl-email" />
+        <!-- Netlify Forms: captures submissions and emails the site owner -->
+        <form class="nl-form" name="newsletter" method="POST" data-netlify="true" netlify-honeypot="bot-field" id="nl-form">
+          <input type="hidden" name="form-name" value="newsletter" />
+          <p class="bot-field" style="display:none"><label>Don't fill this: <input name="bot-field" /></label></p>
+          <input type="text" name="name" placeholder="Your name" id="nl-name" autocomplete="name" />
+          <input type="email" name="email" placeholder="your@email.com" id="nl-email" autocomplete="email" />
           <button class="btn-primary" id="subscribe-btn" type="button">Subscribe Free →</button>
           <p class="nl-note" id="nl-msg"></p>
-        </div>
+        </form>
       </div>
     </div>
   </section>
@@ -319,6 +322,8 @@
     </div>
   </div>
 
+  <!-- EmailJS SDK – sends confirmation email to subscriber -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
   <script src="app.js"></script>
 </body>
 </html>
