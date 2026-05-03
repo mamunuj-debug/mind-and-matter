@@ -1,0 +1,10 @@
+2026-05-01 20:32:30.385 [info] Starting server csv_analyzer
+2026-05-01 20:32:30.385 [info] Connection state: Starting
+2026-05-01 20:32:30.638 [info] Starting server from LocalProcess extension host
+2026-05-01 20:32:30.705 [info] Connection state: Starting
+2026-05-01 20:32:30.706 [info] Connection state: Running
+2026-05-01 20:32:35.706 [info] Waiting for server to respond to `initialize` request...
+2026-05-01 20:32:40.706 [info] Waiting for server to respond to `initialize` request...
+2026-05-01 20:32:44.623 [info] Discovered 4 tools
+2026-05-01 20:34:17.678 [warning] Extension host shut down, server will stop.
+2026-05-01 20:34:17.678 [info] Connection state: Stopped

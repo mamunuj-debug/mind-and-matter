@@ -1,0 +1,7 @@
+2026-05-03 03:17:48.112 [info] Starting server cth_r2g_power_mapping_debug_agent
+2026-05-03 03:17:48.112 [info] Connection state: Starting
+2026-05-03 03:17:48.256 [info] Starting server from LocalProcess extension host
+2026-05-03 03:17:48.300 [info] Connection state: Starting
+2026-05-03 03:17:48.300 [info] Connection state: Running
+2026-05-03 03:17:53.311 [info] Waiting for server to respond to `initialize` request...
+2026-05-03 03:17:56.606 [info] Discovered 18 tools

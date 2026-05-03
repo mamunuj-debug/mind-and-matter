@@ -1,0 +1,11 @@
+2026-05-03 03:17:48.107 [info] Starting server cth_r2g_phoenix_tool
+2026-05-03 03:17:48.110 [info] Connection state: Starting
+2026-05-03 03:17:48.255 [info] Starting server from LocalProcess extension host
+2026-05-03 03:17:48.298 [info] Connection state: Starting
+2026-05-03 03:17:48.298 [info] Connection state: Running
+2026-05-03 03:17:48.919 [warning] [server stderr] /p/hdk/cad/cth_r2g.ai/latest/autobots/cth_r2g_phoenix_tool/mcp/server.py:17: FutureWarning: The 'autobots_base' module is deprecated and will be removed in v3.0+. Please use 'autobots_sdk.base' instead.
+2026-05-03 03:17:48.919 [warning] [server stderr]   from autobots_base.mcp.servers.base_server import (
+2026-05-03 03:17:48.920 [warning] [server stderr] /p/hdk/pu_tu/prd/autobots_sdk/2.3.1.p003/autobots_sdk/util/deprecations.py:8: FutureWarning: The 'autobots_base.mcp' module is deprecated and will be removed in v3.0+. Please use 'autobots_sdk.base.mcp' instead.
+2026-05-03 03:17:48.920 [warning] [server stderr]   warnings.warn(
+2026-05-03 03:17:53.311 [info] Waiting for server to respond to `initialize` request...
+2026-05-03 03:17:56.419 [info] Discovered 5 tools

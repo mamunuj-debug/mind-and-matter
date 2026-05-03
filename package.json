@@ -1,0 +1,9 @@
+{
+  "name": "mind-and-matter",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Mind & Matter — personal science & tech blog by Md Mamunuj Zaman",
+  "dependencies": {
+    "@netlify/blobs": "^8.1.0"
+  }
+}

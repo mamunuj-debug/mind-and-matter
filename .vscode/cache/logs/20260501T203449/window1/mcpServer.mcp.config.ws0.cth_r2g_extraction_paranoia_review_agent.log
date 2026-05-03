@@ -1,0 +1,7 @@
+2026-05-03 03:17:48.105 [info] Starting server cth_r2g_extraction_paranoia_review_agent
+2026-05-03 03:17:48.105 [info] Connection state: Starting
+2026-05-03 03:17:48.255 [info] Starting server from LocalProcess extension host
+2026-05-03 03:17:48.272 [info] Connection state: Starting
+2026-05-03 03:17:48.272 [info] Connection state: Running
+2026-05-03 03:17:53.311 [info] Waiting for server to respond to `initialize` request...
+2026-05-03 03:17:56.626 [info] Discovered 4 tools

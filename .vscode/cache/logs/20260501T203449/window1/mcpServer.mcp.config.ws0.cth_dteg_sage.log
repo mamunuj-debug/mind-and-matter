@@ -1,0 +1,7 @@
+2026-05-03 03:17:48.104 [info] Starting server cth_dteg_sage
+2026-05-03 03:17:48.105 [info] Connection state: Starting
+2026-05-03 03:17:48.255 [info] Starting server from LocalProcess extension host
+2026-05-03 03:17:48.271 [info] Connection state: Starting
+2026-05-03 03:17:48.271 [info] Connection state: Running
+2026-05-03 03:17:53.310 [info] Waiting for server to respond to `initialize` request...
+2026-05-03 03:17:56.635 [info] Discovered 2 tools

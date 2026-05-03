@@ -1,0 +1,53 @@
+2026-05-01 20:29:52.198 [info] Started local extension host with pid 34505.
+2026-05-01 20:29:52.324 [error] Ignoring python.analysis.indexing.followSymlinkedFolders as python.analysis.indexing is true
+2026-05-01 20:29:52.657 [error] Ignoring python.analysis.indexing.followSymlinkedFolders as python.analysis.indexing is true
+2026-05-01 20:29:53.549 [info] Settings Sync: Account status changed from uninitialized to unavailable
+2026-05-01 20:29:54.367 [error] [Extension Host] (node:34505) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `exe --trace-deprecation ...` to show where the warning was created)
+2026-05-01 20:29:54.367 [error] [Extension Host] (node:34505) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+2026-05-01 20:29:54.936 [info] [perf] Render performance baseline is 26ms
+2026-05-01 20:29:55.226 [info] Auto updating outdated extensions. github.copilot-chat, ms-python.debugpy, ms-python.vscode-python-envs
+2026-05-01 20:29:56.151 [error] ENOENT: no such file or directory, mkdir '/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/extensions/github.copilot-chat-0.42.2/node_modules/@github/copilot/sdk/prebuilds': Error: ENOENT: no such file or directory, mkdir '/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/extensions/github.copilot-chat-0.42.2/node_modules/@github/copilot/sdk/prebuilds'
+	at async Object.mkdir (node:internal/fs/promises:856:10)
+	at async MKi (/nfs/site/disks/crt_tools_0105/vscode_cth/1.114.0/autobots/extensions/github.copilot-chat-0.42.2/dist/extension.js:2233:7664)
+	at async LKi (/nfs/site/disks/crt_tools_0105/vscode_cth/1.114.0/autobots/extensions/github.copilot-chat-0.42.2/dist/extension.js:2233:7456)
+	at async Promise.all (index 0)
+	at async HG.ensureShims (/nfs/site/disks/crt_tools_0105/vscode_cth/1.114.0/autobots/extensions/github.copilot-chat-0.42.2/dist/extension.js:2233:19974)
+2026-05-01 20:29:57.321 [error] An unknown error occurred. Please consult the log for more details.
+2026-05-01 20:29:57.859 [error] [ChatSessionsService] Failed to resolve sessions for provider copilotcli ENOENT: no such file or directory, mkdir '/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/extensions/github.copilot-chat-0.42.2/node_modules/@github/copilot/sdk/prebuilds'
+2026-05-01 20:29:57.859 [error] [ChatSessionsService] Failed to resolve sessions for provider copilotcli ENOENT: no such file or directory, mkdir '/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/extensions/github.copilot-chat-0.42.2/node_modules/@github/copilot/sdk/prebuilds'
+2026-05-01 20:29:57.871 [error] [ChatSessionsService] Failed to resolve sessions for provider copilotcli ENOENT: no such file or directory, mkdir '/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/extensions/github.copilot-chat-0.42.2/node_modules/@github/copilot/sdk/prebuilds'
+2026-05-01 20:29:57.872 [error] [ChatSessionsService] Failed to resolve sessions for provider copilotcli ENOENT: no such file or directory, mkdir '/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/extensions/github.copilot-chat-0.42.2/node_modules/@github/copilot/sdk/prebuilds'
+2026-05-01 20:30:21.198 [info] Auto updating outdated extensions. github.copilot-chat, ms-python.debugpy, ms-python.vscode-python-envs
+2026-05-01 20:31:46.316 [error] [ChatSessionsService] Failed to resolve sessions for provider copilotcli ENOENT: no such file or directory, mkdir '/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/extensions/github.copilot-chat-0.42.2/node_modules/@github/copilot/sdk/prebuilds'
+2026-05-01 20:31:46.317 [error] [ChatSessionsService] Failed to resolve sessions for provider copilotcli ENOENT: no such file or directory, mkdir '/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/extensions/github.copilot-chat-0.42.2/node_modules/@github/copilot/sdk/prebuilds'
+2026-05-01 20:34:17.690 [warning] [backup tracker] suspended, ignoring unregister event file:///nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/website/index.html 
+2026-05-01 20:34:17.691 [warning] Attempted to report in-progress status for unknown chat session type 'copilot-cloud-agent'
+2026-05-01 20:34:17.692 [warning] Attempted to report in-progress status for unknown chat session type 'copilotcli'
+2026-05-01 20:34:17.692 [warning] Attempted to report in-progress status for unknown chat session type 'claude-code'
+2026-05-01 20:34:18.602 [warning] [backup tracker] suspended, ignoring register event file:///nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/mcp.json 
+2026-05-01 20:34:18.706 [warning] [lifecycle] onWillShutdown is taking a long time, pending operations: join.chatEditingSession
+2026-05-01 20:34:20.299 [warning] Creation of workbench contribution 'workbench.contrib.chatSetup' took 36ms.
+2026-05-01 20:34:20.802 [info] Started local extension host with pid 20734.
+2026-05-01 20:34:20.927 [error] Ignoring python.analysis.indexing.followSymlinkedFolders as python.analysis.indexing is true
+2026-05-01 20:34:21.339 [error] Ignoring python.analysis.indexing.followSymlinkedFolders as python.analysis.indexing is true
+2026-05-01 20:34:22.364 [info] Settings Sync: Account status changed from uninitialized to unavailable
+2026-05-01 20:34:23.187 [error] [Extension Host] (node:20734) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `exe --trace-deprecation ...` to show where the warning was created)
+2026-05-01 20:34:23.191 [error] [Extension Host] (node:20734) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+2026-05-01 20:34:23.223 [info] Auto updating outdated extensions. github.copilot-chat, ms-python.debugpy, ms-python.vscode-python-envs
+2026-05-01 20:34:23.659 [info] [perf] Render performance baseline is 27ms
+2026-05-01 20:34:24.192 [error] ENOENT: no such file or directory, mkdir '/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/extensions/github.copilot-chat-0.42.2/node_modules/@github/copilot/sdk/prebuilds': Error: ENOENT: no such file or directory, mkdir '/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/extensions/github.copilot-chat-0.42.2/node_modules/@github/copilot/sdk/prebuilds'
+	at async Object.mkdir (node:internal/fs/promises:856:10)
+	at async MKi (/nfs/site/disks/crt_tools_0105/vscode_cth/1.114.0/autobots/extensions/github.copilot-chat-0.42.2/dist/extension.js:2233:7664)
+	at async LKi (/nfs/site/disks/crt_tools_0105/vscode_cth/1.114.0/autobots/extensions/github.copilot-chat-0.42.2/dist/extension.js:2233:7456)
+	at async Promise.all (index 0)
+	at async HG.ensureShims (/nfs/site/disks/crt_tools_0105/vscode_cth/1.114.0/autobots/extensions/github.copilot-chat-0.42.2/dist/extension.js:2233:19974)
+2026-05-01 20:34:25.403 [error] An unknown error occurred. Please consult the log for more details.
+2026-05-01 20:34:25.680 [error] [ChatSessionsService] Failed to resolve sessions for provider copilotcli ENOENT: no such file or directory, mkdir '/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/extensions/github.copilot-chat-0.42.2/node_modules/@github/copilot/sdk/prebuilds'
+2026-05-01 20:34:25.680 [error] [ChatSessionsService] Failed to resolve sessions for provider copilotcli ENOENT: no such file or directory, mkdir '/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/extensions/github.copilot-chat-0.42.2/node_modules/@github/copilot/sdk/prebuilds'
+2026-05-01 20:34:25.698 [error] [ChatSessionsService] Failed to resolve sessions for provider copilotcli ENOENT: no such file or directory, mkdir '/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/extensions/github.copilot-chat-0.42.2/node_modules/@github/copilot/sdk/prebuilds'
+2026-05-01 20:34:25.698 [error] [ChatSessionsService] Failed to resolve sessions for provider copilotcli ENOENT: no such file or directory, mkdir '/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/extensions/github.copilot-chat-0.42.2/node_modules/@github/copilot/sdk/prebuilds'
+2026-05-01 20:34:40.439 [warning] Attempted to report in-progress status for unknown chat session type 'copilot-cloud-agent'
+2026-05-01 20:34:40.439 [warning] Attempted to report in-progress status for unknown chat session type 'copilotcli'
+2026-05-01 20:34:40.440 [warning] Attempted to report in-progress status for unknown chat session type 'claude-code'

@@ -1,0 +1,8 @@
+2026-05-03 03:17:48.098 [info] Starting server blocksinfo
+2026-05-03 03:17:48.099 [info] Connection state: Starting
+2026-05-03 03:17:48.254 [info] Starting server from LocalProcess extension host
+2026-05-03 03:17:48.267 [info] Connection state: Starting
+2026-05-03 03:17:48.268 [info] Connection state: Running
+2026-05-03 03:17:53.310 [info] Waiting for server to respond to `initialize` request...
+2026-05-03 03:17:58.297 [info] Waiting for server to respond to `initialize` request...
+2026-05-03 03:17:59.617 [info] Discovered 9 tools

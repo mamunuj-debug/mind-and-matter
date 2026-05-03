@@ -1,0 +1,14 @@
+2026-05-01 20:32:30.391 [info] Starting server cth_r2g_run_analyzer_agent
+2026-05-01 20:32:30.391 [info] Connection state: Starting
+2026-05-01 20:32:30.638 [info] Starting server from LocalProcess extension host
+2026-05-01 20:32:30.805 [info] Connection state: Starting
+2026-05-01 20:32:30.805 [info] Connection state: Running
+2026-05-01 20:32:35.799 [info] Waiting for server to respond to `initialize` request...
+2026-05-01 20:32:38.420 [warning] [server stderr] /p/hdk/cad/cth_r2g.ai/latest/autobots/cth_r2g_run_analyzer_agent/mcp/server.py:49: FutureWarning: The 'autobots_base' module is deprecated and will be removed in v3.0+. Please use 'autobots_sdk.base' instead.
+2026-05-01 20:32:38.420 [warning] [server stderr]   from autobots_base.mcp.servers.base_server import AutobotsMCPStdioServer
+2026-05-01 20:32:38.421 [warning] [server stderr] /p/hdk/pu_tu/prd/autobots_sdk/2.3.1.p003/autobots_sdk/util/deprecations.py:8: FutureWarning: The 'autobots_base.mcp' module is deprecated and will be removed in v3.0+. Please use 'autobots_sdk.base.mcp' instead.
+2026-05-01 20:32:38.421 [warning] [server stderr]   warnings.warn(
+2026-05-01 20:32:40.800 [info] Waiting for server to respond to `initialize` request...
+2026-05-01 20:32:43.100 [info] Discovered 14 tools
+2026-05-01 20:34:17.682 [warning] Extension host shut down, server will stop.
+2026-05-01 20:34:17.684 [info] Connection state: Stopped

@@ -1,0 +1,8 @@
+2026-05-03 03:17:48.117 [info] Starting server hsd
+2026-05-03 03:17:48.117 [info] Connection state: Starting
+2026-05-03 03:17:48.256 [info] Starting server from LocalProcess extension host
+2026-05-03 03:17:48.711 [info] Connection state: Starting
+2026-05-03 03:17:48.711 [info] Connection state: Running
+2026-05-03 03:17:53.713 [info] Waiting for server to respond to `initialize` request...
+2026-05-03 03:17:58.715 [info] Waiting for server to respond to `initialize` request...
+2026-05-03 03:18:00.333 [info] Discovered 23 tools

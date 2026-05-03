@@ -1,0 +1,10 @@
+2026-05-01 20:32:30.396 [info] Starting server netbatch
+2026-05-01 20:32:30.396 [info] Connection state: Starting
+2026-05-01 20:32:30.639 [info] Starting server from LocalProcess extension host
+2026-05-01 20:32:31.128 [info] Connection state: Starting
+2026-05-01 20:32:31.129 [info] Connection state: Running
+2026-05-01 20:32:36.200 [info] Waiting for server to respond to `initialize` request...
+2026-05-01 20:32:41.197 [info] Waiting for server to respond to `initialize` request...
+2026-05-01 20:32:42.840 [info] Discovered 24 tools
+2026-05-01 20:34:17.686 [warning] Extension host shut down, server will stop.
+2026-05-01 20:34:17.686 [info] Connection state: Stopped

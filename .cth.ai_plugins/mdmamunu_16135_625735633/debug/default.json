@@ -1,0 +1,88 @@
+{
+    "vscode_cth": {
+        "version": "latest",
+        "timestamp": "2026-05-01T20:26:50.741347",
+        "extensions": [
+            {
+                "name": "github.copilot-chat-0.42.2",
+                "source": "/p/cth/cad/vscode_cth/1.114.0/autobots/extensions/github.copilot-chat-0.42.2",
+                "target": "/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/extensions/github.copilot-chat-0.42.2",
+                "origin": "vscode_cth"
+            },
+            {
+                "name": "ms-python.debugpy-2025.18.0-linux-x64",
+                "source": "/p/cth/cad/vscode_cth/1.114.0/autobots/extensions/ms-python.debugpy-2025.18.0-linux-x64",
+                "target": "/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/extensions/ms-python.debugpy-2025.18.0-linux-x64",
+                "origin": "vscode_cth"
+            },
+            {
+                "name": "ms-python.python-2026.4.0-linux-x64",
+                "source": "/p/cth/cad/vscode_cth/1.114.0/autobots/extensions/ms-python.python-2026.4.0-linux-x64",
+                "target": "/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/extensions/ms-python.python-2026.4.0-linux-x64",
+                "origin": "vscode_cth"
+            },
+            {
+                "name": "ms-python.vscode-pylance-2026.2.1",
+                "source": "/p/cth/cad/vscode_cth/1.114.0/autobots/extensions/ms-python.vscode-pylance-2026.2.1",
+                "target": "/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/extensions/ms-python.vscode-pylance-2026.2.1",
+                "origin": "vscode_cth"
+            },
+            {
+                "name": "ms-python.vscode-python-envs-1.26.0-linux-x64",
+                "source": "/p/cth/cad/vscode_cth/1.114.0/autobots/extensions/ms-python.vscode-python-envs-1.26.0-linux-x64",
+                "target": "/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/extensions/ms-python.vscode-python-envs-1.26.0-linux-x64",
+                "origin": "vscode_cth"
+            }
+        ]
+    },
+    "user_home": {
+        "timestamp": "2026-05-01T20:26:50.741357",
+        "extensions": {
+            "source": "/nfs/site/home/mdmamunu/.vscode/extensions",
+            "items": [
+                {
+                    "name": "github.copilot-chat-0.42.2",
+                    "source": "/nfs/site/home/mdmamunu/.vscode/extensions/github.copilot-chat-0.42.2",
+                    "target": "/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/extensions/github.copilot-chat-0.42.2",
+                    "origin": "user_home"
+                },
+                {
+                    "name": "ms-python.debugpy-2025.18.0-linux-x64",
+                    "source": "/nfs/site/home/mdmamunu/.vscode/extensions/ms-python.debugpy-2025.18.0-linux-x64",
+                    "target": "/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/extensions/ms-python.debugpy-2025.18.0-linux-x64",
+                    "origin": "user_home"
+                },
+                {
+                    "name": "ms-python.python-2026.4.0-linux-x64",
+                    "source": "/nfs/site/home/mdmamunu/.vscode/extensions/ms-python.python-2026.4.0-linux-x64",
+                    "target": "/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/extensions/ms-python.python-2026.4.0-linux-x64",
+                    "origin": "user_home"
+                },
+                {
+                    "name": "ms-python.vscode-pylance-2026.2.1",
+                    "source": "/nfs/site/home/mdmamunu/.vscode/extensions/ms-python.vscode-pylance-2026.2.1",
+                    "target": "/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/extensions/ms-python.vscode-pylance-2026.2.1",
+                    "origin": "user_home"
+                },
+                {
+                    "name": "ms-python.vscode-python-envs-1.26.0-linux-x64",
+                    "source": "/nfs/site/home/mdmamunu/.vscode/extensions/ms-python.vscode-python-envs-1.26.0-linux-x64",
+                    "target": "/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/extensions/ms-python.vscode-python-envs-1.26.0-linux-x64",
+                    "origin": "user_home"
+                }
+            ]
+        },
+        "prompts": {
+            "source": "/nfs/site/home/mdmamunu/.config/Code/User/prompts",
+            "items": []
+        },
+        "skills": {
+            "source": "/nfs/site/home/mdmamunu/.claude/skills",
+            "items": []
+        },
+        "mcp_servers": {
+            "source": "/nfs/site/home/mdmamunu/.config/Code/User/mcp.json",
+            "items": []
+        }
+    }
+}

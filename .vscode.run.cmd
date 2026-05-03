@@ -1,0 +1,1 @@
+/p/cth/cad/vscode/1.114.0/bin/code --user-data-dir=/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/cache --extensions-dir=/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/extensions --disable-workspace-trust /nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.cth.ai_plugins/mdmamunu_368_663451128/.cth.ai_plugins.mdmamunu_368_663451128.code-workspace

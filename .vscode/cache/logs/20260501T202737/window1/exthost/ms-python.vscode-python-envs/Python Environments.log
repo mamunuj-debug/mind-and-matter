@@ -1,0 +1,366 @@
+2026-05-01 20:27:43.540 [info] Python-envs extension version: 1.26.0
+2026-05-01 20:27:43.540 [info] 
+=== Python Envs Configuration Levels ===
+2026-05-01 20:27:43.540 [info] {
+  "section": "Python Envs Configuration Levels",
+  "defaultEnvManager": {
+    "workspaceFolderValue": "undefined",
+    "workspaceValue": "undefined",
+    "globalValue": "undefined",
+    "defaultValue": "ms-python.python:venv"
+  },
+  "defaultPackageManager": {
+    "workspaceFolderValue": "undefined",
+    "workspaceValue": "undefined",
+    "globalValue": "undefined",
+    "defaultValue": "ms-python.python:pip"
+  }
+}
+2026-05-01 20:27:43.540 [info] [pet] Starting Python Locator /nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/extensions/ms-python.vscode-python-envs-1.26.0-linux-x64/python-env-tools/bin/pet server
+2026-05-01 20:27:43.540 [warning] Could not determine calling extension from stack frames. Using fallback namespace 'ms-python.python'. Caller paths: /nfs/site/disks/crt_tools_0105/vscode_cth/1.114.0/autobots/extensions/ms-python.vscode-python-envs-1.26.0-linux-x64/dist/extension.js, /nfs/site/disks/crt_tools_0105/vscode_cth/1.114.0/autobots/extensions/ms-python.vscode-python-envs-1.26.0-linux-x64/dist/extension.js, /nfs/site/disks/crt_tools_0105/vscode_cth/1.114.0/autobots/extensions/ms-python.vscode-python-envs-1.26.0-linux-x64/dist/extension.js
+2026-05-01 20:27:43.634 [info] [pet] configure: Sending configuration update: {"workspaceDirectories":["/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17"],"environmentDirectories":["/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/**/.venv"],"pipenvExecutable":"pipenv","poetryExecutable":"poetry","cacheDirectory":"/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/cache/User/globalStorage/ms-python.vscode-python-envs/pythonLocator"}
+2026-05-01 20:27:44.715 [info] Discovered env: /nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/website/.venv/bin/python
+2026-05-01 20:27:44.733 [info] Discovered env: /nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.venv/bin/python
+2026-05-01 20:27:44.747 [info] Discovered env: /nfs/site/disks/crt_tools_0108/autobots_sdk/2.3.1.p003/venv_autobots/bin/python
+2026-05-01 20:27:44.751 [info] Discovered env: /usr/bin/python3
+2026-05-01 20:27:44.764 [info] Discovered env: /nfs/site/disks/crt_tools_0109/liteinfra/2.2/commonFlow/bin/python
+2026-05-01 20:27:45.083 [error] [pet] [2m   1.672160991s[0m [31mERROR[0m [2mpet_python_utils::env[0m[2m:[0m Python Execution for "/nfs/site/disks/crt_tools_089/calibre/soa_cal_2024.3_16.10_cth/bin/python3" produced an output "" without a separator
+[2m   1.672182003s[0m [33m WARN[0m [2mpet::find[0m[2m:[0m Unknown Python Env "/nfs/site/disks/crt_tools_089/calibre/soa_cal_2024.3_16.10_cth/bin/python3"
+
+2026-05-01 20:27:45.083 [info] Resolved environment during PET refresh: /nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/website/.venv/bin/python
+2026-05-01 20:27:45.211 [info] Discovered env: /nfs/site/itools/em64t_SLES15/pkgs/wrapper/2.15/bin/python3
+2026-05-01 20:27:45.255 [info] Resolved environment during PET refresh: /nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.venv/bin/python
+2026-05-01 20:27:45.262 [info] Resolved environment during PET refresh: /nfs/site/disks/crt_tools_0108/autobots_sdk/2.3.1.p003/venv_autobots/bin/python
+2026-05-01 20:27:45.275 [info] Discovered env: /nfs/site/itools/em64t_SLES15/pkgs/wrapper/2.15/bin/python3.10.8
+2026-05-01 20:27:45.278 [info] Discovered env: /nfs/site/itools/em64t_SLES15/pkgs/wrapper/2.15/bin/python3.11.1
+2026-05-01 20:27:45.279 [info] Discovered env: /nfs/site/itools/em64t_SLES15/pkgs/wrapper/2.15/bin/python3.12.3
+2026-05-01 20:27:45.280 [info] Discovered env: /nfs/site/itools/em64t_SLES15/pkgs/wrapper/2.15/bin/python3.13.2
+2026-05-01 20:27:45.280 [info] Discovered env: /nfs/site/itools/em64t_SLES15/pkgs/wrapper/2.15/bin/python3.6.3
+2026-05-01 20:27:45.282 [info] [pet] Telemetry:  {"event":"RefreshPerformance","data":{"refreshPerformance":{"total":506,"breakdown":{"GlobalVirtualEnvs":202,"Locators":299,"Path":505,"Workspaces":111},"locators":{"Conda":299,"Homebrew":0,"LinuxGlobal":281,"PipEnv":2,"Pixi":0,"Poetry":2,"PyEnv":2,"Uv":0,"Venv":0,"VirtualEnv":0,"VirtualEnvWrapper":0}}}}
+2026-05-01 20:27:45.442 [info] Discovered env: /nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.venv/bin/python
+2026-05-01 20:27:45.531 [info] Found venv environment: .venv (3.13.2)
+2026-05-01 20:27:45.535 [info] Discovered env: /nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/website/.venv/bin/python
+2026-05-01 20:27:45.553 [info] Discovered env: /nfs/site/disks/crt_tools_0108/autobots_sdk/2.3.1.p003/venv_autobots/bin/python
+2026-05-01 20:27:45.560 [info] Discovered env: /usr/bin/python3
+2026-05-01 20:27:45.563 [info] Discovered env: /nfs/site/disks/crt_tools_0109/liteinfra/2.2/commonFlow/bin/python
+2026-05-01 20:27:45.563 [info] Resolved environment during PET refresh: /nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.venv/bin/python
+2026-05-01 20:27:45.563 [info] Discovered env: /nfs/site/itools/em64t_SLES15/pkgs/wrapper/2.15/bin/python3
+2026-05-01 20:27:45.566 [info] Found venv environment: .venv (3.13.2)
+2026-05-01 20:27:45.566 [info] Resolved environment during PET refresh: /nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/website/.venv/bin/python
+2026-05-01 20:27:45.569 [info] Discovered env: /nfs/site/itools/em64t_SLES15/pkgs/wrapper/2.15/bin/python3.10.8
+2026-05-01 20:27:45.569 [info] Resolved environment during PET refresh: /nfs/site/disks/crt_tools_0108/autobots_sdk/2.3.1.p003/venv_autobots/bin/python
+2026-05-01 20:27:45.780 [error] [pet] [2m   2.498389153s[0m [31mERROR[0m [2mpet_python_utils::env[0m[2m:[0m Python Execution for "/nfs/site/disks/crt_tools_089/calibre/soa_cal_2024.3_16.10_cth/bin/python3" produced an output "" without a separator
+[2m   2.498421979s[0m [33m WARN[0m [2mpet::find[0m[2m:[0m Unknown Python Env "/nfs/site/disks/crt_tools_089/calibre/soa_cal_2024.3_16.10_cth/bin/python3"
+
+2026-05-01 20:27:45.780 [info] Discovered env: /nfs/site/itools/em64t_SLES15/pkgs/wrapper/2.15/bin/python3.11.1
+2026-05-01 20:27:45.807 [info] Found venv environment: venv_autobots (3.13.2)
+2026-05-01 20:27:45.816 [info] Discovered env: /nfs/site/itools/em64t_SLES15/pkgs/wrapper/2.15/bin/python3.12.3
+2026-05-01 20:27:45.817 [info] Python API: Changed environment from undefined to .venv (3.13.2) for: /nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17
+2026-05-01 20:27:45.819 [info] Internal: Changed environment from undefined to .venv (3.13.2) for: /nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17
+2026-05-01 20:27:45.823 [info] Discovered env: /nfs/site/itools/em64t_SLES15/pkgs/wrapper/2.15/bin/python3.13.2
+2026-05-01 20:27:45.823 [info] Discovered env: /nfs/site/itools/em64t_SLES15/pkgs/wrapper/2.15/bin/python3.6.3
+2026-05-01 20:27:45.833 [info] [pet] Telemetry:  {"event":"RefreshPerformance","data":{"refreshPerformance":{"total":476,"breakdown":{"GlobalVirtualEnvs":122,"Locators":235,"Path":476,"Workspaces":38},"locators":{"Conda":235,"Homebrew":0,"LinuxGlobal":231,"PipEnv":2,"Pixi":0,"Poetry":2,"PyEnv":1,"Uv":0,"Venv":0,"VirtualEnv":0,"VirtualEnvWrapper":0}}}}
+2026-05-01 20:27:45.850 [info] Discovered env: /nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.venv/bin/python
+2026-05-01 20:27:46.153 [info] Discovered env: /nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/website/.venv/bin/python
+2026-05-01 20:27:46.173 [info] Discovered env: /nfs/site/disks/crt_tools_0108/autobots_sdk/2.3.1.p003/venv_autobots/bin/python
+2026-05-01 20:27:46.174 [info] Resolved environment during PET refresh: /nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.venv/bin/python
+2026-05-01 20:27:46.174 [info] Discovered env: /usr/bin/python3
+2026-05-01 20:27:46.175 [info] Discovered env: /nfs/site/disks/crt_tools_0109/liteinfra/2.2/commonFlow/bin/python
+2026-05-01 20:27:46.176 [info] Discovered env: /nfs/site/itools/em64t_SLES15/pkgs/wrapper/2.15/bin/python3
+2026-05-01 20:27:46.178 [info] Discovered env: /nfs/site/itools/em64t_SLES15/pkgs/wrapper/2.15/bin/python3.10.8
+2026-05-01 20:27:46.179 [info] Discovered env: /nfs/site/itools/em64t_SLES15/pkgs/wrapper/2.15/bin/python3.11.1
+2026-05-01 20:27:46.184 [info] Resolved environment during PET refresh: /nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/website/.venv/bin/python
+2026-05-01 20:27:46.185 [info] Resolved environment during PET refresh: /nfs/site/disks/crt_tools_0108/autobots_sdk/2.3.1.p003/venv_autobots/bin/python
+2026-05-01 20:27:46.198 [info] Discovered env: /nfs/site/itools/em64t_SLES15/pkgs/wrapper/2.15/bin/python3.12.3
+2026-05-01 20:27:46.216 [info] Discovered env: /nfs/site/itools/em64t_SLES15/pkgs/wrapper/2.15/bin/python3.13.2
+2026-05-01 20:27:46.263 [info] Discovered env: /nfs/site/itools/em64t_SLES15/pkgs/wrapper/2.15/bin/python3.6.3
+2026-05-01 20:27:46.325 [error] [pet] [2m   3.063679833s[0m [31mERROR[0m [2mpet_python_utils::env[0m[2m:[0m Python Execution for "/nfs/site/disks/crt_tools_089/calibre/soa_cal_2024.3_16.10_cth/bin/python3" produced an output "" without a separator
+[2m   3.063703829s[0m [33m WARN[0m [2mpet::find[0m[2m:[0m Unknown Python Env "/nfs/site/disks/crt_tools_089/calibre/soa_cal_2024.3_16.10_cth/bin/python3"
+
+2026-05-01 20:27:46.326 [info] [pet] Telemetry:  {"event":"RefreshPerformance","data":{"refreshPerformance":{"total":490,"breakdown":{"GlobalVirtualEnvs":179,"Locators":289,"Path":490,"Workspaces":81},"locators":{"Conda":288,"Homebrew":0,"LinuxGlobal":266,"PipEnv":2,"Pixi":0,"Poetry":2,"PyEnv":2,"Uv":0,"Venv":0,"VirtualEnv":0,"VirtualEnvWrapper":0}}}}
+2026-05-01 20:27:46.326 [info] Found venv environment: .venv (3.13.2)
+2026-05-01 20:27:46.328 [info] Found venv environment: .venv (3.13.2)
+2026-05-01 20:27:46.329 [info] Found venv environment: venv_autobots (3.13.2)
+2026-05-01 20:27:46.407 [info] Discovered env: /nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.venv/bin/python
+2026-05-01 20:27:46.408 [info] Discovered env: /nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/website/.venv/bin/python
+2026-05-01 20:27:46.425 [info] Discovered env: /nfs/site/disks/crt_tools_0108/autobots_sdk/2.3.1.p003/venv_autobots/bin/python
+2026-05-01 20:27:46.431 [info] Python API: Changed environment from .venv (3.13.2) to .venv (3.13.2) for: /nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17
+2026-05-01 20:27:46.431 [info] Internal: Changed environment from .venv (3.13.2) to .venv (3.13.2) for: /nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17
+2026-05-01 20:27:46.920 [error] [pet] [2m   3.540098844s[0m [31mERROR[0m [2mpet_python_utils::env[0m[2m:[0m Python Execution for "/nfs/site/disks/crt_tools_089/calibre/soa_cal_2024.3_16.10_cth/bin/python3" produced an output "" without a separator
+[2m   3.540122740s[0m [33m WARN[0m [2mpet::find[0m[2m:[0m Unknown Python Env "/nfs/site/disks/crt_tools_089/calibre/soa_cal_2024.3_16.10_cth/bin/python3"
+
+2026-05-01 20:27:46.930 [info] Resolved environment during PET refresh: /nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.venv/bin/python
+2026-05-01 20:27:46.932 [info] Resolved environment during PET refresh: /nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/website/.venv/bin/python
+2026-05-01 20:27:46.969 [info] Resolved environment during PET refresh: /nfs/site/disks/crt_tools_0108/autobots_sdk/2.3.1.p003/venv_autobots/bin/python
+2026-05-01 20:27:46.969 [info] Discovered env: /usr/bin/python3
+2026-05-01 20:27:46.969 [info] Discovered env: /nfs/site/disks/crt_tools_0109/liteinfra/2.2/commonFlow/bin/python
+2026-05-01 20:27:46.969 [info] Discovered env: /nfs/site/itools/em64t_SLES15/pkgs/wrapper/2.15/bin/python3
+2026-05-01 20:27:46.969 [info] Discovered env: /nfs/site/itools/em64t_SLES15/pkgs/wrapper/2.15/bin/python3.10.8
+2026-05-01 20:27:46.969 [info] Discovered env: /nfs/site/itools/em64t_SLES15/pkgs/wrapper/2.15/bin/python3.11.1
+2026-05-01 20:27:46.969 [info] Discovered env: /nfs/site/itools/em64t_SLES15/pkgs/wrapper/2.15/bin/python3.12.3
+2026-05-01 20:27:47.009 [info] Discovered env: /nfs/site/itools/em64t_SLES15/pkgs/wrapper/2.15/bin/python3.13.2
+2026-05-01 20:27:47.010 [info] Discovered env: /nfs/site/itools/em64t_SLES15/pkgs/wrapper/2.15/bin/python3.6.3
+2026-05-01 20:27:47.013 [info] Pyenv not found, turning off pyenv features.
+2026-05-01 20:27:47.015 [info] [pet] Telemetry:  {"event":"RefreshPerformance","data":{"refreshPerformance":{"total":474,"breakdown":{"GlobalVirtualEnvs":193,"Locators":290,"Path":474,"Workspaces":84},"locators":{"Conda":289,"Homebrew":0,"LinuxGlobal":280,"PipEnv":2,"Pixi":0,"Poetry":2,"PyEnv":1,"Uv":0,"Venv":0,"VirtualEnv":0,"VirtualEnvWrapper":0}}}}
+2026-05-01 20:27:47.038 [info] Discovered env: /nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.venv/bin/python
+2026-05-01 20:27:47.097 [info] Discovered env: /nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/website/.venv/bin/python
+2026-05-01 20:27:47.107 [info] Discovered env: /nfs/site/disks/crt_tools_0108/autobots_sdk/2.3.1.p003/venv_autobots/bin/python
+2026-05-01 20:27:47.132 [info] Resolved environment during PET refresh: /nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.venv/bin/python
+2026-05-01 20:27:47.134 [info] Resolved environment during PET refresh: /nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/website/.venv/bin/python
+2026-05-01 20:27:47.204 [info] Resolved environment during PET refresh: /nfs/site/disks/crt_tools_0108/autobots_sdk/2.3.1.p003/venv_autobots/bin/python
+2026-05-01 20:27:47.319 [info] Discovered env: /usr/bin/python3
+2026-05-01 20:27:47.319 [info] Discovered env: /nfs/site/disks/crt_tools_0109/liteinfra/2.2/commonFlow/bin/python
+2026-05-01 20:27:47.328 [info] Discovered env: /nfs/site/itools/em64t_SLES15/pkgs/wrapper/2.15/bin/python3
+2026-05-01 20:27:47.344 [info] Discovered env: /nfs/site/itools/em64t_SLES15/pkgs/wrapper/2.15/bin/python3.10.8
+2026-05-01 20:27:47.360 [info] Discovered env: /nfs/site/itools/em64t_SLES15/pkgs/wrapper/2.15/bin/python3.11.1
+2026-05-01 20:27:47.375 [info] Discovered env: /nfs/site/itools/em64t_SLES15/pkgs/wrapper/2.15/bin/python3.12.3
+2026-05-01 20:27:47.442 [info] Discovered env: /nfs/site/itools/em64t_SLES15/pkgs/wrapper/2.15/bin/python3.13.2
+2026-05-01 20:27:47.443 [info] Discovered env: /nfs/site/itools/em64t_SLES15/pkgs/wrapper/2.15/bin/python3.6.3
+2026-05-01 20:27:47.483 [error] [pet] [2m   4.222439129s[0m [31mERROR[0m [2mpet_python_utils::env[0m[2m:[0m Python Execution for "/nfs/site/disks/crt_tools_089/calibre/soa_cal_2024.3_16.10_cth/bin/python3" produced an output "" without a separator
+[2m   4.222462801s[0m [33m WARN[0m [2mpet::find[0m[2m:[0m Unknown Python Env "/nfs/site/disks/crt_tools_089/calibre/soa_cal_2024.3_16.10_cth/bin/python3"
+
+2026-05-01 20:27:47.484 [info] Conda not found, turning off conda features. [Error: Conda not found
+	at F (/nfs/site/disks/crt_tools_0105/vscode_cth/1.114.0/autobots/extensions/ms-python.vscode-python-envs-1.26.0-linux-x64/dist/extension.js:2:594057)
+	at runNextTicks (node:internal/process/task_queues:64:5)
+	at process.processImmediate (node:internal/timers:452:9)
+	at async L (/nfs/site/disks/crt_tools_0105/vscode_cth/1.114.0/autobots/extensions/ms-python.vscode-python-envs-1.26.0-linux-x64/dist/extension.js:2:594182)
+	at async t.registerCondaFeatures (/nfs/site/disks/crt_tools_0105/vscode_cth/1.114.0/autobots/extensions/ms-python.vscode-python-envs-1.26.0-linux-x64/dist/extension.js:2:614079)
+	at async t.safeRegister (/nfs/site/disks/crt_tools_0105/vscode_cth/1.114.0/autobots/extensions/ms-python.vscode-python-envs-1.26.0-linux-x64/dist/extension.js:2:282143)
+	at async Promise.all (index 1)
+	at async Immediate.<anonymous> (/nfs/site/disks/crt_tools_0105/vscode_cth/1.114.0/autobots/extensions/ms-python.vscode-python-envs-1.26.0-linux-x64/dist/extension.js:2:741228)]
+2026-05-01 20:27:47.486 [info] [pet] Telemetry:  {"event":"RefreshPerformance","data":{"refreshPerformance":{"total":467,"breakdown":{"GlobalVirtualEnvs":198,"Locators":284,"Path":466,"Workspaces":93},"locators":{"Conda":284,"Homebrew":0,"LinuxGlobal":281,"PipEnv":1,"Pixi":0,"Poetry":1,"PyEnv":1,"Uv":0,"Venv":0,"VirtualEnv":0,"VirtualEnvWrapper":0}}}}
+2026-05-01 20:27:47.513 [info] Discovered env: /nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.venv/bin/python
+2026-05-01 20:27:47.514 [info] Discovered env: /nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/website/.venv/bin/python
+2026-05-01 20:27:47.627 [info] Discovered env: /nfs/site/disks/crt_tools_0108/autobots_sdk/2.3.1.p003/venv_autobots/bin/python
+2026-05-01 20:27:47.628 [info] Resolved environment during PET refresh: /nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.venv/bin/python
+2026-05-01 20:27:47.628 [info] Resolved environment during PET refresh: /nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/website/.venv/bin/python
+2026-05-01 20:27:47.707 [info] Resolved environment during PET refresh: /nfs/site/disks/crt_tools_0108/autobots_sdk/2.3.1.p003/venv_autobots/bin/python
+2026-05-01 20:27:47.740 [info] Discovered env: /usr/bin/python3
+2026-05-01 20:27:47.797 [info] Discovered env: /nfs/site/disks/crt_tools_0109/liteinfra/2.2/commonFlow/bin/python
+2026-05-01 20:27:47.806 [info] Discovered env: /nfs/site/itools/em64t_SLES15/pkgs/wrapper/2.15/bin/python3
+2026-05-01 20:27:47.830 [info] Discovered env: /nfs/site/itools/em64t_SLES15/pkgs/wrapper/2.15/bin/python3.10.8
+2026-05-01 20:27:47.844 [info] Discovered env: /nfs/site/itools/em64t_SLES15/pkgs/wrapper/2.15/bin/python3.11.1
+2026-05-01 20:27:47.858 [info] Discovered env: /nfs/site/itools/em64t_SLES15/pkgs/wrapper/2.15/bin/python3.12.3
+2026-05-01 20:27:47.873 [info] Discovered env: /nfs/site/itools/em64t_SLES15/pkgs/wrapper/2.15/bin/python3.13.2
+2026-05-01 20:27:47.888 [info] Discovered env: /nfs/site/itools/em64t_SLES15/pkgs/wrapper/2.15/bin/python3.6.3
+2026-05-01 20:27:47.966 [error] [pet] [2m   4.705754815s[0m [31mERROR[0m [2mpet_python_utils::env[0m[2m:[0m Python Execution for "/nfs/site/disks/crt_tools_089/calibre/soa_cal_2024.3_16.10_cth/bin/python3" produced an output "" without a separator
+[2m   4.705781245s[0m [33m WARN[0m [2mpet::find[0m[2m:[0m Unknown Python Env "/nfs/site/disks/crt_tools_089/calibre/soa_cal_2024.3_16.10_cth/bin/python3"
+
+2026-05-01 20:27:47.967 [info] Pipenv not found
+2026-05-01 20:27:47.967 [info] Pipenv not found, turning off pipenv features. If you have pipenv installed in a non-standard location, set the "python.pipenvPath" setting.
+2026-05-01 20:27:47.970 [info] [pet] Telemetry:  {"event":"RefreshPerformance","data":{"refreshPerformance":{"total":479,"breakdown":{"GlobalVirtualEnvs":141,"Locators":237,"Path":479,"Workspaces":37},"locators":{"Conda":237,"Homebrew":0,"LinuxGlobal":235,"PipEnv":2,"Pixi":0,"Poetry":1,"PyEnv":1,"Uv":0,"Venv":0,"VirtualEnv":0,"VirtualEnvWrapper":0}}}}
+2026-05-01 20:27:48.029 [info] Discovered env: /nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.venv/bin/python
+2026-05-01 20:27:48.029 [info] Discovered env: /nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/website/.venv/bin/python
+2026-05-01 20:27:48.029 [info] Discovered env: /nfs/site/disks/crt_tools_0108/autobots_sdk/2.3.1.p003/venv_autobots/bin/python
+2026-05-01 20:27:48.111 [info] Resolved environment during PET refresh: /nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/website/.venv/bin/python
+2026-05-01 20:27:48.116 [info] Resolved environment during PET refresh: /nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.venv/bin/python
+2026-05-01 20:27:48.123 [info] Resolved environment during PET refresh: /nfs/site/disks/crt_tools_0108/autobots_sdk/2.3.1.p003/venv_autobots/bin/python
+2026-05-01 20:27:48.221 [info] Discovered env: /usr/bin/python3
+2026-05-01 20:27:48.242 [info] Discovered env: /nfs/site/disks/crt_tools_0109/liteinfra/2.2/commonFlow/bin/python
+2026-05-01 20:27:48.255 [info] Discovered env: /nfs/site/itools/em64t_SLES15/pkgs/wrapper/2.15/bin/python3
+2026-05-01 20:27:48.273 [info] Discovered env: /nfs/site/itools/em64t_SLES15/pkgs/wrapper/2.15/bin/python3.10.8
+2026-05-01 20:27:48.286 [info] Discovered env: /nfs/site/itools/em64t_SLES15/pkgs/wrapper/2.15/bin/python3.11.1
+2026-05-01 20:27:48.298 [info] Discovered env: /nfs/site/itools/em64t_SLES15/pkgs/wrapper/2.15/bin/python3.12.3
+2026-05-01 20:27:48.314 [info] Discovered env: /nfs/site/itools/em64t_SLES15/pkgs/wrapper/2.15/bin/python3.13.2
+2026-05-01 20:27:48.329 [info] Discovered env: /nfs/site/itools/em64t_SLES15/pkgs/wrapper/2.15/bin/python3.6.3
+2026-05-01 20:27:48.510 [error] [pet] [2m   5.247499310s[0m [31mERROR[0m [2mpet_python_utils::env[0m[2m:[0m Python Execution for "/nfs/site/disks/crt_tools_089/calibre/soa_cal_2024.3_16.10_cth/bin/python3" produced an output "" without a separator
+[2m   5.247523910s[0m [33m WARN[0m [2mpet::find[0m[2m:[0m Unknown Python Env "/nfs/site/disks/crt_tools_089/calibre/soa_cal_2024.3_16.10_cth/bin/python3"
+
+2026-05-01 20:27:48.511 [info] Poetry not found, turning off poetry features.
+2026-05-01 20:27:48.515 [info] [interpreterSelection] Applying initial environment selection for 1 workspace folder(s)
+2026-05-01 20:27:48.518 [info] [pet] Telemetry:  {"event":"RefreshPerformance","data":{"refreshPerformance":{"total":537,"breakdown":{"GlobalVirtualEnvs":133,"Locators":260,"Path":537,"Workspaces":41},"locators":{"Conda":260,"Homebrew":0,"LinuxGlobal":250,"PipEnv":1,"Pixi":0,"Poetry":2,"PyEnv":1,"Uv":0,"Venv":0,"VirtualEnv":0,"VirtualEnvWrapper":0}}}}
+2026-05-01 20:27:48.563 [info] Resolved Python Environment /usr/intel/bin/python3.13.2
+2026-05-01 20:27:48.584 [info] Resolved Python Environment /usr/intel/bin/python3.13.2
+2026-05-01 20:27:48.605 [info] Resolved Python Environment /usr/intel/bin/python3.13.2
+2026-05-01 20:27:48.627 [info] Resolved Python Environment /usr/intel/bin/python3.13.2
+2026-05-01 20:27:48.628 [info] [SYS_SET] scope=/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17, project=/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17, normalizedKey=/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17, env=defaultInterpreterPath:/usr/intel/bin/python3.13.2
+2026-05-01 20:27:48.634 [info] [interpreterSelection] GHCP_WW17: defaultInterpreterPath: 3.13.2.final.0 (source: defaultInterpreterPath)
+2026-05-01 20:27:48.635 [info] Python API: Changed environment from .venv (3.13.2) to defaultInterpreterPath: 3.13.2.final.0 for: /nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17
+2026-05-01 20:27:48.635 [info] Internal: Changed environment from .venv (3.13.2) to defaultInterpreterPath: 3.13.2.final.0 for: /nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17
+2026-05-01 20:27:48.655 [info] Resolved Python Environment /usr/intel/bin/python3.13.2
+2026-05-01 20:27:48.675 [info] Resolved Python Environment /usr/intel/bin/python3.13.2
+2026-05-01 20:27:48.704 [info] Resolved Python Environment /usr/intel/bin/python3.13.2
+2026-05-01 20:27:48.708 [info] [interpreterSelection] global: defaultInterpreterPath: 3.13.2.final.0 (source: defaultInterpreterPath)
+2026-05-01 20:27:48.713 [info] Terminal is activated: /nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.venv/bin/python
+2026-05-01 20:27:48.719 [info] Environment discovery complete: 12 environments found (Global: 9, venv: 3)
+2026-05-01 20:27:48.727 [info] Python API: Changed environment from undefined to defaultInterpreterPath: 3.13.2.final.0 for: global
+2026-05-01 20:27:48.727 [info] Internal: Changed environment from undefined to defaultInterpreterPath: 3.13.2.final.0 for: global
+2026-05-01 20:27:48.727 [info] Python API: Changed environment from defaultInterpreterPath: 3.13.2.final.0 to .venv (3.13.2) for: /nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17
+2026-05-01 20:27:48.727 [info] Internal: Changed environment from defaultInterpreterPath: 3.13.2.final.0 to .venv (3.13.2) for: /nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17
+2026-05-01 20:27:49.600 [info] Python API: Changed environment from defaultInterpreterPath: 3.13.2.final.0 to Python 3.13.2 for: global
+2026-05-01 20:27:49.600 [info] Internal: Changed environment from defaultInterpreterPath: 3.13.2.final.0 to Python 3.13.2 for: global
+2026-05-01 20:28:14.232 [info] Python-envs extension version: 1.26.0
+2026-05-01 20:28:14.232 [info] 
+=== Python Envs Configuration Levels ===
+2026-05-01 20:28:14.232 [info] {
+  "section": "Python Envs Configuration Levels",
+  "defaultEnvManager": {
+    "workspaceFolderValue": "undefined",
+    "workspaceValue": "undefined",
+    "globalValue": "undefined",
+    "defaultValue": "ms-python.python:venv"
+  },
+  "defaultPackageManager": {
+    "workspaceFolderValue": "undefined",
+    "workspaceValue": "undefined",
+    "globalValue": "undefined",
+    "defaultValue": "ms-python.python:pip"
+  }
+}
+2026-05-01 20:28:14.232 [info] [pet] Starting Python Locator /nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/extensions/ms-python.vscode-python-envs-1.26.0-linux-x64/python-env-tools/bin/pet server
+2026-05-01 20:28:14.232 [warning] Could not determine calling extension from stack frames. Using fallback namespace 'ms-python.python'. Caller paths: /nfs/site/disks/crt_tools_0105/vscode_cth/1.114.0/autobots/extensions/ms-python.vscode-python-envs-1.26.0-linux-x64/dist/extension.js, /nfs/site/disks/crt_tools_0105/vscode_cth/1.114.0/autobots/extensions/ms-python.vscode-python-envs-1.26.0-linux-x64/dist/extension.js, /nfs/site/disks/crt_tools_0105/vscode_cth/1.114.0/autobots/extensions/ms-python.vscode-python-envs-1.26.0-linux-x64/dist/extension.js
+2026-05-01 20:28:14.315 [info] [pet] configure: Sending configuration update: {"workspaceDirectories":["/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/website"],"environmentDirectories":["/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/website/**/.venv"],"pipenvExecutable":"pipenv","poetryExecutable":"poetry","cacheDirectory":"/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/cache/User/globalStorage/ms-python.vscode-python-envs/pythonLocator"}
+2026-05-01 20:28:14.612 [info] Discovered env: /nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/website/.venv/bin/python
+2026-05-01 20:28:14.626 [info] Discovered env: /nfs/site/disks/crt_tools_0108/autobots_sdk/2.3.1.p003/venv_autobots/bin/python
+2026-05-01 20:28:14.914 [error] [pet] [2m   0.797557718s[0m [31mERROR[0m [2mpet_python_utils::env[0m[2m:[0m Python Execution for "/nfs/site/disks/crt_tools_089/calibre/soa_cal_2024.3_16.10_cth/bin/python3" produced an output "" without a separator
+[2m   0.797582161s[0m [33m WARN[0m [2mpet::find[0m[2m:[0m Unknown Python Env "/nfs/site/disks/crt_tools_089/calibre/soa_cal_2024.3_16.10_cth/bin/python3"
+
+2026-05-01 20:28:14.915 [info] Resolved environment during PET refresh: /nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/website/.venv/bin/python
+2026-05-01 20:28:15.217 [info] Resolved environment during PET refresh: /nfs/site/disks/crt_tools_0108/autobots_sdk/2.3.1.p003/venv_autobots/bin/python
+2026-05-01 20:28:15.285 [info] Discovered env: /usr/bin/python3
+2026-05-01 20:28:15.332 [info] Discovered env: /nfs/site/disks/crt_tools_0109/liteinfra/2.2/commonFlow/bin/python
+2026-05-01 20:28:15.359 [info] Discovered env: /nfs/site/itools/em64t_SLES15/pkgs/wrapper/2.15/bin/python3
+2026-05-01 20:28:15.371 [info] Discovered env: /nfs/site/itools/em64t_SLES15/pkgs/wrapper/2.15/bin/python3.10.8
+2026-05-01 20:28:15.374 [info] Discovered env: /nfs/site/itools/em64t_SLES15/pkgs/wrapper/2.15/bin/python3.11.1
+2026-05-01 20:28:15.389 [info] Discovered env: /nfs/site/itools/em64t_SLES15/pkgs/wrapper/2.15/bin/python3.12.3
+2026-05-01 20:28:15.390 [info] Discovered env: /nfs/site/itools/em64t_SLES15/pkgs/wrapper/2.15/bin/python3.13.2
+2026-05-01 20:28:15.428 [info] Discovered env: /nfs/site/itools/em64t_SLES15/pkgs/wrapper/2.15/bin/python3.6.3
+2026-05-01 20:28:15.433 [info] Conda not found, turning off conda features. [Error: Conda not found
+	at F (/nfs/site/disks/crt_tools_0105/vscode_cth/1.114.0/autobots/extensions/ms-python.vscode-python-envs-1.26.0-linux-x64/dist/extension.js:2:594057)
+	at async L (/nfs/site/disks/crt_tools_0105/vscode_cth/1.114.0/autobots/extensions/ms-python.vscode-python-envs-1.26.0-linux-x64/dist/extension.js:2:594182)
+	at async t.registerCondaFeatures (/nfs/site/disks/crt_tools_0105/vscode_cth/1.114.0/autobots/extensions/ms-python.vscode-python-envs-1.26.0-linux-x64/dist/extension.js:2:614079)
+	at async t.safeRegister (/nfs/site/disks/crt_tools_0105/vscode_cth/1.114.0/autobots/extensions/ms-python.vscode-python-envs-1.26.0-linux-x64/dist/extension.js:2:282143)
+	at async Promise.all (index 1)
+	at async Immediate.<anonymous> (/nfs/site/disks/crt_tools_0105/vscode_cth/1.114.0/autobots/extensions/ms-python.vscode-python-envs-1.26.0-linux-x64/dist/extension.js:2:741228)]
+2026-05-01 20:28:15.620 [info] [pet] Telemetry:  {"event":"RefreshPerformance","data":{"refreshPerformance":{"total":471,"breakdown":{"GlobalVirtualEnvs":145,"Locators":320,"Path":471,"Workspaces":130},"locators":{"Conda":268,"Homebrew":0,"LinuxGlobal":318,"PipEnv":2,"Pixi":0,"Poetry":2,"PyEnv":2,"Uv":0,"Venv":0,"VirtualEnv":0,"VirtualEnvWrapper":0}}}}
+2026-05-01 20:28:16.079 [info] Discovered env: /nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/website/.venv/bin/python
+2026-05-01 20:28:16.093 [info] Discovered env: /nfs/site/disks/crt_tools_0108/autobots_sdk/2.3.1.p003/venv_autobots/bin/python
+2026-05-01 20:28:16.096 [info] Discovered env: /usr/bin/python3
+2026-05-01 20:28:16.096 [info] Discovered env: /nfs/site/disks/crt_tools_0109/liteinfra/2.2/commonFlow/bin/python
+2026-05-01 20:28:16.097 [info] Discovered env: /nfs/site/itools/em64t_SLES15/pkgs/wrapper/2.15/bin/python3
+2026-05-01 20:28:16.100 [info] Discovered env: /nfs/site/itools/em64t_SLES15/pkgs/wrapper/2.15/bin/python3.10.8
+2026-05-01 20:28:16.102 [info] Discovered env: /nfs/site/itools/em64t_SLES15/pkgs/wrapper/2.15/bin/python3.11.1
+2026-05-01 20:28:16.103 [info] Discovered env: /nfs/site/itools/em64t_SLES15/pkgs/wrapper/2.15/bin/python3.12.3
+2026-05-01 20:28:16.103 [info] Discovered env: /nfs/site/itools/em64t_SLES15/pkgs/wrapper/2.15/bin/python3.13.2
+2026-05-01 20:28:16.103 [info] Discovered env: /nfs/site/itools/em64t_SLES15/pkgs/wrapper/2.15/bin/python3.6.3
+2026-05-01 20:28:16.103 [info] Resolved environment during PET refresh: /nfs/site/disks/crt_tools_0108/autobots_sdk/2.3.1.p003/venv_autobots/bin/python
+2026-05-01 20:28:16.113 [error] [pet] [2m   2.056723613s[0m [31mERROR[0m [2mpet_python_utils::env[0m[2m:[0m Python Execution for "/nfs/site/disks/crt_tools_089/calibre/soa_cal_2024.3_16.10_cth/bin/python3" produced an output "" without a separator
+[2m   2.056748168s[0m [33m WARN[0m [2mpet::find[0m[2m:[0m Unknown Python Env "/nfs/site/disks/crt_tools_089/calibre/soa_cal_2024.3_16.10_cth/bin/python3"
+
+2026-05-01 20:28:16.116 [info] Resolved environment during PET refresh: /nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/website/.venv/bin/python
+2026-05-01 20:28:16.117 [info] Pipenv not found
+2026-05-01 20:28:16.117 [info] Pipenv not found, turning off pipenv features. If you have pipenv installed in a non-standard location, set the "python.pipenvPath" setting.
+2026-05-01 20:28:16.129 [info] [pet] Telemetry:  {"event":"RefreshPerformance","data":{"refreshPerformance":{"total":489,"breakdown":{"GlobalVirtualEnvs":187,"Locators":318,"Path":488,"Workspaces":94},"locators":{"Conda":317,"Homebrew":0,"LinuxGlobal":301,"PipEnv":1,"Pixi":0,"Poetry":1,"PyEnv":1,"Uv":0,"Venv":0,"VirtualEnv":0,"VirtualEnvWrapper":0}}}}
+2026-05-01 20:28:16.210 [info] Discovered env: /nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/website/.venv/bin/python
+2026-05-01 20:28:16.211 [info] Discovered env: /nfs/site/disks/crt_tools_0108/autobots_sdk/2.3.1.p003/venv_autobots/bin/python
+2026-05-01 20:28:16.454 [info] Resolved environment during PET refresh: /nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/website/.venv/bin/python
+2026-05-01 20:28:16.457 [info] Resolved environment during PET refresh: /nfs/site/disks/crt_tools_0108/autobots_sdk/2.3.1.p003/venv_autobots/bin/python
+2026-05-01 20:28:16.460 [info] Discovered env: /usr/bin/python3
+2026-05-01 20:28:16.463 [info] Discovered env: /nfs/site/disks/crt_tools_0109/liteinfra/2.2/commonFlow/bin/python
+2026-05-01 20:28:16.468 [info] Discovered env: /nfs/site/itools/em64t_SLES15/pkgs/wrapper/2.15/bin/python3
+2026-05-01 20:28:16.469 [info] Discovered env: /nfs/site/itools/em64t_SLES15/pkgs/wrapper/2.15/bin/python3.10.8
+2026-05-01 20:28:16.476 [info] Discovered env: /nfs/site/itools/em64t_SLES15/pkgs/wrapper/2.15/bin/python3.11.1
+2026-05-01 20:28:16.499 [info] Discovered env: /nfs/site/itools/em64t_SLES15/pkgs/wrapper/2.15/bin/python3.12.3
+2026-05-01 20:28:16.512 [info] Discovered env: /nfs/site/itools/em64t_SLES15/pkgs/wrapper/2.15/bin/python3.13.2
+2026-05-01 20:28:16.528 [info] Discovered env: /nfs/site/itools/em64t_SLES15/pkgs/wrapper/2.15/bin/python3.6.3
+2026-05-01 20:28:16.754 [error] [pet] [2m   2.535671155s[0m [31mERROR[0m [2mpet_python_utils::env[0m[2m:[0m Python Execution for "/nfs/site/disks/crt_tools_089/calibre/soa_cal_2024.3_16.10_cth/bin/python3" produced an output "" without a separator
+[2m   2.535693038s[0m [33m WARN[0m [2mpet::find[0m[2m:[0m Unknown Python Env "/nfs/site/disks/crt_tools_089/calibre/soa_cal_2024.3_16.10_cth/bin/python3"
+
+2026-05-01 20:28:16.759 [info] Poetry not found, turning off poetry features.
+2026-05-01 20:28:16.763 [info] [pet] Telemetry:  {"event":"RefreshPerformance","data":{"refreshPerformance":{"total":459,"breakdown":{"GlobalVirtualEnvs":105,"Locators":292,"Path":459,"Workspaces":73},"locators":{"Conda":292,"Homebrew":0,"LinuxGlobal":290,"PipEnv":1,"Pixi":0,"Poetry":1,"PyEnv":1,"Uv":0,"Venv":0,"VirtualEnv":0,"VirtualEnvWrapper":0}}}}
+2026-05-01 20:28:16.797 [info] Discovered env: /nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/website/.venv/bin/python
+2026-05-01 20:28:16.813 [info] Discovered env: /nfs/site/disks/crt_tools_0108/autobots_sdk/2.3.1.p003/venv_autobots/bin/python
+2026-05-01 20:28:16.831 [info] Resolved environment during PET refresh: /nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/website/.venv/bin/python
+2026-05-01 20:28:16.835 [info] Resolved environment during PET refresh: /nfs/site/disks/crt_tools_0108/autobots_sdk/2.3.1.p003/venv_autobots/bin/python
+2026-05-01 20:28:16.964 [info] Discovered env: /usr/bin/python3
+2026-05-01 20:28:17.015 [info] Discovered env: /nfs/site/disks/crt_tools_0109/liteinfra/2.2/commonFlow/bin/python
+2026-05-01 20:28:17.028 [info] Discovered env: /nfs/site/itools/em64t_SLES15/pkgs/wrapper/2.15/bin/python3
+2026-05-01 20:28:17.046 [info] Discovered env: /nfs/site/itools/em64t_SLES15/pkgs/wrapper/2.15/bin/python3.10.8
+2026-05-01 20:28:17.060 [info] Discovered env: /nfs/site/itools/em64t_SLES15/pkgs/wrapper/2.15/bin/python3.11.1
+2026-05-01 20:28:17.074 [info] Discovered env: /nfs/site/itools/em64t_SLES15/pkgs/wrapper/2.15/bin/python3.12.3
+2026-05-01 20:28:17.089 [info] Discovered env: /nfs/site/itools/em64t_SLES15/pkgs/wrapper/2.15/bin/python3.13.2
+2026-05-01 20:28:17.104 [info] Discovered env: /nfs/site/itools/em64t_SLES15/pkgs/wrapper/2.15/bin/python3.6.3
+2026-05-01 20:28:17.160 [error] [pet] [2m   3.089216207s[0m [31mERROR[0m [2mpet_python_utils::env[0m[2m:[0m Python Execution for "/nfs/site/disks/crt_tools_089/calibre/soa_cal_2024.3_16.10_cth/bin/python3" produced an output "" without a separator
+[2m   3.089242339s[0m [33m WARN[0m [2mpet::find[0m[2m:[0m Unknown Python Env "/nfs/site/disks/crt_tools_089/calibre/soa_cal_2024.3_16.10_cth/bin/python3"
+
+2026-05-01 20:28:17.162 [info] Pyenv not found, turning off pyenv features.
+2026-05-01 20:28:17.167 [info] [interpreterSelection] Applying initial environment selection for 1 workspace folder(s)
+2026-05-01 20:28:17.169 [info] [pet] Telemetry:  {"event":"RefreshPerformance","data":{"refreshPerformance":{"total":378,"breakdown":{"GlobalVirtualEnvs":144,"Locators":240,"Path":378,"Workspaces":33},"locators":{"Conda":240,"Homebrew":0,"LinuxGlobal":199,"PipEnv":1,"Pixi":0,"Poetry":1,"PyEnv":1,"Uv":0,"Venv":0,"VirtualEnv":0,"VirtualEnvWrapper":0}}}}
+2026-05-01 20:28:17.202 [info] Discovered env: /nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/website/.venv/bin/python
+2026-05-01 20:28:17.209 [info] Discovered env: /nfs/site/disks/crt_tools_0108/autobots_sdk/2.3.1.p003/venv_autobots/bin/python
+2026-05-01 20:28:17.234 [info] Resolved environment during PET refresh: /nfs/site/disks/crt_tools_0108/autobots_sdk/2.3.1.p003/venv_autobots/bin/python
+2026-05-01 20:28:17.235 [info] Resolved environment during PET refresh: /nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/website/.venv/bin/python
+2026-05-01 20:28:17.415 [info] Discovered env: /usr/bin/python3
+2026-05-01 20:28:17.432 [info] Discovered env: /nfs/site/disks/crt_tools_0109/liteinfra/2.2/commonFlow/bin/python
+2026-05-01 20:28:17.435 [info] Resolved Python Environment /usr/intel/bin/python3.13.2
+2026-05-01 20:28:17.441 [info] Discovered env: /nfs/site/itools/em64t_SLES15/pkgs/wrapper/2.15/bin/python3
+2026-05-01 20:28:17.501 [info] Discovered env: /nfs/site/itools/em64t_SLES15/pkgs/wrapper/2.15/bin/python3.10.8
+2026-05-01 20:28:17.501 [info] Resolved Python Environment /usr/intel/bin/python3.13.2
+2026-05-01 20:28:17.504 [info] Discovered env: /nfs/site/itools/em64t_SLES15/pkgs/wrapper/2.15/bin/python3.11.1
+2026-05-01 20:28:17.514 [info] Discovered env: /nfs/site/itools/em64t_SLES15/pkgs/wrapper/2.15/bin/python3.12.3
+2026-05-01 20:28:17.526 [info] Resolved Python Environment /usr/intel/bin/python3.13.2
+2026-05-01 20:28:17.532 [info] Discovered env: /nfs/site/itools/em64t_SLES15/pkgs/wrapper/2.15/bin/python3.13.2
+2026-05-01 20:28:17.549 [error] [pet] [2m   3.496047208s[0m [31mERROR[0m [2mpet_python_utils::env[0m[2m:[0m Python Execution for "/nfs/site/disks/crt_tools_089/calibre/soa_cal_2024.3_16.10_cth/bin/python3" produced an output "" without a separator
+[2m   3.496078373s[0m [33m WARN[0m [2mpet::find[0m[2m:[0m Unknown Python Env "/nfs/site/disks/crt_tools_089/calibre/soa_cal_2024.3_16.10_cth/bin/python3"
+
+2026-05-01 20:28:17.550 [info] Discovered env: /nfs/site/itools/em64t_SLES15/pkgs/wrapper/2.15/bin/python3.6.3
+2026-05-01 20:28:17.550 [info] Resolved Python Environment /usr/intel/bin/python3.13.2
+2026-05-01 20:28:17.553 [info] [SYS_SET] scope=/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/website, project=/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/website, normalizedKey=/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/website, env=defaultInterpreterPath:/usr/intel/bin/python3.13.2
+2026-05-01 20:28:17.556 [info] [pet] Telemetry:  {"event":"RefreshPerformance","data":{"refreshPerformance":{"total":380,"breakdown":{"GlobalVirtualEnvs":136,"Locators":251,"Path":380,"Workspaces":31},"locators":{"Conda":251,"Homebrew":0,"LinuxGlobal":244,"PipEnv":2,"Pixi":0,"Poetry":2,"PyEnv":1,"Uv":0,"Venv":0,"VirtualEnv":0,"VirtualEnvWrapper":0}}}}
+2026-05-01 20:28:17.557 [info] Found venv environment: venv_autobots (3.13.2)
+2026-05-01 20:28:17.557 [info] Found venv environment: .venv (3.13.2)
+2026-05-01 20:28:17.561 [info] [interpreterSelection] website: defaultInterpreterPath: 3.13.2.final.0 (source: defaultInterpreterPath)
+2026-05-01 20:28:17.562 [info] Python API: Changed environment from undefined to defaultInterpreterPath: 3.13.2.final.0 for: /nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/website
+2026-05-01 20:28:17.562 [info] Internal: Changed environment from undefined to defaultInterpreterPath: 3.13.2.final.0 for: /nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/website
+2026-05-01 20:28:17.612 [info] Discovered env: /nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/website/.venv/bin/python
+2026-05-01 20:28:17.742 [info] Discovered env: /nfs/site/disks/crt_tools_0108/autobots_sdk/2.3.1.p003/venv_autobots/bin/python
+2026-05-01 20:28:17.742 [info] Resolved environment during PET refresh: /nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/website/.venv/bin/python
+2026-05-01 20:28:17.817 [info] Resolved environment during PET refresh: /nfs/site/disks/crt_tools_0108/autobots_sdk/2.3.1.p003/venv_autobots/bin/python
+2026-05-01 20:28:17.846 [info] Discovered env: /usr/bin/python3
+2026-05-01 20:28:17.870 [info] Discovered env: /nfs/site/disks/crt_tools_0109/liteinfra/2.2/commonFlow/bin/python
+2026-05-01 20:28:17.910 [info] Resolved Python Environment /usr/intel/bin/python3.13.2
+2026-05-01 20:28:17.916 [info] Resolved Python Environment /usr/intel/bin/python3.13.2
+2026-05-01 20:28:17.917 [info] Python API: Changed environment from defaultInterpreterPath: 3.13.2.final.0 to .venv (3.13.2) for: /nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/website
+2026-05-01 20:28:17.917 [info] Internal: Changed environment from defaultInterpreterPath: 3.13.2.final.0 to .venv (3.13.2) for: /nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/website
+2026-05-01 20:28:18.279 [error] [pet] [2m   3.967294842s[0m [31mERROR[0m [2mpet_python_utils::env[0m[2m:[0m Python Execution for "/nfs/site/disks/crt_tools_089/calibre/soa_cal_2024.3_16.10_cth/bin/python3" produced an output "" without a separator
+[2m   3.967318409s[0m [33m WARN[0m [2mpet::find[0m[2m:[0m Unknown Python Env "/nfs/site/disks/crt_tools_089/calibre/soa_cal_2024.3_16.10_cth/bin/python3"
+
+2026-05-01 20:28:18.299 [info] Discovered env: /nfs/site/itools/em64t_SLES15/pkgs/wrapper/2.15/bin/python3
+2026-05-01 20:28:18.299 [info] Discovered env: /nfs/site/itools/em64t_SLES15/pkgs/wrapper/2.15/bin/python3.10.8
+2026-05-01 20:28:18.300 [info] Resolved Python Environment /usr/intel/bin/python3.13.2
+2026-05-01 20:28:18.301 [info] Discovered env: /nfs/site/itools/em64t_SLES15/pkgs/wrapper/2.15/bin/python3.11.1
+2026-05-01 20:28:18.301 [info] Discovered env: /nfs/site/itools/em64t_SLES15/pkgs/wrapper/2.15/bin/python3.12.3
+2026-05-01 20:28:18.301 [info] Discovered env: /nfs/site/itools/em64t_SLES15/pkgs/wrapper/2.15/bin/python3.13.2
+2026-05-01 20:28:18.301 [info] Discovered env: /nfs/site/itools/em64t_SLES15/pkgs/wrapper/2.15/bin/python3.6.3
+2026-05-01 20:28:18.302 [info] [pet] Telemetry:  {"event":"RefreshPerformance","data":{"refreshPerformance":{"total":463,"breakdown":{"GlobalVirtualEnvs":154,"Locators":289,"Path":463,"Workspaces":56},"locators":{"Conda":289,"Homebrew":0,"LinuxGlobal":288,"PipEnv":1,"Pixi":0,"Poetry":1,"PyEnv":1,"Uv":0,"Venv":0,"VirtualEnv":0,"VirtualEnvWrapper":0}}}}
+2026-05-01 20:28:18.414 [info] Discovered env: /nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/website/.venv/bin/python
+2026-05-01 20:28:18.414 [info] Discovered env: /nfs/site/disks/crt_tools_0108/autobots_sdk/2.3.1.p003/venv_autobots/bin/python
+2026-05-01 20:28:18.538 [info] Resolved environment during PET refresh: /nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/website/.venv/bin/python
+2026-05-01 20:28:18.538 [info] Resolved environment during PET refresh: /nfs/site/disks/crt_tools_0108/autobots_sdk/2.3.1.p003/venv_autobots/bin/python
+2026-05-01 20:28:18.701 [info] Discovered env: /usr/bin/python3
+2026-05-01 20:28:18.718 [info] Discovered env: /nfs/site/disks/crt_tools_0109/liteinfra/2.2/commonFlow/bin/python
+2026-05-01 20:28:18.719 [info] Resolved Python Environment /usr/intel/bin/python3.13.2
+2026-05-01 20:28:18.722 [info] Resolved Python Environment /usr/intel/bin/python3.13.2
+2026-05-01 20:28:18.725 [info] [interpreterSelection] global: defaultInterpreterPath: 3.13.2.final.0 (source: defaultInterpreterPath)
+2026-05-01 20:28:18.729 [info] Terminal is activated: /nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/website/.venv/bin/python
+2026-05-01 20:28:18.731 [info] Python API: Changed environment from undefined to defaultInterpreterPath: 3.13.2.final.0 for: global
+2026-05-01 20:28:18.731 [info] Internal: Changed environment from undefined to defaultInterpreterPath: 3.13.2.final.0 for: global
+2026-05-01 20:28:18.750 [info] Discovered env: /nfs/site/itools/em64t_SLES15/pkgs/wrapper/2.15/bin/python3
+2026-05-01 20:28:18.752 [info] Discovered env: /nfs/site/itools/em64t_SLES15/pkgs/wrapper/2.15/bin/python3.10.8
+2026-05-01 20:28:18.769 [info] Discovered env: /nfs/site/itools/em64t_SLES15/pkgs/wrapper/2.15/bin/python3.11.1
+2026-05-01 20:28:18.782 [info] Discovered env: /nfs/site/itools/em64t_SLES15/pkgs/wrapper/2.15/bin/python3.12.3
+2026-05-01 20:28:18.811 [info] Discovered env: /nfs/site/itools/em64t_SLES15/pkgs/wrapper/2.15/bin/python3.13.2
+2026-05-01 20:28:18.826 [info] Discovered env: /nfs/site/itools/em64t_SLES15/pkgs/wrapper/2.15/bin/python3.6.3
+2026-05-01 20:28:18.850 [error] [pet] [2m   4.797284078s[0m [31mERROR[0m [2mpet_python_utils::env[0m[2m:[0m Python Execution for "/nfs/site/disks/crt_tools_089/calibre/soa_cal_2024.3_16.10_cth/bin/python3" produced an output "" without a separator
+[2m   4.797313853s[0m [33m WARN[0m [2mpet::find[0m[2m:[0m Unknown Python Env "/nfs/site/disks/crt_tools_089/calibre/soa_cal_2024.3_16.10_cth/bin/python3"
+
+2026-05-01 20:28:18.850 [info] [pet] Telemetry:  {"event":"RefreshPerformance","data":{"refreshPerformance":{"total":546,"breakdown":{"GlobalVirtualEnvs":124,"Locators":399,"Path":546,"Workspaces":96},"locators":{"Conda":397,"Homebrew":0,"LinuxGlobal":398,"PipEnv":2,"Pixi":0,"Poetry":2,"PyEnv":1,"Uv":0,"Venv":0,"VirtualEnv":0,"VirtualEnvWrapper":0}}}}
+2026-05-01 20:28:18.851 [info] Found venv environment: .venv (3.13.2)
+2026-05-01 20:28:18.851 [info] Found venv environment: venv_autobots (3.13.2)
+2026-05-01 20:28:18.862 [info] Python API: Changed environment from .venv (3.13.2) to .venv (3.13.2) for: /nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/website
+2026-05-01 20:28:18.862 [info] Internal: Changed environment from .venv (3.13.2) to .venv (3.13.2) for: /nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/website
+2026-05-01 20:28:20.427 [info] Python API: Changed environment from defaultInterpreterPath: 3.13.2.final.0 to Python 3.13.2 for: global
+2026-05-01 20:28:20.427 [info] Internal: Changed environment from defaultInterpreterPath: 3.13.2.final.0 to Python 3.13.2 for: global
+2026-05-01 20:28:23.729 [error] Shell execution timed out: source /nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/website/.venv/bin/activate
+2026-05-01 20:28:23.729 [info] Terminal is activated: /nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/website/.venv/bin/python
+2026-05-01 20:28:23.736 [info] Environment discovery complete: 11 environments found (Global: 9, venv: 2)

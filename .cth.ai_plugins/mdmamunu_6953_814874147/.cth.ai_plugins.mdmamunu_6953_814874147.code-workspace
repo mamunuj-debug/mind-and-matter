@@ -1,0 +1,96 @@
+{
+    "folders": [
+        {
+            "path": "/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17"
+        }
+    ],
+    "settings": {
+        "chat.instructionsFilesLocations": {
+            ".github/instructions": true,
+            ".claude/rules": true,
+            "~/.copilot/instructions": true,
+            "~/.claude/rules": true,
+            ".cth.ai_plugins/mdmamunu_6953_814874147/plugins/autobots_common_agents/instructions": true,
+            ".cth.ai_plugins/mdmamunu_6953_814874147/plugins/cth.ai/instructions": true,
+            ".cth.ai_plugins/mdmamunu_6953_814874147/plugins/cth_r2g.ai/instructions": true,
+            ".cth.ai_plugins/mdmamunu_6953_814874147/plugins/vscode_cth/instructions": true
+        },
+        "chat.promptFilesLocations": {
+            ".github/prompts": true,
+            ".cth.ai_plugins/mdmamunu_6953_814874147/plugins/autobots_common_agents/prompts": true,
+            ".cth.ai_plugins/mdmamunu_6953_814874147/plugins/cth.ai/prompts": true,
+            ".cth.ai_plugins/mdmamunu_6953_814874147/plugins/cth_r2g.ai/prompts": true,
+            ".cth.ai_plugins/mdmamunu_6953_814874147/plugins/vscode_cth/prompts": true
+        },
+        "chat.agentFilesLocations": {
+            ".github/agents": true,
+            ".claude/agents": true,
+            "~/.copilot/agents": true,
+            ".cth.ai_plugins/mdmamunu_6953_814874147/plugins/autobots_common_agents/agents": true,
+            ".cth.ai_plugins/mdmamunu_6953_814874147/plugins/cth.ai/agents": true,
+            ".cth.ai_plugins/mdmamunu_6953_814874147/plugins/cth_r2g.ai/agents": true,
+            ".cth.ai_plugins/mdmamunu_6953_814874147/plugins/vscode_cth/agents": true
+        },
+        "chat.agentSkillsLocations": {
+            ".github/skills": true,
+            ".agents/skills": true,
+            ".claude/skills": true,
+            "~/.copilot/skills": true,
+            "~/.agents/skills": true,
+            "~/.claude/skills": true,
+            ".cth.ai_plugins/mdmamunu_6953_814874147/plugins/autobots_common_agents/skills": true,
+            ".cth.ai_plugins/mdmamunu_6953_814874147/plugins/cth.ai/skills": true,
+            ".cth.ai_plugins/mdmamunu_6953_814874147/plugins/cth_r2g.ai/skills": true,
+            ".cth.ai_plugins/mdmamunu_6953_814874147/plugins/vscode_cth/skills": true
+        },
+        "chat.plugins.enabled": true,
+        "chat.subagents.allowInvocationsFromSubagents": true,
+        "chat.pluginLocations": {
+            ".cth.ai_plugins/mdmamunu_6953_814874147/plugins/autobots_common_agents": true,
+            ".cth.ai_plugins/mdmamunu_6953_814874147/plugins/cth.ai": true,
+            ".cth.ai_plugins/mdmamunu_6953_814874147/plugins/cth_r2g.ai": true,
+            ".cth.ai_plugins/mdmamunu_6953_814874147/plugins/vscode_cth": true
+        },
+        "terminal.integrated.cwd": "/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17",
+        "terminal.integrated.defaultLocation": "view",
+        "terminal.integrated.defaultProfile.linux": "cheetah tcsh",
+        "task.allowAutomaticTasks": "on",
+        "terminal.integrated.hideOnStartup": "never",
+        "terminal.integrated.profiles.linux": {
+            "cheetah tcsh": {
+                "path": "/bin/tcsh",
+                "env": {
+                    "HOME": "/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.cth.ai_plugins/mdmamunu_6953_814874147"
+                }
+            }
+        },
+        "window.title": "irw${separator}GHCP_WW17${separator}mdmamunu_6953_814874147"
+    },
+    "tasks": {
+        "version": "2.0.0",
+        "tasks": [
+            {
+                "label": "Terminal",
+                "type": "process",
+                "command": "/bin/tcsh",
+                "isBackground": true,
+                "problemMatcher": [],
+                "options": {
+                    "env": {
+                        "HOME": "/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.cth.ai_plugins/mdmamunu_6953_814874147"
+                    },
+                    "cwd": "/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17"
+                },
+                "presentation": {
+                    "reveal": "always",
+                    "panel": "dedicated",
+                    "echo": false,
+                    "focus": true
+                },
+                "runOptions": {
+                    "runOn": "folderOpen"
+                }
+            }
+        ]
+    }
+}

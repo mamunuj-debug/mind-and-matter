@@ -1,0 +1,144 @@
+2026-05-01 20:29:52.771 [info] Extension host with pid 34505 started
+2026-05-01 20:29:52.771 [info] Skipping acquiring lock for /nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/cache/User/workspaceStorage/7f46fc6751facf3acc72fc3075926f5f.
+2026-05-01 20:29:52.983 [info] ExtensionService#_doActivateExtension vscode.github-authentication, startup: false, activationEvent: 'onAuthenticationRequest:github'
+2026-05-01 20:29:53.006 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2026-05-01 20:29:53.022 [info] ExtensionService#_doActivateExtension GitHub.copilot-chat, startup: false, activationEvent: 'onChatParticipant:github.copilot.editsAgent'
+2026-05-01 20:29:55.055 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2026-05-01 20:29:55.113 [info] ExtensionService#_doActivateExtension vscode.configuration-editing, startup: false, activationEvent: 'onLanguage:jsonc'
+2026-05-01 20:29:55.120 [info] ExtensionService#_doActivateExtension vscode.json-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+2026-05-01 20:29:55.186 [info] ExtensionService#_doActivateExtension vscode.typescript-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+2026-05-01 20:29:55.228 [info] ExtensionService#_doActivateExtension ms-python.python, startup: true, activationEvent: 'workspaceContains:.venv'
+2026-05-01 20:29:55.398 [info] ExtensionService#_doActivateExtension vscode.microsoft-authentication, startup: false, activationEvent: 'onAuthenticationRequest:microsoft'
+2026-05-01 20:29:55.553 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+2026-05-01 20:29:55.596 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2026-05-01 20:29:55.610 [info] ExtensionService#_doActivateExtension ms-python.vscode-python-envs, startup: false, activationEvent: 'api', root cause: ms-python.python
+2026-05-01 20:29:56.324 [info] Eager extensions activated
+2026-05-01 20:29:56.409 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2026-05-01 20:29:56.411 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2026-05-01 20:29:56.607 [warning] [Decorations] CAPPING events from decorations provider vscode.git 1089
+2026-05-01 20:29:57.319 [error] Error: ENOENT: no such file or directory, mkdir '/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/extensions/github.copilot-chat-0.42.2/node_modules/@github/copilot/sdk/prebuilds'
+	at async Object.mkdir (node:internal/fs/promises:856:10)
+	at async MKi (/nfs/site/disks/crt_tools_0105/vscode_cth/1.114.0/autobots/extensions/github.copilot-chat-0.42.2/dist/extension.js:2233:7664)
+	at async LKi (/nfs/site/disks/crt_tools_0105/vscode_cth/1.114.0/autobots/extensions/github.copilot-chat-0.42.2/dist/extension.js:2233:7456)
+	at async Promise.all (index 0)
+	at async HG.ensureShims (/nfs/site/disks/crt_tools_0105/vscode_cth/1.114.0/autobots/extensions/github.copilot-chat-0.42.2/dist/extension.js:2233:19974)
+2026-05-01 20:29:57.820 [warning] [Decorations] CAPPING events from decorations provider vscode.git 1090
+2026-05-01 20:29:58.578 [warning] [Decorations] CAPPING events from decorations provider vscode.git 1091
+2026-05-01 20:29:59.314 [info] ExtensionService#_doActivateExtension ms-python.vscode-pylance, startup: false, activationEvent: 'api', root cause: ms-python.python
+2026-05-01 20:30:02.658 [warning] DiagnosticCollection with name 'Pylance' does already exist.
+2026-05-01 20:30:04.075 [warning] DiagnosticCollection with name 'Pylance' does already exist.
+2026-05-01 20:30:04.083 [warning] DiagnosticCollection with name 'Pylance' does already exist.
+2026-05-01 20:30:04.083 [warning] DiagnosticCollection with name 'Pylance' does already exist.
+2026-05-01 20:30:04.084 [warning] DiagnosticCollection with name 'Pylance' does already exist.
+2026-05-01 20:30:05.351 [warning] [Decorations] CAPPING events from decorations provider vscode.git 1093
+2026-05-01 20:30:10.489 [warning] [Decorations] CAPPING events from decorations provider vscode.git 1093
+2026-05-01 20:30:15.753 [warning] [Decorations] CAPPING events from decorations provider vscode.git 1093
+2026-05-01 20:30:20.901 [warning] [Decorations] CAPPING events from decorations provider vscode.git 1093
+2026-05-01 20:30:26.096 [warning] [Decorations] CAPPING events from decorations provider vscode.git 1093
+2026-05-01 20:30:31.203 [warning] [Decorations] CAPPING events from decorations provider vscode.git 1093
+2026-05-01 20:30:36.325 [warning] [Decorations] CAPPING events from decorations provider vscode.git 1093
+2026-05-01 20:30:41.475 [warning] [Decorations] CAPPING events from decorations provider vscode.git 1093
+2026-05-01 20:30:46.611 [warning] [Decorations] CAPPING events from decorations provider vscode.git 1093
+2026-05-01 20:30:51.710 [warning] [Decorations] CAPPING events from decorations provider vscode.git 1093
+2026-05-01 20:30:56.852 [warning] [Decorations] CAPPING events from decorations provider vscode.git 1093
+2026-05-01 20:31:01.980 [warning] [Decorations] CAPPING events from decorations provider vscode.git 1093
+2026-05-01 20:31:46.258 [warning] [Decorations] CAPPING events from decorations provider vscode.git 1093
+2026-05-01 20:31:51.531 [warning] [Decorations] CAPPING events from decorations provider vscode.git 1094
+2026-05-01 20:31:56.691 [warning] [Decorations] CAPPING events from decorations provider vscode.git 1094
+2026-05-01 20:32:01.866 [warning] [Decorations] CAPPING events from decorations provider vscode.git 1094
+2026-05-01 20:32:07.122 [warning] [Decorations] CAPPING events from decorations provider vscode.git 1094
+2026-05-01 20:32:12.289 [warning] [Decorations] CAPPING events from decorations provider vscode.git 1094
+2026-05-01 20:32:17.506 [warning] [Decorations] CAPPING events from decorations provider vscode.git 1094
+2026-05-01 20:32:22.615 [warning] [Decorations] CAPPING events from decorations provider vscode.git 1094
+2026-05-01 20:32:27.778 [warning] [Decorations] CAPPING events from decorations provider vscode.git 1094
+2026-05-01 20:32:33.421 [warning] [Decorations] CAPPING events from decorations provider vscode.git 1095
+2026-05-01 20:32:38.623 [warning] [Decorations] CAPPING events from decorations provider vscode.git 1095
+2026-05-01 20:32:44.033 [warning] [Decorations] CAPPING events from decorations provider vscode.git 1095
+2026-05-01 20:32:49.163 [warning] [Decorations] CAPPING events from decorations provider vscode.git 1095
+2026-05-01 20:32:57.631 [warning] [Decorations] CAPPING events from decorations provider vscode.git 1095
+2026-05-01 20:33:02.922 [warning] [Decorations] CAPPING events from decorations provider vscode.git 1095
+2026-05-01 20:33:08.062 [warning] [Decorations] CAPPING events from decorations provider vscode.git 1095
+2026-05-01 20:33:13.405 [warning] [Decorations] CAPPING events from decorations provider vscode.git 1095
+2026-05-01 20:33:18.530 [warning] [Decorations] CAPPING events from decorations provider vscode.git 1095
+2026-05-01 20:33:24.093 [warning] [Decorations] CAPPING events from decorations provider vscode.git 1095
+2026-05-01 20:33:29.242 [warning] [Decorations] CAPPING events from decorations provider vscode.git 1095
+2026-05-01 20:33:31.128 [info] ExtensionService#_doActivateExtension vscode.html-language-features, startup: false, activationEvent: 'onLanguage:html'
+2026-05-01 20:33:34.536 [warning] [Decorations] CAPPING events from decorations provider vscode.git 1098
+2026-05-01 20:33:37.623 [info] ExtensionService#_doActivateExtension vscode.css-language-features, startup: false, activationEvent: 'onLanguage:css'
+2026-05-01 20:33:39.686 [warning] [Decorations] CAPPING events from decorations provider vscode.git 1099
+2026-05-01 20:33:44.879 [warning] [Decorations] CAPPING events from decorations provider vscode.git 1099
+2026-05-01 20:33:49.986 [warning] [Decorations] CAPPING events from decorations provider vscode.git 1099
+2026-05-01 20:33:55.194 [warning] [Decorations] CAPPING events from decorations provider vscode.git 1099
+2026-05-01 20:34:00.410 [warning] [Decorations] CAPPING events from decorations provider vscode.git 1099
+2026-05-01 20:34:05.560 [warning] [Decorations] CAPPING events from decorations provider vscode.git 1099
+2026-05-01 20:34:10.885 [warning] [Decorations] CAPPING events from decorations provider vscode.git 1099
+2026-05-01 20:34:16.203 [warning] [Decorations] CAPPING events from decorations provider vscode.git 1099
+2026-05-01 20:34:17.617 [info] Extension host terminating: received terminate message from renderer
+2026-05-01 20:34:17.686 [error] An error occurred when disposing the subscriptions for extension 'ms-python.vscode-python-envs':
+2026-05-01 20:34:17.687 [error] Error: Channel has been closed
+	at i (file:///nfs/site/disks/crt_tools_0105/vscode/1.114.0/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:508:3935)
+	at Object.error (file:///nfs/site/disks/crt_tools_0105/vscode/1.114.0/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:508:4394)
+	at Object.dispose (/nfs/site/disks/crt_tools_0105/vscode_cth/1.114.0/autobots/extensions/ms-python.vscode-python-envs-1.26.0-linux-x64/dist/extension.js:2:552051)
+	at /nfs/site/disks/crt_tools_0105/vscode_cth/1.114.0/autobots/extensions/ms-python.vscode-python-envs-1.26.0-linux-x64/dist/extension.js:2:550819
+	at Array.forEach (<anonymous>)
+	at T.dispose (/nfs/site/disks/crt_tools_0105/vscode_cth/1.114.0/autobots/extensions/ms-python.vscode-python-envs-1.26.0-linux-x64/dist/extension.js:2:550806)
+	at Cn (file:///nfs/site/disks/crt_tools_0105/vscode/1.114.0/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:401:736)
+	at FP._fn (file:///nfs/site/disks/crt_tools_0105/vscode/1.114.0/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:505:18387)
+	at FP.dispose (file:///nfs/site/disks/crt_tools_0105/vscode/1.114.0/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:401:1248)
+	at lP._deactivate (file:///nfs/site/disks/crt_tools_0105/vscode/1.114.0/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:505:14704)
+	at file:///nfs/site/disks/crt_tools_0105/vscode/1.114.0/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:505:12006
+	at Array.map (<anonymous>)
+	at lP._deactivateAll (file:///nfs/site/disks/crt_tools_0105/vscode/1.114.0/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:505:11994)
+	at lP.terminate (file:///nfs/site/disks/crt_tools_0105/vscode/1.114.0/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:505:12345)
+	at r.terminate (file:///nfs/site/disks/crt_tools_0105/vscode/1.114.0/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:507:1072)
+	at Gs (file:///nfs/site/disks/crt_tools_0105/vscode/1.114.0/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:821:11700)
+	at op.value (file:///nfs/site/disks/crt_tools_0105/vscode/1.114.0/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:821:9847)
+	at E._deliver (file:///nfs/site/disks/crt_tools_0105/vscode/1.114.0/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:403:3043)
+	at E.fire (file:///nfs/site/disks/crt_tools_0105/vscode/1.114.0/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:403:3361)
+	at as.fire (file:///nfs/site/disks/crt_tools_0105/vscode/1.114.0/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:405:8437)
+	at MessagePortMain.<anonymous> (file:///nfs/site/disks/crt_tools_0105/vscode/1.114.0/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:821:8082)
+	at MessagePortMain.emit (node:events:519:28)
+	at MessagePortMain._internalPort.emit (node:electron/js2c/utility_init:2:2959)
+	at Object.callbackTrampoline (node:internal/async_hooks:130:17)
+2026-05-01 20:34:17.690 [error] TypeError: Cannot read properties of undefined (reading 'subscriptions')
+	at Object.te [as deactivate] (/nfs/site/disks/crt_tools_0105/vscode_cth/1.114.0/autobots/extensions/ms-python.vscode-python-envs-1.26.0-linux-x64/dist/extension.js:2:729417)
+	at lP._deactivate (file:///nfs/site/disks/crt_tools_0105/vscode/1.114.0/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:505:14479)
+	at file:///nfs/site/disks/crt_tools_0105/vscode/1.114.0/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:505:12006
+	at Array.map (<anonymous>)
+	at lP._deactivateAll (file:///nfs/site/disks/crt_tools_0105/vscode/1.114.0/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:505:11994)
+	at lP.terminate (file:///nfs/site/disks/crt_tools_0105/vscode/1.114.0/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:505:12345)
+	at r.terminate (file:///nfs/site/disks/crt_tools_0105/vscode/1.114.0/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:507:1072)
+	at Gs (file:///nfs/site/disks/crt_tools_0105/vscode/1.114.0/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:821:11700)
+	at op.value (file:///nfs/site/disks/crt_tools_0105/vscode/1.114.0/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:821:9847)
+	at E._deliver (file:///nfs/site/disks/crt_tools_0105/vscode/1.114.0/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:403:3043)
+	at E.fire (file:///nfs/site/disks/crt_tools_0105/vscode/1.114.0/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:403:3361)
+	at as.fire (file:///nfs/site/disks/crt_tools_0105/vscode/1.114.0/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:405:8437)
+	at MessagePortMain.<anonymous> (file:///nfs/site/disks/crt_tools_0105/vscode/1.114.0/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:821:8082)
+	at MessagePortMain.emit (node:events:519:28)
+	at MessagePortMain._internalPort.emit (node:electron/js2c/utility_init:2:2959)
+	at Object.callbackTrampoline (node:internal/async_hooks:130:17)
+2026-05-01 20:34:17.709 [info] Extension host with pid 34505 exiting with code 0
+2026-05-01 20:34:21.760 [info] Extension host with pid 20734 started
+2026-05-01 20:34:21.760 [info] Skipping acquiring lock for /nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/cache/User/workspaceStorage/19d6e13be90ad272c2147c47b81e0d4d.
+2026-05-01 20:34:21.846 [info] ExtensionService#_doActivateExtension vscode.github-authentication, startup: false, activationEvent: 'onAuthenticationRequest:github'
+2026-05-01 20:34:21.884 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2026-05-01 20:34:21.906 [info] ExtensionService#_doActivateExtension GitHub.copilot-chat, startup: false, activationEvent: 'onChatParticipant:github.copilot.editsAgent'
+2026-05-01 20:34:23.603 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2026-05-01 20:34:23.657 [info] ExtensionService#_doActivateExtension vscode.microsoft-authentication, startup: false, activationEvent: 'onAuthenticationRequest:microsoft'
+2026-05-01 20:34:23.774 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+2026-05-01 20:34:23.834 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2026-05-01 20:34:24.355 [warning] [Decorations] CAPPING events from decorations provider vscode.git 1101
+2026-05-01 20:34:24.758 [warning] [Decorations] CAPPING events from decorations provider vscode.git 1101
+2026-05-01 20:34:25.392 [error] Error: ENOENT: no such file or directory, mkdir '/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/extensions/github.copilot-chat-0.42.2/node_modules/@github/copilot/sdk/prebuilds'
+	at async Object.mkdir (node:internal/fs/promises:856:10)
+	at async MKi (/nfs/site/disks/crt_tools_0105/vscode_cth/1.114.0/autobots/extensions/github.copilot-chat-0.42.2/dist/extension.js:2233:7664)
+	at async LKi (/nfs/site/disks/crt_tools_0105/vscode_cth/1.114.0/autobots/extensions/github.copilot-chat-0.42.2/dist/extension.js:2233:7456)
+	at async Promise.all (index 0)
+	at async HG.ensureShims (/nfs/site/disks/crt_tools_0105/vscode_cth/1.114.0/autobots/extensions/github.copilot-chat-0.42.2/dist/extension.js:2233:19974)
+2026-05-01 20:34:25.883 [warning] [Decorations] CAPPING events from decorations provider vscode.git 1102
+2026-05-01 20:34:30.188 [info] Not activating extension 'ms-python.python': Timed out while searching for 'workspaceContains' pattern **/pylock.*.toml
+2026-05-01 20:34:30.189 [info] Eager extensions activated
+2026-05-01 20:34:30.190 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2026-05-01 20:34:30.193 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2026-05-01 20:34:40.427 [info] Extension host terminating: received terminate message from renderer
+2026-05-01 20:34:40.456 [info] Extension host with pid 20734 exiting with code 0

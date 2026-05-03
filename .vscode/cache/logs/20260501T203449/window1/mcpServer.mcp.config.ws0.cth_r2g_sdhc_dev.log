@@ -1,0 +1,9 @@
+2026-05-03 03:17:48.113 [info] Starting server cth_r2g_sdhc_dev
+2026-05-03 03:17:48.116 [info] Connection state: Starting
+2026-05-03 03:17:48.256 [info] Starting server from LocalProcess extension host
+2026-05-03 03:17:48.707 [info] Connection state: Starting
+2026-05-03 03:17:48.708 [info] Connection state: Running
+2026-05-03 03:17:53.713 [info] Waiting for server to respond to `initialize` request...
+2026-05-03 03:17:56.415 [warning] [server stderr] 2026-05-03 03:17:56,412 - mcp.server.lowlevel.server - INFO - Processing request of type ListPromptsRequest
+2026-05-03 03:17:56.415 [warning] [server stderr] 2026-05-03 03:17:56,413 - mcp.server.lowlevel.server - INFO - Processing request of type ListToolsRequest
+2026-05-03 03:17:56.418 [info] Discovered 3 tools

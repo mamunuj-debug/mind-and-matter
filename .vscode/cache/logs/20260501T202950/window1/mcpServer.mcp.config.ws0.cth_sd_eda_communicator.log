@@ -1,0 +1,10 @@
+2026-05-01 20:32:30.392 [info] Starting server cth_sd_eda_communicator
+2026-05-01 20:32:30.393 [info] Connection state: Starting
+2026-05-01 20:32:30.639 [info] Starting server from LocalProcess extension host
+2026-05-01 20:32:31.118 [info] Connection state: Starting
+2026-05-01 20:32:31.125 [info] Connection state: Running
+2026-05-01 20:32:36.196 [info] Waiting for server to respond to `initialize` request...
+2026-05-01 20:32:41.125 [info] Waiting for server to respond to `initialize` request...
+2026-05-01 20:32:42.414 [info] Discovered 4 tools
+2026-05-01 20:34:17.684 [warning] Extension host shut down, server will stop.
+2026-05-01 20:34:17.685 [info] Connection state: Stopped

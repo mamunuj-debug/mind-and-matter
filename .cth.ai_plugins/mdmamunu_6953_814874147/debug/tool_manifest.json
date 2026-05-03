@@ -1,0 +1,376 @@
+{
+    "cth.ai": {
+        "timestamp": "2026-05-01T20:19:55.504538",
+        "tool_path": "/p/hdk/pu_tu/prd/cth.ai/2026.03.p006",
+        "active": true,
+        "mcp_servers": [],
+        "prompts": [],
+        "extensions": [],
+        "skills": [
+            {
+                "name": "cth-ai-agent-development",
+                "source": "/p/hdk/pu_tu/prd/cth.ai/2026.03.p006/autobots/skills/cth-ai-agent-development",
+                "target": "/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.cth.ai_plugins/mdmamunu_6953_814874147/plugins/cth.ai/skills/cth-ai-agent-development",
+                "tool": "cth.ai"
+            },
+            {
+                "name": "linux-shell-environment",
+                "source": "/p/hdk/pu_tu/prd/cth.ai/2026.03.p006/autobots/skills/linux-shell-environment",
+                "target": "/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.cth.ai_plugins/mdmamunu_6953_814874147/plugins/cth.ai/skills/linux-shell-environment",
+                "tool": "cth.ai"
+            }
+        ]
+    },
+    "vscode_cth": {
+        "timestamp": "2026-05-01T20:19:55.893520",
+        "tool_path": "/p/hdk/cad/vscode_cth/1.114.0",
+        "active": true,
+        "mcp_servers": [],
+        "prompts": [],
+        "extensions": [
+            {
+                "name": "github.copilot-chat-0.42.2",
+                "source": "/p/hdk/cad/vscode_cth/1.114.0/autobots/extensions/github.copilot-chat-0.42.2",
+                "target": "/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/extensions/github.copilot-chat-0.42.2",
+                "tool": "vscode_cth"
+            },
+            {
+                "name": "ms-python.debugpy-2025.18.0-linux-x64",
+                "source": "/p/hdk/cad/vscode_cth/1.114.0/autobots/extensions/ms-python.debugpy-2025.18.0-linux-x64",
+                "target": "/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/extensions/ms-python.debugpy-2025.18.0-linux-x64",
+                "tool": "vscode_cth"
+            },
+            {
+                "name": "ms-python.python-2026.4.0-linux-x64",
+                "source": "/p/hdk/cad/vscode_cth/1.114.0/autobots/extensions/ms-python.python-2026.4.0-linux-x64",
+                "target": "/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/extensions/ms-python.python-2026.4.0-linux-x64",
+                "tool": "vscode_cth"
+            },
+            {
+                "name": "ms-python.vscode-pylance-2026.2.1",
+                "source": "/p/hdk/cad/vscode_cth/1.114.0/autobots/extensions/ms-python.vscode-pylance-2026.2.1",
+                "target": "/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/extensions/ms-python.vscode-pylance-2026.2.1",
+                "tool": "vscode_cth"
+            },
+            {
+                "name": "ms-python.vscode-python-envs-1.26.0-linux-x64",
+                "source": "/p/hdk/cad/vscode_cth/1.114.0/autobots/extensions/ms-python.vscode-python-envs-1.26.0-linux-x64",
+                "target": "/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/extensions/ms-python.vscode-python-envs-1.26.0-linux-x64",
+                "tool": "vscode_cth"
+            }
+        ],
+        "skills": []
+    },
+    "autobots_common_agents": {
+        "timestamp": "2026-05-01T20:19:56.747883",
+        "tool_path": "/p/hdk/pu_tu/prd/autobots_common_agents/latest",
+        "active": true,
+        "mcp_servers": [
+            {
+                "name": "arc_prime",
+                "source": "/p/hdk/pu_tu/prd/autobots_common_agents/latest/autobots/arc_prime/mcp/server.py"
+            },
+            {
+                "name": "blocksinfo",
+                "source": "/p/hdk/pu_tu/prd/autobots_common_agents/latest/autobots/blocksinfo/mcp/server.py"
+            },
+            {
+                "name": "cdislookup",
+                "source": "/p/hdk/pu_tu/prd/autobots_common_agents/latest/autobots/cdislookup/mcp/server.py"
+            },
+            {
+                "name": "confluence",
+                "source": "/p/hdk/pu_tu/prd/autobots_common_agents/latest/autobots/confluence/mcp/server.py"
+            },
+            {
+                "name": "crt",
+                "source": "/p/hdk/pu_tu/prd/autobots_common_agents/latest/autobots/crt/mcp/server.py"
+            },
+            {
+                "name": "csv_analyzer",
+                "source": "/p/hdk/pu_tu/prd/autobots_common_agents/latest/autobots/csv_analyzer/mcp/server.py"
+            },
+            {
+                "name": "hsd",
+                "source": "/p/hdk/pu_tu/prd/autobots_common_agents/latest/autobots/hsd/mcp/server.py"
+            },
+            {
+                "name": "jenkins",
+                "source": "/p/hdk/pu_tu/prd/autobots_common_agents/latest/autobots/jenkins/mcp/server.py"
+            },
+            {
+                "name": "netbatch",
+                "source": "/p/hdk/pu_tu/prd/autobots_common_agents/latest/autobots/netbatch/mcp/server.py"
+            },
+            {
+                "name": "p4",
+                "source": "/p/hdk/pu_tu/prd/autobots_common_agents/latest/autobots/p4/mcp/server.py"
+            },
+            {
+                "name": "rag",
+                "source": "/p/hdk/pu_tu/prd/autobots_common_agents/latest/autobots/rag/mcp/server.py"
+            },
+            {
+                "name": "snps_ka",
+                "source": "/p/hdk/pu_tu/prd/autobots_common_agents/latest/autobots/snps_ka/mcp/server.py"
+            },
+            {
+                "name": "splunk",
+                "source": "/p/hdk/pu_tu/prd/autobots_common_agents/latest/autobots/splunk/mcp/server.py"
+            },
+            {
+                "name": "stodstatus",
+                "source": "/p/hdk/pu_tu/prd/autobots_common_agents/latest/autobots/stodstatus/mcp/server.py"
+            },
+            {
+                "name": "sql_database",
+                "source": "/p/hdk/pu_tu/prd/autobots_common_agents/latest/autobots/sql_database/mcp/server.py"
+            }
+        ],
+        "prompts": [
+            {
+                "name": "infra_agents.agent.md",
+                "source": "/p/hdk/pu_tu/prd/autobots_common_agents/latest/autobots/prompts/infra_agents.agent.md",
+                "target": "/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.cth.ai_plugins/mdmamunu_6953_814874147/plugins/autobots_common_agents/agents/infra_agents.agent.md",
+                "tool": "autobots_common_agents"
+            },
+            {
+                "name": "autobots_common_agents.agent.md",
+                "source": "/p/hdk/pu_tu/prd/autobots_common_agents/latest/autobots/prompts/autobots_common_agents.agent.md",
+                "target": "/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.cth.ai_plugins/mdmamunu_6953_814874147/plugins/autobots_common_agents/agents/autobots_common_agents.agent.md",
+                "tool": "autobots_common_agents"
+            }
+        ],
+        "extensions": [],
+        "skills": [
+            {
+                "name": "cheetah_design_environment",
+                "source": "/p/hdk/pu_tu/prd/autobots_common_agents/latest/autobots/skills/cheetah_design_environment",
+                "target": "/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.cth.ai_plugins/mdmamunu_6953_814874147/plugins/autobots_common_agents/skills/cheetah_design_environment",
+                "tool": "autobots_common_agents"
+            },
+            {
+                "name": "mcp_builder",
+                "source": "/p/hdk/pu_tu/prd/autobots_common_agents/latest/autobots/skills/mcp_builder",
+                "target": "/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.cth.ai_plugins/mdmamunu_6953_814874147/plugins/autobots_common_agents/skills/mcp_builder",
+                "tool": "autobots_common_agents"
+            },
+            {
+                "name": "skill_creator",
+                "source": "/p/hdk/pu_tu/prd/autobots_common_agents/latest/autobots/skills/skill_creator",
+                "target": "/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.cth.ai_plugins/mdmamunu_6953_814874147/plugins/autobots_common_agents/skills/skill_creator",
+                "tool": "autobots_common_agents"
+            }
+        ]
+    },
+    "cth_r2g.ai": {
+        "timestamp": "2026-05-01T20:20:38.880759",
+        "tool_path": "/p/hdk/cad/cth_r2g.ai/latest",
+        "active": true,
+        "mcp_servers": [
+            {
+                "name": "cth_r2g_phoenix_tool",
+                "source": "/p/hdk/cad/cth_r2g.ai/latest/autobots/cth_r2g_phoenix_tool/mcp/server.py"
+            },
+            {
+                "name": "cth_r2g_sdhc_dev",
+                "source": "/p/hdk/cad/cth_r2g.ai/latest/autobots/cth_r2g_sdhc_dev/mcp/server.py"
+            },
+            {
+                "name": "cth_r2g_run_analyzer_agent",
+                "source": "/p/hdk/cad/cth_r2g.ai/latest/autobots/cth_r2g_run_analyzer_agent/mcp/server.py"
+            },
+            {
+                "name": "cth_r2g_lv_icv_v_cal",
+                "source": "/p/hdk/cad/cth_r2g.ai/latest/autobots/cth_r2g_lv_icv_v_cal/mcp/server.py"
+            },
+            {
+                "name": "cth_r2g_power_mapping_debug_agent",
+                "source": "/p/hdk/cad/cth_r2g.ai/latest/autobots/cth_r2g_power_mapping_debug_agent/mcp/server.py"
+            },
+            {
+                "name": "cth_r2g_power_diff_debug_agent",
+                "source": "/p/hdk/cad/cth_r2g.ai/latest/autobots/cth_r2g_power_diff_debug_agent/mcp/server.py"
+            },
+            {
+                "name": "cth_r2g_extraction_paranoia_review_agent",
+                "source": "/p/hdk/cad/cth_r2g.ai/latest/autobots/cth_r2g_extraction_paranoia_review_agent/mcp/server.py"
+            },
+            {
+                "name": "autoda",
+                "source": "Unknown"
+            },
+            {
+                "name": "cth_sd_eda_communicator",
+                "source": "/p/hdk/cad/cth_r2g.ai/latest/autobots/cth_sd_autoda/mcp_server/server.py"
+            },
+            {
+                "name": "cth_dteg_sage",
+                "source": "/p/hdk/cad/cth_r2g.ai/latest/autobots/cth_dteg_sage/mcp/server.py"
+            },
+            {
+                "name": "cth_r2g_power_clock_agent",
+                "source": "/p/hdk/cad/cth_r2g.ai/latest/autobots/cth_r2g_power_clock_agent/mcp/server.py"
+            },
+            {
+                "name": "fc_innovus_conversion_agent",
+                "source": "/p/hdk/cad/cth_r2g.ai/latest/autobots/fc_innovus_conversion_agent/mcp/server.py"
+            }
+        ],
+        "prompts": [
+            {
+                "name": "cth_r2g_lv_icv_v_cal.agent.md",
+                "source": "/p/hdk/cad/cth_r2g.ai/latest/autobots/prompts/cth_r2g_lv_icv_v_cal.agent.md",
+                "target": "/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.cth.ai_plugins/mdmamunu_6953_814874147/plugins/cth_r2g.ai/agents/cth_r2g_lv_icv_v_cal.agent.md",
+                "tool": "cth_r2g.ai"
+            },
+            {
+                "name": "innovus_root_attribute_finder.subagent.agent.md",
+                "source": "/p/hdk/cad/cth_r2g.ai/latest/autobots/prompts/innovus_root_attribute_finder.subagent.agent.md",
+                "target": "/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.cth.ai_plugins/mdmamunu_6953_814874147/plugins/cth_r2g.ai/agents/innovus_root_attribute_finder.subagent.agent.md",
+                "tool": "cth_r2g.ai"
+            },
+            {
+                "name": "power_clock_agent.agent.md",
+                "source": "/p/hdk/cad/cth_r2g.ai/latest/autobots/prompts/power_clock_agent.agent.md",
+                "target": "/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.cth.ai_plugins/mdmamunu_6953_814874147/plugins/cth_r2g.ai/agents/power_clock_agent.agent.md",
+                "tool": "cth_r2g.ai"
+            },
+            {
+                "name": "autoda.agent.md",
+                "source": "/p/hdk/cad/cth_r2g.ai/latest/autobots/prompts/autoda.agent.md",
+                "target": "/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.cth.ai_plugins/mdmamunu_6953_814874147/plugins/cth_r2g.ai/agents/autoda.agent.md",
+                "tool": "cth_r2g.ai"
+            },
+            {
+                "name": "fc_innovus_conversion_agent.agent.md",
+                "source": "/p/hdk/cad/cth_r2g.ai/latest/autobots/prompts/fc_innovus_conversion_agent.agent.md",
+                "target": "/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.cth.ai_plugins/mdmamunu_6953_814874147/plugins/cth_r2g.ai/agents/fc_innovus_conversion_agent.agent.md",
+                "tool": "cth_r2g.ai"
+            },
+            {
+                "name": "Extraction_Paranoia_Review_Agent.agent.md",
+                "source": "/p/hdk/cad/cth_r2g.ai/latest/autobots/prompts/Extraction_Paranoia_Review_Agent.agent.md",
+                "target": "/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.cth.ai_plugins/mdmamunu_6953_814874147/plugins/cth_r2g.ai/agents/Extraction_Paranoia_Review_Agent.agent.md",
+                "tool": "cth_r2g.ai"
+            },
+            {
+                "name": "fc_reverse_prompt_builder.subagent.agent.md",
+                "source": "/p/hdk/cad/cth_r2g.ai/latest/autobots/prompts/fc_reverse_prompt_builder.subagent.agent.md",
+                "target": "/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.cth.ai_plugins/mdmamunu_6953_814874147/plugins/cth_r2g.ai/agents/fc_reverse_prompt_builder.subagent.agent.md",
+                "tool": "cth_r2g.ai"
+            },
+            {
+                "name": "sage.agent.md",
+                "source": "/p/hdk/cad/cth_r2g.ai/latest/autobots/prompts/sage.agent.md",
+                "target": "/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.cth.ai_plugins/mdmamunu_6953_814874147/plugins/cth_r2g.ai/agents/sage.agent.md",
+                "tool": "cth_r2g.ai"
+            },
+            {
+                "name": "sdhc_dev.agent.md",
+                "source": "/p/hdk/cad/cth_r2g.ai/latest/autobots/prompts/sdhc_dev.agent.md",
+                "target": "/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.cth.ai_plugins/mdmamunu_6953_814874147/plugins/cth_r2g.ai/agents/sdhc_dev.agent.md",
+                "tool": "cth_r2g.ai"
+            },
+            {
+                "name": "r2g_knowledge_agent.agent.md",
+                "source": "/p/hdk/cad/cth_r2g.ai/latest/autobots/prompts/r2g_knowledge_agent.agent.md",
+                "target": "/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.cth.ai_plugins/mdmamunu_6953_814874147/plugins/cth_r2g.ai/agents/r2g_knowledge_agent.agent.md",
+                "tool": "cth_r2g.ai"
+            },
+            {
+                "name": "run_analyzer_agent.agent.md",
+                "source": "/p/hdk/cad/cth_r2g.ai/latest/autobots/prompts/run_analyzer_agent.agent.md",
+                "target": "/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.cth.ai_plugins/mdmamunu_6953_814874147/plugins/cth_r2g.ai/agents/run_analyzer_agent.agent.md",
+                "tool": "cth_r2g.ai"
+            },
+            {
+                "name": "phoenix_agent.agent.md",
+                "source": "/p/hdk/cad/cth_r2g.ai/latest/autobots/prompts/phoenix_agent.agent.md",
+                "target": "/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.cth.ai_plugins/mdmamunu_6953_814874147/plugins/cth_r2g.ai/agents/phoenix_agent.agent.md",
+                "tool": "cth_r2g.ai"
+            },
+            {
+                "name": "power_diff_debug_agent.agent.md",
+                "source": "/p/hdk/cad/cth_r2g.ai/latest/autobots/prompts/power_diff_debug_agent.agent.md",
+                "target": "/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.cth.ai_plugins/mdmamunu_6953_814874147/plugins/cth_r2g.ai/agents/power_diff_debug_agent.agent.md",
+                "tool": "cth_r2g.ai"
+            },
+            {
+                "name": "power_mapping_debug_agent.agent.md",
+                "source": "/p/hdk/cad/cth_r2g.ai/latest/autobots/prompts/power_mapping_debug_agent.agent.md",
+                "target": "/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.cth.ai_plugins/mdmamunu_6953_814874147/plugins/cth_r2g.ai/agents/power_mapping_debug_agent.agent.md",
+                "tool": "cth_r2g.ai"
+            },
+            {
+                "name": "sdhc_dev.instructions.md",
+                "source": "/p/hdk/cad/cth_r2g.ai/latest/autobots/prompts/sdhc_dev.instructions.md",
+                "target": "/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.cth.ai_plugins/mdmamunu_6953_814874147/plugins/cth_r2g.ai/instructions/sdhc_dev.instructions.md",
+                "tool": "cth_r2g.ai"
+            },
+            {
+                "name": "run_analyzer_runtime_methodology.instructions.md",
+                "source": "/p/hdk/cad/cth_r2g.ai/latest/autobots/prompts/run_analyzer_runtime_methodology.instructions.md",
+                "target": "/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.cth.ai_plugins/mdmamunu_6953_814874147/plugins/cth_r2g.ai/instructions/run_analyzer_runtime_methodology.instructions.md",
+                "tool": "cth_r2g.ai"
+            },
+            {
+                "name": "run_analyzer_query_methodology.instructions.md",
+                "source": "/p/hdk/cad/cth_r2g.ai/latest/autobots/prompts/run_analyzer_query_methodology.instructions.md",
+                "target": "/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.cth.ai_plugins/mdmamunu_6953_814874147/plugins/cth_r2g.ai/instructions/run_analyzer_query_methodology.instructions.md",
+                "tool": "cth_r2g.ai"
+            },
+            {
+                "name": "run_analyzer_error_methodology.instructions.md",
+                "source": "/p/hdk/cad/cth_r2g.ai/latest/autobots/prompts/run_analyzer_error_methodology.instructions.md",
+                "target": "/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.cth.ai_plugins/mdmamunu_6953_814874147/plugins/cth_r2g.ai/instructions/run_analyzer_error_methodology.instructions.md",
+                "tool": "cth_r2g.ai"
+            },
+            {
+                "name": "phoenix_runner.prompt.md",
+                "source": "/p/hdk/cad/cth_r2g.ai/latest/autobots/prompts/phoenix_runner.prompt.md",
+                "target": "/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.cth.ai_plugins/mdmamunu_6953_814874147/plugins/cth_r2g.ai/prompts/phoenix_runner.prompt.md",
+                "tool": "cth_r2g.ai"
+            },
+            {
+                "name": "phoenix_setup.prompt.md",
+                "source": "/p/hdk/cad/cth_r2g.ai/latest/autobots/prompts/phoenix_setup.prompt.md",
+                "target": "/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.cth.ai_plugins/mdmamunu_6953_814874147/plugins/cth_r2g.ai/prompts/phoenix_setup.prompt.md",
+                "tool": "cth_r2g.ai"
+            },
+            {
+                "name": "phoenix_analyst.prompt.md",
+                "source": "/p/hdk/cad/cth_r2g.ai/latest/autobots/prompts/phoenix_analyst.prompt.md",
+                "target": "/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.cth.ai_plugins/mdmamunu_6953_814874147/plugins/cth_r2g.ai/prompts/phoenix_analyst.prompt.md",
+                "tool": "cth_r2g.ai"
+            }
+        ],
+        "extensions": [],
+        "skills": [
+            {
+                "name": "analyze_coverage",
+                "source": "/p/hdk/cad/cth_r2g.ai/latest/autobots/skills/analyze_coverage",
+                "target": "/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.cth.ai_plugins/mdmamunu_6953_814874147/plugins/cth_r2g.ai/skills/analyze_coverage",
+                "tool": "cth_r2g.ai"
+            },
+            {
+                "name": "document_ingestion",
+                "source": "/p/hdk/cad/cth_r2g.ai/latest/autobots/skills/document_ingestion",
+                "target": "/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.cth.ai_plugins/mdmamunu_6953_814874147/plugins/cth_r2g.ai/skills/document_ingestion",
+                "tool": "cth_r2g.ai"
+            },
+            {
+                "name": "run_sage_execution",
+                "source": "/p/hdk/cad/cth_r2g.ai/latest/autobots/skills/run_sage_execution",
+                "target": "/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.cth.ai_plugins/mdmamunu_6953_814874147/plugins/cth_r2g.ai/skills/run_sage_execution",
+                "tool": "cth_r2g.ai"
+            },
+            {
+                "name": "scan_dictionary_generator",
+                "source": "/p/hdk/cad/cth_r2g.ai/latest/autobots/skills/scan_dictionary_generator",
+                "target": "/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.cth.ai_plugins/mdmamunu_6953_814874147/plugins/cth_r2g.ai/skills/scan_dictionary_generator",
+                "tool": "cth_r2g.ai"
+            }
+        ]
+    }
+}

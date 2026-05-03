@@ -1,0 +1,31 @@
+2026-05-01 20:34:51.187 [info] Started local extension host with pid 18847.
+2026-05-01 20:34:51.380 [error] Ignoring python.analysis.indexing.followSymlinkedFolders as python.analysis.indexing is true
+2026-05-01 20:34:51.938 [error] Ignoring python.analysis.indexing.followSymlinkedFolders as python.analysis.indexing is true
+2026-05-01 20:34:53.487 [info] Settings Sync: Account status changed from uninitialized to unavailable
+2026-05-01 20:34:53.509 [error] [Extension Host] (node:18847) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `exe --trace-deprecation ...` to show where the warning was created)
+2026-05-01 20:34:53.509 [error] [Extension Host] (node:18847) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+2026-05-01 20:34:55.048 [error] ENOENT: no such file or directory, mkdir '/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/extensions/github.copilot-chat-0.42.2/node_modules/@github/copilot/sdk/prebuilds': Error: ENOENT: no such file or directory, mkdir '/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/extensions/github.copilot-chat-0.42.2/node_modules/@github/copilot/sdk/prebuilds'
+	at async Object.mkdir (node:internal/fs/promises:856:10)
+	at async MKi (/nfs/site/disks/crt_tools_0105/vscode_cth/1.114.0/autobots/extensions/github.copilot-chat-0.42.2/dist/extension.js:2233:7664)
+	at async LKi (/nfs/site/disks/crt_tools_0105/vscode_cth/1.114.0/autobots/extensions/github.copilot-chat-0.42.2/dist/extension.js:2233:7456)
+	at async Promise.all (index 0)
+	at async HG.ensureShims (/nfs/site/disks/crt_tools_0105/vscode_cth/1.114.0/autobots/extensions/github.copilot-chat-0.42.2/dist/extension.js:2233:19974)
+2026-05-01 20:34:55.537 [error] An unknown error occurred. Please consult the log for more details.
+2026-05-01 20:34:55.844 [info] Auto updating outdated extensions. github.copilot-chat, ms-python.debugpy, ms-python.vscode-python-envs
+2026-05-01 20:34:56.259 [info] [perf] Render performance baseline is 27ms
+2026-05-01 20:34:57.160 [error] [ChatSessionsService] Failed to resolve sessions for provider copilotcli ENOENT: no such file or directory, mkdir '/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/extensions/github.copilot-chat-0.42.2/node_modules/@github/copilot/sdk/prebuilds'
+2026-05-01 20:34:57.160 [error] [ChatSessionsService] Failed to resolve sessions for provider copilotcli ENOENT: no such file or directory, mkdir '/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/extensions/github.copilot-chat-0.42.2/node_modules/@github/copilot/sdk/prebuilds'
+2026-05-01 20:34:57.189 [error] [ChatSessionsService] Failed to resolve sessions for provider copilotcli ENOENT: no such file or directory, mkdir '/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/extensions/github.copilot-chat-0.42.2/node_modules/@github/copilot/sdk/prebuilds'
+2026-05-01 20:34:57.190 [error] [ChatSessionsService] Failed to resolve sessions for provider copilotcli ENOENT: no such file or directory, mkdir '/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/extensions/github.copilot-chat-0.42.2/node_modules/@github/copilot/sdk/prebuilds'
+2026-05-01 20:35:01.631 [error] [ChatSessionsService] Failed to resolve sessions for provider copilotcli ENOENT: no such file or directory, mkdir '/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/extensions/github.copilot-chat-0.42.2/node_modules/@github/copilot/sdk/prebuilds'
+2026-05-01 20:35:01.634 [error] [ChatSessionsService] Failed to resolve sessions for provider copilotcli ENOENT: no such file or directory, mkdir '/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/extensions/github.copilot-chat-0.42.2/node_modules/@github/copilot/sdk/prebuilds'
+2026-05-01 20:35:20.272 [info] Auto updating outdated extensions. github.copilot-chat, ms-python.debugpy, ms-python.vscode-python-envs
+2026-05-02 08:34:55.989 [info] Auto updating outdated extensions. github.copilot-chat, ms-python.debugpy, ms-python.vscode-python-envs
+2026-05-02 20:34:56.124 [info] Auto updating outdated extensions. github.copilot-chat, ms-python.debugpy, ms-python.vscode-python-envs
+2026-05-03 03:16:55.938 [error] [ChatSessionsService] Failed to resolve sessions for provider copilotcli ENOENT: no such file or directory, mkdir '/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/extensions/github.copilot-chat-0.42.2/node_modules/@github/copilot/sdk/prebuilds'
+2026-05-03 03:16:55.939 [error] [ChatSessionsService] Failed to resolve sessions for provider copilotcli ENOENT: no such file or directory, mkdir '/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/extensions/github.copilot-chat-0.42.2/node_modules/@github/copilot/sdk/prebuilds'
+2026-05-03 03:18:29.046 [error] [Extension Host] Failed to fetch remote embeddings cache from https://embeddings.vscode-cdn.net/text-3-small/v1.114/tools/latest.txt
+2026-05-03 03:18:29.046 [error] [Extension Host] Response status: 404, status text: 
+2026-05-03 03:18:29.240 [error] [Extension Host] Failed to fetch remote embeddings cache from https://embeddings.vscode-cdn.net/text-3-small/v1.114/tools/core.json
+2026-05-03 03:18:29.240 [error] [Extension Host] Response status: 404, status text: 

@@ -1,0 +1,6 @@
+{
+    "name": "cth-ai-vscode_cth",
+    "description": "CTH.AI plugin for vscode_cth",
+    "agents": "agents/",
+    "skills": "skills/"
+}

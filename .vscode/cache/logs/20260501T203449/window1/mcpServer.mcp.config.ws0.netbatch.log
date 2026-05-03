@@ -1,0 +1,8 @@
+2026-05-03 03:17:48.118 [info] Starting server netbatch
+2026-05-03 03:17:48.118 [info] Connection state: Starting
+2026-05-03 03:17:48.257 [info] Starting server from LocalProcess extension host
+2026-05-03 03:17:48.716 [info] Connection state: Starting
+2026-05-03 03:17:48.717 [info] Connection state: Running
+2026-05-03 03:17:53.720 [info] Waiting for server to respond to `initialize` request...
+2026-05-03 03:17:58.715 [info] Waiting for server to respond to `initialize` request...
+2026-05-03 03:17:59.704 [info] Discovered 24 tools

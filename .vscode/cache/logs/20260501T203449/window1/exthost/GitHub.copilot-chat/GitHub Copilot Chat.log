@@ -1,0 +1,360 @@
+2026-05-01 20:34:54.228 [info] [GitExtensionServiceImpl] Initializing Git extension service.
+2026-05-01 20:34:54.436 [info] ConversationFeature: Waiting for copilot token to activate conversation feature
+2026-05-01 20:34:54.443 [info] [OTel] Instrumentation enabled — exporter=otlp-http endpoint=https://langfuse-otel-collector.malina.intel.com/ captureContent=true
+2026-05-01 20:34:54.447 [info] Creating node-pty shim: source=/nfs/site/disks/crt_tools_0105/vscode/1.114.0/resources/app/node_modules/node-pty/build/Release, dest=/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/extensions/github.copilot-chat-0.42.2/node_modules/@github/copilot/sdk/prebuilds/linux-x64
+2026-05-01 20:34:54.447 [info] Creating ripgrep shim: source=/nfs/site/disks/crt_tools_0105/vscode/1.114.0/resources/app/node_modules/@vscode/ripgrep/bin, dest=/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/extensions/github.copilot-chat-0.42.2/node_modules/@github/copilot/sdk/ripgrep/bin/linux-x64
+2026-05-01 20:34:54.512 [error] Failed to create node-pty shim (source dir: /nfs/site/disks/crt_tools_0105/vscode/1.114.0/resources/app/node_modules/node-pty/build/Release, extension dir: /nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/extensions/github.copilot-chat-0.42.2/node_modules/@github/copilot/sdk/prebuilds/linux-x64): Error: ENOENT: no such file or directory, mkdir '/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/extensions/github.copilot-chat-0.42.2/node_modules/@github/copilot/sdk/prebuilds'
+2026-05-01 20:34:54.512 [error] [CopilotCLISession] Failed to load @github/copilot/sdk: Error: ENOENT: no such file or directory, mkdir '/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/extensions/github.copilot-chat-0.42.2/node_modules/@github/copilot/sdk/prebuilds'
+2026-05-01 20:34:54.512 [error] [CopilotCLISession] Failed to load @github/copilot/sdk: Error: ENOENT: no such file or directory, mkdir '/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/extensions/github.copilot-chat-0.42.2/node_modules/@github/copilot/sdk/prebuilds'
+2026-05-01 20:34:54.512 [error] [CopilotCLISession] Failed to load @github/copilot/sdk: Error: ENOENT: no such file or directory, mkdir '/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/extensions/github.copilot-chat-0.42.2/node_modules/@github/copilot/sdk/prebuilds'
+2026-05-01 20:34:54.512 [error] [CopilotCLISDK] Failed to initialize logger: Error: ENOENT: no such file or directory, mkdir '/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/extensions/github.copilot-chat-0.42.2/node_modules/@github/copilot/sdk/prebuilds'
+2026-05-01 20:34:54.512 [error] [CopilotCLIAgents] Failed to fetch custom agents: Error: ENOENT: no such file or directory, mkdir '/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/extensions/github.copilot-chat-0.42.2/node_modules/@github/copilot/sdk/prebuilds'
+2026-05-01 20:34:54.512 [error] [CopilotCLIModels] Failed to fetch available models: Error: ENOENT: no such file or directory, mkdir '/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/extensions/github.copilot-chat-0.42.2/node_modules/@github/copilot/sdk/prebuilds'
+2026-05-01 20:34:54.513 [error] Failed to create ripgrep shim (vscode dir: /nfs/site/disks/crt_tools_0105/vscode/1.114.0/resources/app/node_modules/@vscode/ripgrep/bin, extension dir: /nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/extensions/github.copilot-chat-0.42.2/node_modules/@github/copilot/sdk/ripgrep/bin/linux-x64): Error: ENOENT: no such file or directory, mkdir '/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/extensions/github.copilot-chat-0.42.2/node_modules/@github/copilot/sdk/ripgrep'
+2026-05-01 20:34:54.514 [info] [CopilotCLI] MCP server started. Lock file: /nfs/site/home/mdmamunu/.copilot/ide/c8e2d86e-ad68-467f-9834-17cad3e4b683.lock
+2026-05-01 20:34:54.514 [info] [CopilotCLI] Server URI: unix:/tmp/mcp-hcV7cm/mcp.sock#%2Fmcp
+2026-05-01 20:34:54.987 [error] [CopilotCLISession] Failed to load @github/copilot/sdk: Error: ENOENT: no such file or directory, mkdir '/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/extensions/github.copilot-chat-0.42.2/node_modules/@github/copilot/sdk/prebuilds'
+2026-05-01 20:34:54.987 [error] Failed to initialize Copilot CLI Session Manager: Error: ENOENT: no such file or directory, mkdir '/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/extensions/github.copilot-chat-0.42.2/node_modules/@github/copilot/sdk/prebuilds'
+2026-05-01 20:34:54.987 [error] Failed to get all sessions: Error: ENOENT: no such file or directory, mkdir '/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/extensions/github.copilot-chat-0.42.2/node_modules/@github/copilot/sdk/prebuilds'
+2026-05-01 20:34:55.303 [error] [CopilotCLISession] Failed to load @github/copilot/sdk: Error: ENOENT: no such file or directory, mkdir '/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/extensions/github.copilot-chat-0.42.2/node_modules/@github/copilot/sdk/prebuilds'
+2026-05-01 20:34:55.303 [error] [CopilotCLIAgents] Failed to fetch custom agents: Error: ENOENT: no such file or directory, mkdir '/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/extensions/github.copilot-chat-0.42.2/node_modules/@github/copilot/sdk/prebuilds'
+2026-05-01 20:34:55.319 [info] [GitExtensionServiceImpl] Successfully activated the vscode.git extension.
+2026-05-01 20:34:55.319 [info] [GitExtensionServiceImpl] Enablement state of the vscode.git extension: true.
+2026-05-01 20:34:55.319 [info] [GitExtensionServiceImpl] Successfully registered Git commit message provider.
+2026-05-01 20:34:55.466 [info] Logged in as mamunuj
+2026-05-01 20:34:55.471 [info] Using the Electron fetcher.
+2026-05-01 20:34:55.596 [error] [CopilotCLISession] Failed to load @github/copilot/sdk: Error: ENOENT: no such file or directory, mkdir '/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/extensions/github.copilot-chat-0.42.2/node_modules/@github/copilot/sdk/prebuilds'
+2026-05-01 20:34:55.596 [error] [CopilotCLIAgents] Failed to fetch custom agents: Error: ENOENT: no such file or directory, mkdir '/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/extensions/github.copilot-chat-0.42.2/node_modules/@github/copilot/sdk/prebuilds'
+2026-05-01 20:34:56.072 [info] Got Copilot token for mamunuj
+2026-05-01 20:34:56.072 [info] Copilot Chat: 0.42.2, VS Code: 1.114.0
+2026-05-01 20:34:56.246 [info] [context keys] Setting context key: github.copilot-chat.activated
+2026-05-01 20:34:56.247 [info] activationBlocker from 'languageModelAccess' took for 1851ms
+2026-05-01 20:34:56.519 [info] Fetched model metadata in 2104ms 8d442840-aea4-46aa-b6d6-42d21a7d3f87
+2026-05-01 20:34:56.623 [info] Latest entry: ccreq:latest.copilotmd
+2026-05-01 20:34:56.623 [info] ccreq:b969dcdc.copilotmd | markdown
+2026-05-01 20:34:56.631 [error] [CopilotCLISession] Failed to load @github/copilot/sdk: Error: ENOENT: no such file or directory, mkdir '/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/extensions/github.copilot-chat-0.42.2/node_modules/@github/copilot/sdk/prebuilds'
+2026-05-01 20:34:56.631 [error] [CopilotCLIAgents] Failed to fetch custom agents: Error: ENOENT: no such file or directory, mkdir '/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/extensions/github.copilot-chat-0.42.2/node_modules/@github/copilot/sdk/prebuilds'
+2026-05-01 20:34:56.829 [info] AuthenticationService: firing onDidAuthenticationChange from handleAuthChangeEvent. Has token: true
+2026-05-01 20:34:56.829 [info] copilot token sku: copilot_for_business_seat_quota
+2026-05-01 20:34:56.829 [info] ConversationFeature: Activating contributions
+2026-05-01 20:34:56.829 [info] GitHub.vscode-pull-request-github extension is not yet activated.
+2026-05-01 20:34:56.845 [info] Registering default platform agent...
+2026-05-01 20:34:56.846 [info] ConversationFeature: onDidAuthenticationChange has token: true
+2026-05-01 20:34:56.852 [info] activationBlocker from 'conversationFeature' took for 2461ms
+2026-05-01 20:34:56.990 [warning] Copilot preview features are disabled by organizational policy. Learn more: https://aka.ms/github-copilot-org-enable-features
+2026-05-01 20:34:56.992 [info] GithubAvailableEmbeddingTypesManager: Got embeddings. Primary: metis-1024-I16-Binary. Deprecated: 
+2026-05-01 20:34:56.995 [info] WorkspaceChunkSearchService: using embedding type metis-1024-I16-Binary
+2026-05-01 20:34:57.144 [info] Fetched model metadata in 318ms e1169195-a806-4fdc-8c10-311b7190ce8b
+2026-05-01 20:34:57.158 [error] Failed to get all sessions: Error: ENOENT: no such file or directory, mkdir '/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/extensions/github.copilot-chat-0.42.2/node_modules/@github/copilot/sdk/prebuilds'
+2026-05-01 20:34:57.163 [info] ccreq:77c896ae.copilotmd | markdown
+2026-05-01 20:34:57.185 [error] Failed to get all sessions: Error: ENOENT: no such file or directory, mkdir '/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/extensions/github.copilot-chat-0.42.2/node_modules/@github/copilot/sdk/prebuilds'
+2026-05-01 20:34:58.297 [info] Fetched content exclusion rules in 1305ms
+2026-05-01 20:34:58.297 [info] ccreq:c8ce556d.copilotmd | markdown
+2026-05-01 20:34:58.455 [error] [CopilotCLISession] Failed to load @github/copilot/sdk: Error: ENOENT: no such file or directory, mkdir '/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/extensions/github.copilot-chat-0.42.2/node_modules/@github/copilot/sdk/prebuilds'
+2026-05-01 20:34:58.455 [error] [CopilotCLIAgents] Failed to fetch custom agents: Error: ENOENT: no such file or directory, mkdir '/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/extensions/github.copilot-chat-0.42.2/node_modules/@github/copilot/sdk/prebuilds'
+2026-05-01 20:34:58.809 [error] [CopilotCLISession] Failed to load @github/copilot/sdk: Error: ENOENT: no such file or directory, mkdir '/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/extensions/github.copilot-chat-0.42.2/node_modules/@github/copilot/sdk/prebuilds'
+2026-05-01 20:34:58.809 [error] [CopilotCLIAgents] Failed to fetch custom agents: Error: ENOENT: no such file or directory, mkdir '/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/extensions/github.copilot-chat-0.42.2/node_modules/@github/copilot/sdk/prebuilds'
+2026-05-01 20:34:58.843 [error] [CopilotCLISession] Failed to load @github/copilot/sdk: Error: ENOENT: no such file or directory, mkdir '/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/extensions/github.copilot-chat-0.42.2/node_modules/@github/copilot/sdk/prebuilds'
+2026-05-01 20:34:58.843 [error] [CopilotCLIAgents] Failed to fetch custom agents: Error: ENOENT: no such file or directory, mkdir '/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/extensions/github.copilot-chat-0.42.2/node_modules/@github/copilot/sdk/prebuilds'
+2026-05-01 20:35:01.596 [error] Failed to get all sessions: Error: ENOENT: no such file or directory, mkdir '/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/extensions/github.copilot-chat-0.42.2/node_modules/@github/copilot/sdk/prebuilds'
+2026-05-02 01:12:00.214 [info] Logged in as mamunuj
+2026-05-02 01:12:00.752 [info] Got Copilot token for mamunuj
+2026-05-02 01:12:00.752 [info] Copilot Chat: 0.42.2, VS Code: 1.114.0
+2026-05-02 01:12:00.765 [info] AuthenticationService: firing onDidAuthenticationChange from handleAuthChangeEvent. Has token: true
+2026-05-02 01:12:00.766 [info] copilot token sku: copilot_for_business_seat_quota
+2026-05-02 01:12:00.766 [info] ConversationFeature: onDidAuthenticationChange has token: true
+2026-05-02 01:12:00.767 [warning] Copilot preview features are disabled by organizational policy. Learn more: https://aka.ms/github-copilot-org-enable-features
+2026-05-02 01:12:01.091 [info] Fetched model metadata in 328ms 35003df6-5b99-4981-af03-06faa9f85873
+2026-05-02 01:12:01.156 [info] ccreq:63c23e52.copilotmd | markdown
+2026-05-03 03:16:55.937 [error] Failed to get all sessions: Error: ENOENT: no such file or directory, mkdir '/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/extensions/github.copilot-chat-0.42.2/node_modules/@github/copilot/sdk/prebuilds'
+2026-05-03 03:17:32.563 [info] Logged in as mamunuj
+2026-05-03 03:17:33.059 [info] Got Copilot token for mamunuj
+2026-05-03 03:17:33.059 [info] Copilot Chat: 0.42.2, VS Code: 1.114.0
+2026-05-03 03:17:33.074 [info] AuthenticationService: firing onDidAuthenticationChange from handleAuthChangeEvent. Has token: true
+2026-05-03 03:17:33.074 [info] copilot token sku: copilot_for_business_seat_quota
+2026-05-03 03:17:33.074 [info] ConversationFeature: onDidAuthenticationChange has token: true
+2026-05-03 03:17:33.076 [warning] Copilot preview features are disabled by organizational policy. Learn more: https://aka.ms/github-copilot-org-enable-features
+2026-05-03 03:17:33.389 [info] Fetched model metadata in 318ms 08b016a0-6a0f-4af5-9cb2-4d67f289fced
+2026-05-03 03:17:33.458 [info] ccreq:45350ea3.copilotmd | markdown
+2026-05-03 03:18:26.472 [info] message 0 returned. finish reason: [stop]
+2026-05-03 03:18:26.475 [info] request done: requestId: [85945907-a931-46de-9825-62e5c387c4f4] model deployment ID: []
+2026-05-03 03:18:26.477 [info] ccreq:722fdbdf.copilotmd | success | gpt-4o-mini-2024-07-18 | 2072ms | [progressMessages]
+2026-05-03 03:18:26.666 [info] message 0 returned. finish reason: [stop]
+2026-05-03 03:18:26.668 [info] request done: requestId: [051819ff-3494-416c-b700-eeb88730fd3e] model deployment ID: []
+2026-05-03 03:18:26.669 [info] ccreq:41c0f391.copilotmd | success | gpt-4o-mini-2024-07-18 | 2270ms | [progressMessages]
+2026-05-03 03:18:28.248 [info] [messagesAPI] message 0 returned. finish reason: [stop]
+2026-05-03 03:18:28.261 [info] ccreq:870d7d51.copilotmd | success | claude-sonnet-4.6 -> claude-sonnet-4-6 | 3612ms | [panel/editAgent]
+2026-05-03 03:18:28.353 [info] Fetched content exclusion rules in 855ms
+2026-05-03 03:18:28.354 [info] ccreq:09fddc50.copilotmd | markdown
+2026-05-03 03:18:32.117 [info] [messagesAPI] message 0 returned. finish reason: [stop]
+2026-05-03 03:18:32.160 [info] ccreq:2d4d5542.copilotmd | success | claude-sonnet-4.6 -> claude-sonnet-4-6 | 2533ms | [panel/editAgent]
+2026-05-03 03:18:33.265 [info] message 0 returned. finish reason: [stop]
+2026-05-03 03:18:33.267 [info] request done: requestId: [bd93dcca-0b72-40b1-a094-b1cdad2e4952] model deployment ID: []
+2026-05-03 03:18:33.268 [info] ccreq:df46226b.copilotmd | success | gpt-4o-mini -> gpt-4o-mini-2024-07-18 | 1037ms | [copilotLanguageModelWrapper]
+2026-05-03 03:18:33.686 [info] message 0 returned. finish reason: [stop]
+2026-05-03 03:18:33.687 [info] request done: requestId: [76973290-8ebc-40d3-b88f-fe3ddf66d5ff] model deployment ID: []
+2026-05-03 03:18:33.688 [info] ccreq:52d0afc5.copilotmd | success | gpt-4o-mini -> gpt-4o-mini-2024-07-18 | 1004ms | [copilotLanguageModelWrapper]
+2026-05-03 03:19:04.220 [info] [messagesAPI] message 0 returned. finish reason: [stop]
+2026-05-03 03:19:04.232 [info] ccreq:2d836fbd.copilotmd | success | claude-sonnet-4.6 -> claude-sonnet-4-6 | 4520ms | [panel/editAgent]
+2026-05-03 03:19:04.251 [info] [ToolCallingLoop] Stop hook result: shouldContinue=false, reasons=undefined
+2026-05-03 04:25:12.169 [info] Logged in as mamunuj
+2026-05-03 04:25:12.612 [info] Got Copilot token for mamunuj
+2026-05-03 04:25:12.612 [info] Copilot Chat: 0.42.2, VS Code: 1.114.0
+2026-05-03 04:25:12.624 [info] AuthenticationService: firing onDidAuthenticationChange from handleAuthChangeEvent. Has token: true
+2026-05-03 04:25:12.624 [info] copilot token sku: copilot_for_business_seat_quota
+2026-05-03 04:25:12.624 [info] ConversationFeature: onDidAuthenticationChange has token: true
+2026-05-03 04:25:12.625 [warning] Copilot preview features are disabled by organizational policy. Learn more: https://aka.ms/github-copilot-org-enable-features
+2026-05-03 04:25:12.918 [info] Fetched model metadata in 296ms 149f4b3d-b671-484a-930f-548096b0da51
+2026-05-03 04:25:12.981 [info] ccreq:dcba1a20.copilotmd | markdown
+2026-05-03 04:26:49.312 [info] message 0 returned. finish reason: [stop]
+2026-05-03 04:26:49.315 [info] request done: requestId: [0874f7b6-9284-4e68-aeeb-08ad669e1648] model deployment ID: []
+2026-05-03 04:26:49.316 [info] ccreq:ef1c36b4.copilotmd | success | gpt-4o-mini -> gpt-4o-mini-2024-07-18 | 1142ms | [copilotLanguageModelWrapper]
+2026-05-03 04:26:49.834 [info] message 0 returned. finish reason: [stop]
+2026-05-03 04:26:49.835 [info] request done: requestId: [d62a32af-3a41-4483-abf7-9a81bf4d08ac] model deployment ID: []
+2026-05-03 04:26:49.836 [info] ccreq:2e776339.copilotmd | success | gpt-4o-mini -> gpt-4o-mini-2024-07-18 | 1174ms | [copilotLanguageModelWrapper]
+2026-05-03 04:26:49.982 [info] [messagesAPI] message 0 returned. finish reason: [stop]
+2026-05-03 04:26:49.994 [info] ccreq:87e26322.copilotmd | success | claude-sonnet-4.6 -> claude-sonnet-4-6 | 5443ms | [panel/editAgent]
+2026-05-03 04:26:51.203 [info] Fetched content exclusion rules in 787ms
+2026-05-03 04:26:51.203 [info] ccreq:489135cb.copilotmd | markdown
+2026-05-03 04:26:55.267 [info] [messagesAPI] message 0 returned. finish reason: [stop]
+2026-05-03 04:26:55.278 [info] ccreq:b04147f9.copilotmd | success | claude-sonnet-4.6 -> claude-sonnet-4-6 | 4946ms | [panel/editAgent]
+2026-05-03 04:26:59.768 [info] [messagesAPI] message 0 returned. finish reason: [stop]
+2026-05-03 04:26:59.781 [info] ccreq:7191623a.copilotmd | success | claude-sonnet-4.6 -> claude-sonnet-4-6 | 4314ms | [panel/editAgent]
+2026-05-03 04:28:55.721 [info] message 0 returned. finish reason: [stop]
+2026-05-03 04:28:55.724 [info] request done: requestId: [9004e790-2588-4cc1-82d3-834bcd0e2b9f] model deployment ID: []
+2026-05-03 04:28:55.725 [info] ccreq:eec23350.copilotmd | success | gpt-4o-mini -> gpt-4o-mini-2024-07-18 | 1080ms | [copilotLanguageModelWrapper]
+2026-05-03 04:28:55.809 [info] message 0 returned. finish reason: [stop]
+2026-05-03 04:28:55.811 [info] request done: requestId: [a7fe74d0-ac67-4555-b99b-25ae37e95317] model deployment ID: []
+2026-05-03 04:28:55.812 [info] ccreq:bc069397.copilotmd | success | gpt-4o-mini -> gpt-4o-mini-2024-07-18 | 999ms | [copilotLanguageModelWrapper]
+2026-05-03 04:28:55.867 [info] [messagesAPI] message 0 returned. finish reason: [stop]
+2026-05-03 04:28:55.889 [info] ccreq:4daf73a4.copilotmd | success | claude-sonnet-4.6 -> claude-sonnet-4-6 | 115998ms | [panel/editAgent]
+2026-05-03 04:31:36.484 [info] [messagesAPI] message 0 returned. finish reason: [stop]
+2026-05-03 04:31:36.506 [info] ccreq:71eba0bd.copilotmd | success | claude-sonnet-4.6 -> claude-sonnet-4-6 | 158697ms | [panel/editAgent]
+2026-05-03 04:32:03.466 [info] message 0 returned. finish reason: [stop]
+2026-05-03 04:32:03.468 [info] request done: requestId: [dc784d14-7cc4-4145-ab08-55122b8b47c7] model deployment ID: []
+2026-05-03 04:32:03.469 [info] ccreq:22f4c7f2.copilotmd | success | gpt-4o-mini -> gpt-4o-mini-2024-07-18 | 1221ms | [copilotLanguageModelWrapper]
+2026-05-03 04:32:03.680 [info] message 0 returned. finish reason: [stop]
+2026-05-03 04:32:03.682 [info] request done: requestId: [1958a47f-e232-489b-b4e2-27bfbdd769a3] model deployment ID: []
+2026-05-03 04:32:03.683 [info] ccreq:f53b85bf.copilotmd | success | gpt-4o-mini -> gpt-4o-mini-2024-07-18 | 1253ms | [copilotLanguageModelWrapper]
+2026-05-03 04:32:03.766 [info] [messagesAPI] message 0 returned. finish reason: [stop]
+2026-05-03 04:32:03.777 [info] ccreq:478e3386.copilotmd | success | claude-sonnet-4.6 -> claude-sonnet-4-6 | 25628ms | [panel/editAgent]
+2026-05-03 04:32:07.855 [info] [messagesAPI] message 0 returned. finish reason: [stop]
+2026-05-03 04:32:07.867 [info] ccreq:4567fa43.copilotmd | success | claude-sonnet-4.6 -> claude-sonnet-4-6 | 3925ms | [panel/editAgent]
+2026-05-03 04:32:46.689 [info] [messagesAPI] message 0 returned. finish reason: [stop]
+2026-05-03 04:32:46.745 [info] ccreq:13d8cb59.copilotmd | success | claude-sonnet-4.6 -> claude-sonnet-4-6 | 38732ms | [panel/editAgent]
+2026-05-03 04:32:54.573 [info] [messagesAPI] message 0 returned. finish reason: [stop]
+2026-05-03 04:32:54.584 [info] ccreq:fb901081.copilotmd | success | claude-sonnet-4.6 -> claude-sonnet-4-6 | 5504ms | [panel/editAgent]
+2026-05-03 04:33:34.835 [info] [messagesAPI] message 0 returned. finish reason: [stop]
+2026-05-03 04:33:34.848 [info] ccreq:a2f7e1f5.copilotmd | success | claude-sonnet-4.6 -> claude-sonnet-4-6 | 40063ms | [panel/editAgent]
+2026-05-03 04:33:41.555 [info] [messagesAPI] message 0 returned. finish reason: [stop]
+2026-05-03 04:33:41.567 [info] ccreq:d4056021.copilotmd | success | claude-sonnet-4.6 -> claude-sonnet-4-6 | 5542ms | [panel/editAgent]
+2026-05-03 04:33:59.665 [info] [messagesAPI] message 0 returned. finish reason: [stop]
+2026-05-03 04:33:59.677 [info] ccreq:a1f8ab69.copilotmd | success | claude-sonnet-4.6 -> claude-sonnet-4-6 | 18016ms | [panel/editAgent]
+2026-05-03 04:34:04.114 [info] [messagesAPI] message 0 returned. finish reason: [stop]
+2026-05-03 04:34:04.125 [info] ccreq:90dee69f.copilotmd | success | claude-sonnet-4.6 -> claude-sonnet-4-6 | 3745ms | [panel/editAgent]
+2026-05-03 04:34:08.022 [info] [messagesAPI] message 0 returned. finish reason: [stop]
+2026-05-03 04:34:08.035 [info] ccreq:0cac12e6.copilotmd | success | claude-sonnet-4.6 -> claude-sonnet-4-6 | 3797ms | [panel/editAgent]
+2026-05-03 04:34:08.952 [info] message 0 returned. finish reason: [stop]
+2026-05-03 04:34:08.954 [info] request done: requestId: [5995b9c2-cb57-4ce3-a0a2-393a3c8f1e9b] model deployment ID: []
+2026-05-03 04:34:08.955 [info] ccreq:02ac3c22.copilotmd | success | gpt-4o-mini -> gpt-4o-mini-2024-07-18 | 698ms | [copilotLanguageModelWrapper]
+2026-05-03 04:34:09.321 [info] message 0 returned. finish reason: [stop]
+2026-05-03 04:34:09.323 [info] request done: requestId: [42dee12b-3748-44ff-866e-57559b3760f3] model deployment ID: []
+2026-05-03 04:34:09.324 [info] ccreq:5c9ed015.copilotmd | success | gpt-4o-mini -> gpt-4o-mini-2024-07-18 | 1106ms | [copilotLanguageModelWrapper]
+2026-05-03 04:34:35.863 [info] [messagesAPI] message 0 returned. finish reason: [stop]
+2026-05-03 04:34:35.875 [info] ccreq:f1dfe1d6.copilotmd | success | claude-sonnet-4.6 -> claude-sonnet-4-6 | 3776ms | [panel/editAgent]
+2026-05-03 04:34:41.150 [info] [messagesAPI] message 0 returned. finish reason: [stop]
+2026-05-03 04:34:41.163 [info] ccreq:2ad88ef0.copilotmd | success | claude-sonnet-4.6 -> claude-sonnet-4-6 | 5197ms | [panel/editAgent]
+2026-05-03 04:34:44.919 [info] [messagesAPI] message 0 returned. finish reason: [stop]
+2026-05-03 04:34:44.930 [info] ccreq:917b7d94.copilotmd | success | claude-sonnet-4.6 -> claude-sonnet-4-6 | 3590ms | [panel/editAgent]
+2026-05-03 04:34:48.313 [info] message 0 returned. finish reason: [stop]
+2026-05-03 04:34:48.315 [info] request done: requestId: [9dd09aa9-7a38-490d-aa70-33fc580e43fb] model deployment ID: []
+2026-05-03 04:34:48.315 [info] ccreq:0c4014c5.copilotmd | success | gpt-4o-mini -> gpt-4o-mini-2024-07-18 | 1006ms | [copilotLanguageModelWrapper]
+2026-05-03 04:34:49.087 [info] message 0 returned. finish reason: [stop]
+2026-05-03 04:34:49.089 [info] request done: requestId: [1391d383-4519-4966-832c-3eb83f157f57] model deployment ID: []
+2026-05-03 04:34:49.090 [info] ccreq:1f2192f3.copilotmd | success | gpt-4o-mini -> gpt-4o-mini-2024-07-18 | 1283ms | [copilotLanguageModelWrapper]
+2026-05-03 04:35:08.350 [info] [messagesAPI] message 0 returned. finish reason: [stop]
+2026-05-03 04:35:08.362 [info] ccreq:160a2f28.copilotmd | success | claude-sonnet-4.6 -> claude-sonnet-4-6 | 23320ms | [panel/editAgent]
+2026-05-03 04:35:14.167 [info] [messagesAPI] message 0 returned. finish reason: [stop]
+2026-05-03 04:35:14.179 [info] ccreq:22428396.copilotmd | success | claude-sonnet-4.6 -> claude-sonnet-4-6 | 5308ms | [panel/editAgent]
+2026-05-03 04:35:14.294 [info] Fetched model metadata in 101ms a3e70a8b-9bd1-4ecb-b22d-39ca37010724
+2026-05-03 04:35:14.298 [info] ccreq:ef350629.copilotmd | markdown
+2026-05-03 04:35:17.615 [info] message 0 returned. finish reason: [stop]
+2026-05-03 04:35:17.617 [info] request done: requestId: [bc60d7f5-ba40-4d35-baff-5224195a614a] model deployment ID: []
+2026-05-03 04:35:17.618 [info] ccreq:3ee225b8.copilotmd | success | gpt-4o-mini -> gpt-4o-mini-2024-07-18 | 1067ms | [copilotLanguageModelWrapper]
+2026-05-03 04:35:18.766 [info] message 0 returned. finish reason: [stop]
+2026-05-03 04:35:18.768 [info] request done: requestId: [085e2b5a-fe8b-470f-9300-ab340d8be538] model deployment ID: []
+2026-05-03 04:35:18.768 [info] ccreq:62a0e0e2.copilotmd | success | gpt-4o-mini -> gpt-4o-mini-2024-07-18 | 1734ms | [copilotLanguageModelWrapper]
+2026-05-03 04:35:22.547 [info] [messagesAPI] message 0 returned. finish reason: [stop]
+2026-05-03 04:35:22.556 [info] ccreq:07ff0e4a.copilotmd | success | claude-sonnet-4.6 -> claude-sonnet-4-6 | 8173ms | [panel/editAgent]
+2026-05-03 04:35:26.922 [info] [messagesAPI] message 0 returned. finish reason: [stop]
+2026-05-03 04:35:26.934 [info] ccreq:3cf73803.copilotmd | success | claude-sonnet-4.6 -> claude-sonnet-4-6 | 3990ms | [panel/editAgent]
+2026-05-03 04:35:30.293 [info] message 0 returned. finish reason: [stop]
+2026-05-03 04:35:30.295 [info] request done: requestId: [97c5e4fa-5627-4d8c-9d28-b22d1441a7b0] model deployment ID: []
+2026-05-03 04:35:30.296 [info] ccreq:c418a057.copilotmd | success | gpt-4o-mini -> gpt-4o-mini-2024-07-18 | 1066ms | [copilotLanguageModelWrapper]
+2026-05-03 04:35:30.778 [info] message 0 returned. finish reason: [stop]
+2026-05-03 04:35:30.780 [info] request done: requestId: [c6c2c12c-a017-43d6-a26d-88e184270d29] model deployment ID: []
+2026-05-03 04:35:30.781 [info] ccreq:5809f5be.copilotmd | success | gpt-4o-mini -> gpt-4o-mini-2024-07-18 | 1062ms | [copilotLanguageModelWrapper]
+2026-05-03 04:35:38.734 [info] [messagesAPI] message 0 returned. finish reason: [stop]
+2026-05-03 04:35:38.750 [info] ccreq:bba948f8.copilotmd | success | claude-sonnet-4.6 -> claude-sonnet-4-6 | 11719ms | [panel/editAgent]
+2026-05-03 04:35:38.781 [info] [ToolCallingLoop] Stop hook result: shouldContinue=false, reasons=undefined
+2026-05-03 04:38:22.923 [info] message 0 returned. finish reason: [stop]
+2026-05-03 04:38:22.926 [info] request done: requestId: [3794e14d-0676-444a-acda-485cc73805d1] model deployment ID: []
+2026-05-03 04:38:22.927 [info] ccreq:a36ab7aa.copilotmd | success | gpt-4o-mini -> gpt-4o-mini-2024-07-18 | 700ms | [copilotLanguageModelWrapper]
+2026-05-03 04:38:23.606 [info] message 0 returned. finish reason: [stop]
+2026-05-03 04:38:23.608 [info] request done: requestId: [bbfd4e4d-6609-417e-ab04-efc4a7f29d40] model deployment ID: []
+2026-05-03 04:38:23.609 [info] ccreq:2d088fd4.copilotmd | success | gpt-4o-mini -> gpt-4o-mini-2024-07-18 | 1105ms | [copilotLanguageModelWrapper]
+2026-05-03 04:38:29.500 [info] [messagesAPI] message 0 returned. finish reason: [stop]
+2026-05-03 04:38:29.512 [info] ccreq:30642b9e.copilotmd | success | claude-sonnet-4.6 -> claude-sonnet-4-6 | 11230ms | [panel/editAgent]
+2026-05-03 04:38:29.528 [info] [ToolCallingLoop] Stop hook result: shouldContinue=false, reasons=undefined
+2026-05-03 05:19:00.022 [info] Fetched content exclusion rules in 626ms
+2026-05-03 05:19:00.022 [info] ccreq:cd29d873.copilotmd | markdown
+2026-05-03 07:53:18.292 [info] Logged in as mamunuj
+2026-05-03 07:53:18.846 [info] Got Copilot token for mamunuj
+2026-05-03 07:53:18.846 [info] Copilot Chat: 0.42.2, VS Code: 1.114.0
+2026-05-03 07:53:18.858 [info] AuthenticationService: firing onDidAuthenticationChange from handleAuthChangeEvent. Has token: true
+2026-05-03 07:53:18.858 [info] copilot token sku: copilot_for_business_seat_quota
+2026-05-03 07:53:18.858 [info] ConversationFeature: onDidAuthenticationChange has token: true
+2026-05-03 07:53:18.859 [warning] Copilot preview features are disabled by organizational policy. Learn more: https://aka.ms/github-copilot-org-enable-features
+2026-05-03 07:53:19.167 [info] Fetched model metadata in 311ms 6212f316-2b3c-4b3d-bf65-2fe9bb0899bf
+2026-05-03 07:53:19.231 [info] ccreq:fd063355.copilotmd | markdown
+2026-05-03 07:53:53.803 [info] Fetched content exclusion rules in 893ms
+2026-05-03 07:53:53.804 [info] ccreq:7ee79192.copilotmd | markdown
+2026-05-03 07:53:58.156 [info] message 0 returned. finish reason: [stop]
+2026-05-03 07:53:58.159 [info] request done: requestId: [da1d2ba1-469d-441b-8f0e-f8aa83806fc8] model deployment ID: []
+2026-05-03 07:53:58.160 [info] ccreq:5f3cb8f7.copilotmd | success | gpt-4o-mini -> gpt-4o-mini-2024-07-18 | 1082ms | [copilotLanguageModelWrapper]
+2026-05-03 07:53:58.225 [info] message 0 returned. finish reason: [stop]
+2026-05-03 07:53:58.227 [info] request done: requestId: [a5567217-2369-4521-8a79-21ef947a9a9d] model deployment ID: []
+2026-05-03 07:53:58.228 [info] ccreq:9cf4ed00.copilotmd | success | gpt-4o-mini -> gpt-4o-mini-2024-07-18 | 1089ms | [copilotLanguageModelWrapper]
+2026-05-03 07:54:06.365 [info] [messagesAPI] message 0 returned. finish reason: [stop]
+2026-05-03 07:54:06.389 [info] ccreq:e5629824.copilotmd | success | claude-sonnet-4.6 -> claude-sonnet-4-6 | 13013ms | [panel/editAgent]
+2026-05-03 07:54:06.413 [info] [ToolCallingLoop] Stop hook result: shouldContinue=false, reasons=undefined
+2026-05-03 07:54:44.594 [info] message 0 returned. finish reason: [stop]
+2026-05-03 07:54:44.596 [info] request done: requestId: [0c0a1bad-b29c-48a9-b2cd-1ab4d59b55bc] model deployment ID: []
+2026-05-03 07:54:44.597 [info] ccreq:ce83837a.copilotmd | success | gpt-4o-mini -> gpt-4o-mini-2024-07-18 | 1163ms | [copilotLanguageModelWrapper]
+2026-05-03 07:54:45.088 [info] message 0 returned. finish reason: [stop]
+2026-05-03 07:54:45.090 [info] request done: requestId: [992ada83-9531-4f7b-935c-22059f1edcbf] model deployment ID: []
+2026-05-03 07:54:45.091 [info] ccreq:f3c8776c.copilotmd | success | gpt-4o-mini -> gpt-4o-mini-2024-07-18 | 1168ms | [copilotLanguageModelWrapper]
+2026-05-03 07:54:46.253 [info] [messagesAPI] message 0 returned. finish reason: [stop]
+2026-05-03 07:54:46.265 [info] ccreq:dfaff4f1.copilotmd | success | claude-sonnet-4.6 -> claude-sonnet-4-6 | 5839ms | [panel/editAgent]
+2026-05-03 07:54:46.279 [info] [ToolCallingLoop] Stop hook result: shouldContinue=false, reasons=undefined
+2026-05-03 08:01:32.781 [info] message 0 returned. finish reason: [stop]
+2026-05-03 08:01:32.784 [info] request done: requestId: [edb8bffc-ed36-46a3-83fc-01da098c094b] model deployment ID: []
+2026-05-03 08:01:32.785 [info] ccreq:ab54da6e.copilotmd | success | gpt-4o-mini -> gpt-4o-mini-2024-07-18 | 1101ms | [copilotLanguageModelWrapper]
+2026-05-03 08:01:32.786 [info] message 0 returned. finish reason: [stop]
+2026-05-03 08:01:32.788 [info] request done: requestId: [29ac6df8-d229-4f7e-bfb3-60524d5d48ae] model deployment ID: []
+2026-05-03 08:01:32.788 [info] ccreq:28a34944.copilotmd | success | gpt-4o-mini -> gpt-4o-mini-2024-07-18 | 1116ms | [copilotLanguageModelWrapper]
+2026-05-03 08:01:34.273 [info] [messagesAPI] message 0 returned. finish reason: [stop]
+2026-05-03 08:01:34.285 [info] ccreq:a99727ce.copilotmd | success | claude-sonnet-4.6 -> claude-sonnet-4-6 | 5591ms | [panel/editAgent]
+2026-05-03 08:01:34.301 [info] [ToolCallingLoop] Stop hook result: shouldContinue=false, reasons=undefined
+2026-05-03 08:02:15.048 [info] message 0 returned. finish reason: [stop]
+2026-05-03 08:02:15.050 [info] request done: requestId: [65d2062a-61ea-4d6f-a69d-fd393dd47e2c] model deployment ID: []
+2026-05-03 08:02:15.051 [info] ccreq:f23f3839.copilotmd | success | gpt-4o-mini -> gpt-4o-mini-2024-07-18 | 1149ms | [copilotLanguageModelWrapper]
+2026-05-03 08:02:15.343 [info] message 0 returned. finish reason: [stop]
+2026-05-03 08:02:15.345 [info] request done: requestId: [7c5dd7ea-00b3-42db-8fab-698cd42a9fb4] model deployment ID: []
+2026-05-03 08:02:15.345 [info] ccreq:82fefe68.copilotmd | success | gpt-4o-mini -> gpt-4o-mini-2024-07-18 | 1146ms | [copilotLanguageModelWrapper]
+2026-05-03 08:02:18.439 [info] [messagesAPI] message 0 returned. finish reason: [stop]
+2026-05-03 08:02:18.451 [info] ccreq:df4888e2.copilotmd | success | claude-sonnet-4.6 -> claude-sonnet-4-6 | 7563ms | [panel/editAgent]
+2026-05-03 08:02:18.475 [info] [ToolCallingLoop] Stop hook result: shouldContinue=false, reasons=undefined
+2026-05-03 08:05:09.993 [info] Fetched model metadata in 99ms f868e3f3-98d0-4dad-8951-5220160b5241
+2026-05-03 08:05:10.062 [info] ccreq:643ac557.copilotmd | markdown
+2026-05-03 08:05:30.908 [info] message 0 returned. finish reason: [stop]
+2026-05-03 08:05:30.910 [info] request done: requestId: [2b075e48-20de-40fb-bb32-302cbc4a9d0a] model deployment ID: []
+2026-05-03 08:05:30.911 [info] ccreq:13cda735.copilotmd | success | gpt-4o-mini -> gpt-4o-mini-2024-07-18 | 1175ms | [copilotLanguageModelWrapper]
+2026-05-03 08:05:31.104 [info] message 0 returned. finish reason: [stop]
+2026-05-03 08:05:31.106 [info] request done: requestId: [0ef85ece-9ca2-4718-894c-757c202cdc87] model deployment ID: []
+2026-05-03 08:05:31.107 [info] ccreq:75d0f43f.copilotmd | success | gpt-4o-mini -> gpt-4o-mini-2024-07-18 | 1158ms | [copilotLanguageModelWrapper]
+2026-05-03 08:05:36.958 [info] [messagesAPI] message 0 returned. finish reason: [stop]
+2026-05-03 08:05:36.969 [info] ccreq:3a19bcea.copilotmd | success | claude-sonnet-4.6 -> claude-sonnet-4-6 | 26456ms | [panel/editAgent]
+2026-05-03 08:05:42.819 [info] message 0 returned. finish reason: [stop]
+2026-05-03 08:05:42.821 [info] request done: requestId: [b7f2e5d3-ad31-4605-a3dd-b6dcc330d27a] model deployment ID: []
+2026-05-03 08:05:42.822 [info] ccreq:d21f4d80.copilotmd | success | gpt-4o-mini -> gpt-4o-mini-2024-07-18 | 1101ms | [copilotLanguageModelWrapper]
+2026-05-03 08:05:42.944 [info] message 0 returned. finish reason: [stop]
+2026-05-03 08:05:42.946 [info] request done: requestId: [426bec7e-a4db-40bb-b2e5-037880850c75] model deployment ID: []
+2026-05-03 08:05:42.946 [info] ccreq:35d8e328.copilotmd | success | gpt-4o-mini -> gpt-4o-mini-2024-07-18 | 1715ms | [copilotLanguageModelWrapper]
+2026-05-03 08:05:43.857 [info] [messagesAPI] message 0 returned. finish reason: [stop]
+2026-05-03 08:05:43.861 [info] ccreq:71a3ce26.copilotmd | success | claude-sonnet-4.6 -> claude-sonnet-4-6 | 6490ms | [panel/editAgent]
+2026-05-03 08:05:43.875 [info] [ToolCallingLoop] Stop hook result: shouldContinue=false, reasons=undefined
+2026-05-03 08:06:16.231 [info] message 0 returned. finish reason: [stop]
+2026-05-03 08:06:16.233 [info] request done: requestId: [5325ea91-9ad5-41cd-af6d-dea68cbaeb55] model deployment ID: []
+2026-05-03 08:06:16.234 [info] ccreq:2f9fe366.copilotmd | success | gpt-4o-mini -> gpt-4o-mini-2024-07-18 | 997ms | [copilotLanguageModelWrapper]
+2026-05-03 08:06:20.111 [info] message 0 returned. finish reason: [stop]
+2026-05-03 08:06:20.114 [info] request done: requestId: [23551452-ec5e-4e0f-b1a9-f7e76d66e311] model deployment ID: []
+2026-05-03 08:06:20.114 [info] ccreq:2a5f8d0d.copilotmd | success | gpt-4o-mini -> gpt-4o-mini-2024-07-18 | 1155ms | [copilotLanguageModelWrapper]
+2026-05-03 08:06:20.160 [info] message 0 returned. finish reason: [stop]
+2026-05-03 08:06:20.162 [info] request done: requestId: [2e2fc6b1-0e22-4fe0-a031-48353875979b] model deployment ID: []
+2026-05-03 08:06:20.163 [info] ccreq:0190bcc2.copilotmd | success | gpt-4o-mini -> gpt-4o-mini-2024-07-18 | 1092ms | [copilotLanguageModelWrapper]
+2026-05-03 08:06:20.165 [info] [messagesAPI] message 0 returned. finish reason: [stop]
+2026-05-03 08:06:20.175 [info] ccreq:433f977f.copilotmd | success | claude-sonnet-4.6 -> claude-sonnet-4-6 | 4451ms | [panel/editAgent]
+2026-05-03 08:06:20.194 [info] [ToolCallingLoop] Stop hook result: shouldContinue=false, reasons=undefined
+2026-05-03 08:07:45.135 [info] message 0 returned. finish reason: [stop]
+2026-05-03 08:07:45.138 [info] request done: requestId: [4885afb1-5d0f-4bee-8509-daf54d9d855b] model deployment ID: []
+2026-05-03 08:07:45.138 [info] ccreq:9ea4012e.copilotmd | success | gpt-4o-mini -> gpt-4o-mini-2024-07-18 | 1188ms | [copilotLanguageModelWrapper]
+2026-05-03 08:07:45.452 [info] message 0 returned. finish reason: [stop]
+2026-05-03 08:07:45.454 [info] request done: requestId: [fff9c87e-c69b-4f20-b60f-6fd0e184bedb] model deployment ID: []
+2026-05-03 08:07:45.454 [info] ccreq:9e850acf.copilotmd | success | gpt-4o-mini -> gpt-4o-mini-2024-07-18 | 1250ms | [copilotLanguageModelWrapper]
+2026-05-03 08:07:46.418 [info] [messagesAPI] message 0 returned. finish reason: [stop]
+2026-05-03 08:07:46.431 [info] ccreq:93b591eb.copilotmd | success | claude-sonnet-4.6 -> claude-sonnet-4-6 | 5737ms | [panel/editAgent]
+2026-05-03 08:07:46.446 [info] [ToolCallingLoop] Stop hook result: shouldContinue=false, reasons=undefined
+2026-05-03 08:09:45.180 [info] message 0 returned. finish reason: [stop]
+2026-05-03 08:09:45.182 [info] request done: requestId: [f5e77b30-67d6-4af3-b960-849f7b31dfa1] model deployment ID: []
+2026-05-03 08:09:45.183 [info] ccreq:b82cc625.copilotmd | success | gpt-4o-mini -> gpt-4o-mini-2024-07-18 | 1158ms | [copilotLanguageModelWrapper]
+2026-05-03 08:09:45.659 [info] message 0 returned. finish reason: [stop]
+2026-05-03 08:09:45.661 [info] request done: requestId: [2e16d5fc-8179-47c2-999e-e1e910d8c53d] model deployment ID: []
+2026-05-03 08:09:45.661 [info] ccreq:09cb0339.copilotmd | success | gpt-4o-mini -> gpt-4o-mini-2024-07-18 | 1153ms | [copilotLanguageModelWrapper]
+2026-05-03 08:09:46.754 [info] [messagesAPI] message 0 returned. finish reason: [stop]
+2026-05-03 08:09:46.775 [info] ccreq:d624337d.copilotmd | success | claude-sonnet-4.6 -> claude-sonnet-4-6 | 5643ms | [panel/editAgent]
+2026-05-03 08:09:46.793 [info] [ToolCallingLoop] Stop hook result: shouldContinue=false, reasons=undefined
+2026-05-03 08:11:19.773 [info] message 0 returned. finish reason: [stop]
+2026-05-03 08:11:19.776 [info] request done: requestId: [01e27f87-9c77-42e6-91e0-125122ea4e7f] model deployment ID: []
+2026-05-03 08:11:19.777 [info] ccreq:a6469f59.copilotmd | success | gpt-4o-mini -> gpt-4o-mini-2024-07-18 | 1169ms | [copilotLanguageModelWrapper]
+2026-05-03 08:11:19.940 [info] message 0 returned. finish reason: [stop]
+2026-05-03 08:11:19.942 [info] request done: requestId: [ce62b2bc-b351-4c4c-add9-e2a7ecb2f3f7] model deployment ID: []
+2026-05-03 08:11:19.942 [info] ccreq:e1c06b36.copilotmd | success | gpt-4o-mini -> gpt-4o-mini-2024-07-18 | 1169ms | [copilotLanguageModelWrapper]
+2026-05-03 08:11:21.519 [info] [messagesAPI] message 0 returned. finish reason: [stop]
+2026-05-03 08:11:21.532 [info] ccreq:4e3ee739.copilotmd | success | claude-sonnet-4.6 -> claude-sonnet-4-6 | 6486ms | [panel/editAgent]
+2026-05-03 08:11:21.547 [info] [ToolCallingLoop] Stop hook result: shouldContinue=false, reasons=undefined
+2026-05-03 08:14:57.561 [info] Logged in as mamunuj
+2026-05-03 08:14:57.981 [info] Got Copilot token for mamunuj
+2026-05-03 08:14:57.981 [info] Copilot Chat: 0.42.2, VS Code: 1.114.0
+2026-05-03 08:14:58.002 [info] AuthenticationService: firing onDidAuthenticationChange from handleAuthChangeEvent. Has token: true
+2026-05-03 08:14:58.002 [info] copilot token sku: copilot_for_business_seat_quota
+2026-05-03 08:14:58.002 [info] ConversationFeature: onDidAuthenticationChange has token: true
+2026-05-03 08:14:58.004 [warning] Copilot preview features are disabled by organizational policy. Learn more: https://aka.ms/github-copilot-org-enable-features
+2026-05-03 08:14:58.513 [info] Fetched model metadata in 513ms b83e8012-e2c3-487c-adf2-ba3e1016e3e5
+2026-05-03 08:14:58.517 [info] ccreq:c920950a.copilotmd | markdown
+2026-05-03 08:15:02.455 [info] message 0 returned. finish reason: [stop]
+2026-05-03 08:15:02.458 [info] request done: requestId: [fc9d1135-dbbb-4993-986f-6af25aa5ab67] model deployment ID: []
+2026-05-03 08:15:02.459 [info] ccreq:53f51a28.copilotmd | success | gpt-4o-mini -> gpt-4o-mini-2024-07-18 | 1170ms | [copilotLanguageModelWrapper]
+2026-05-03 08:15:02.653 [info] message 0 returned. finish reason: [stop]
+2026-05-03 08:15:02.655 [info] request done: requestId: [4dc70ccc-addf-4cbc-bb58-43c6468b43d5] model deployment ID: []
+2026-05-03 08:15:02.656 [info] ccreq:df9faf22.copilotmd | success | gpt-4o-mini -> gpt-4o-mini-2024-07-18 | 1208ms | [copilotLanguageModelWrapper]
+2026-05-03 08:15:03.151 [info] [messagesAPI] message 0 returned. finish reason: [stop]
+2026-05-03 08:15:03.167 [info] ccreq:c7bf7b64.copilotmd | success | claude-sonnet-4.6 -> claude-sonnet-4-6 | 5622ms | [panel/editAgent]
+2026-05-03 08:15:03.184 [info] [ToolCallingLoop] Stop hook result: shouldContinue=false, reasons=undefined
+2026-05-03 08:17:18.918 [info] message 0 returned. finish reason: [stop]
+2026-05-03 08:17:18.921 [info] request done: requestId: [fa903368-15ad-443e-903c-af20d89f5e29] model deployment ID: []
+2026-05-03 08:17:18.921 [info] ccreq:ac0af7fa.copilotmd | success | gpt-4o-mini -> gpt-4o-mini-2024-07-18 | 1165ms | [copilotLanguageModelWrapper]
+2026-05-03 08:17:18.946 [info] message 0 returned. finish reason: [stop]
+2026-05-03 08:17:18.947 [info] request done: requestId: [dafbd4e0-0c78-407b-bcb6-2a0755be4ac7] model deployment ID: []
+2026-05-03 08:17:18.948 [info] ccreq:9d0c8c11.copilotmd | success | gpt-4o-mini -> gpt-4o-mini-2024-07-18 | 1168ms | [copilotLanguageModelWrapper]
+2026-05-03 08:17:20.683 [info] [messagesAPI] message 0 returned. finish reason: [stop]
+2026-05-03 08:17:20.697 [info] ccreq:b31c0667.copilotmd | success | claude-sonnet-4.6 -> claude-sonnet-4-6 | 12636ms | [panel/editAgent]
+2026-05-03 08:17:20.715 [info] [ToolCallingLoop] Stop hook result: shouldContinue=false, reasons=undefined
+2026-05-03 08:18:43.073 [info] message 0 returned. finish reason: [stop]
+2026-05-03 08:18:43.075 [info] request done: requestId: [3caa4662-ecda-41c9-a6a7-4061f525a135] model deployment ID: []
+2026-05-03 08:18:43.076 [info] ccreq:e05784be.copilotmd | success | gpt-4o-mini -> gpt-4o-mini-2024-07-18 | 1170ms | [copilotLanguageModelWrapper]
+2026-05-03 08:18:43.447 [info] message 0 returned. finish reason: [stop]
+2026-05-03 08:18:43.450 [info] request done: requestId: [c792de78-72cd-4566-b562-e8d34ce50fd0] model deployment ID: []
+2026-05-03 08:18:43.451 [info] ccreq:526ff53d.copilotmd | success | gpt-4o-mini -> gpt-4o-mini-2024-07-18 | 1234ms | [copilotLanguageModelWrapper]
+2026-05-03 08:18:46.426 [info] [messagesAPI] message 0 returned. finish reason: [stop]
+2026-05-03 08:18:46.436 [info] ccreq:cec04c33.copilotmd | success | claude-sonnet-4.6 -> claude-sonnet-4-6 | 10854ms | [panel/editAgent]
+2026-05-03 08:18:46.455 [info] [ToolCallingLoop] Stop hook result: shouldContinue=false, reasons=undefined
+2026-05-03 08:20:34.307 [info] message 0 returned. finish reason: [stop]
+2026-05-03 08:20:34.313 [info] request done: requestId: [9de8145e-d906-4b4b-8c44-4a3086bcb93f] model deployment ID: []
+2026-05-03 08:20:34.314 [info] ccreq:459b600b.copilotmd | success | gpt-4o-mini -> gpt-4o-mini-2024-07-18 | 1055ms | [copilotLanguageModelWrapper]
+2026-05-03 08:20:34.539 [info] message 0 returned. finish reason: [stop]
+2026-05-03 08:20:34.541 [info] request done: requestId: [7af941f7-39c1-4343-9406-11026313b1ee] model deployment ID: []
+2026-05-03 08:20:34.542 [info] ccreq:f4bb4ef2.copilotmd | success | gpt-4o-mini -> gpt-4o-mini-2024-07-18 | 1181ms | [copilotLanguageModelWrapper]
+2026-05-03 08:20:36.931 [info] [messagesAPI] message 0 returned. finish reason: [stop]
+2026-05-03 08:20:36.946 [info] ccreq:3ed95b0e.copilotmd | success | claude-sonnet-4.6 -> claude-sonnet-4-6 | 8922ms | [panel/editAgent]
+2026-05-03 08:20:36.961 [info] [ToolCallingLoop] Stop hook result: shouldContinue=false, reasons=undefined

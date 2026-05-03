@@ -1,0 +1,20 @@
+{
+    "editor.fontSize": 18,
+    "workbench.startupEditor": "none",
+    "workbench.sideBar.location": "left",
+    "window.zoomLevel": 2,
+    "chat.mcp.autostart": "newAndOutdated",
+    "github.copilot.nextEditSuggestions.enabled": true,
+    "chat.useAgentSkills": true,
+    "files.simpleDialog.enable": true,
+    "http.proxy": "http://proxy-dmz.intel.com:912",
+    "http.proxyStrictSSL": false,
+    "http.proxySupport": "on",
+    "editor.mouseWheelZoom": true,
+    "python.defaultInterpreterPath": "/usr/intel/bin/python3.13.2",
+    "extensions.autoUpdate": false,
+    "window.openFoldersInNewWindow": "off",
+    "window.openFilesInNewWindow": "off",
+    "window.restoreWindows": "none",
+    "window.newWindowDimensions": "inherit"
+}

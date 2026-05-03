@@ -1,0 +1,8 @@
+2026-05-01 20:27:38.198 [info] update#setState idle
+2026-05-01 20:27:39.227 [error] vscode-file: Refused to load resource /nfs/site/disks/crt_tools_0105/vscode/1.109.3/resources/app/extensions/theme-seti/icons/seti.woff from vscode-file: protocol (original URL: vscode-file://vscode-app/nfs/site/disks/crt_tools_0105/vscode/1.109.3/resources/app/extensions/theme-seti/icons/seti.woff)
+2026-05-01 20:28:08.203 [info] update#setState checking for updates
+2026-05-01 20:28:08.271 [info] update#setState available for download
+2026-05-01 20:28:10.304 [info] Extension host with pid 21252 exited with code: 0, signal: unknown.
+2026-05-01 20:28:10.361 [error] [UtilityProcess id: 1, type: fileWatcher, pid: 20247]: crashed with code 15 and reason 'killed'
+2026-05-01 20:28:43.682 [info] Extension host with pid 4482 exited with code: 0, signal: unknown.
+2026-05-01 20:28:52.389 [info] Extension host with pid 18411 exited with code: 0, signal: unknown.

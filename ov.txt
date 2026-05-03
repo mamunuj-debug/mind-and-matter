@@ -1,0 +1,8 @@
+[TOOLVERSION]
+    autobots_common_agents = latest
+    cth.ai = 2026.03.p006
+    cth_r2g.ai = latest
+    autobots_sdk = 2.3.1.p003
+    vscode_cth = 1.114.0
+[TOOLBUNDLE]
+    r2g_all += cth_r2g.ai

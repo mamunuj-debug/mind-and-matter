@@ -1,0 +1,8 @@
+2026-05-01 20:32:30.378 [info] Starting server autoda
+2026-05-01 20:32:30.378 [info] Connection state: Starting
+2026-05-01 20:32:30.636 [info] Starting server from LocalProcess extension host
+2026-05-01 20:32:30.641 [info] Connection state: Running
+2026-05-01 20:32:32.023 [info] 405 status sending message to https://autoda.intel.com/mcp, will attempt to fall back to legacy SSE
+2026-05-01 20:32:33.022 [info] Discovered 3 tools
+2026-05-01 20:34:17.669 [warning] Extension host shut down, server will stop.
+2026-05-01 20:34:17.669 [info] Connection state: Stopped

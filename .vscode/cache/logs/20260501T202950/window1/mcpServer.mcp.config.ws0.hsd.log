@@ -1,0 +1,10 @@
+2026-05-01 20:32:30.395 [info] Starting server hsd
+2026-05-01 20:32:30.395 [info] Connection state: Starting
+2026-05-01 20:32:30.639 [info] Starting server from LocalProcess extension host
+2026-05-01 20:32:31.127 [info] Connection state: Starting
+2026-05-01 20:32:31.127 [info] Connection state: Running
+2026-05-01 20:32:36.199 [info] Waiting for server to respond to `initialize` request...
+2026-05-01 20:32:41.127 [info] Waiting for server to respond to `initialize` request...
+2026-05-01 20:32:43.714 [info] Discovered 23 tools
+2026-05-01 20:34:17.686 [warning] Extension host shut down, server will stop.
+2026-05-01 20:34:17.686 [info] Connection state: Stopped

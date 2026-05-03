@@ -1,0 +1,8 @@
+2026-05-03 03:17:48.120 [info] Starting server splunk
+2026-05-03 03:17:48.120 [info] Connection state: Starting
+2026-05-03 03:17:48.257 [info] Starting server from LocalProcess extension host
+2026-05-03 03:17:48.811 [info] Connection state: Starting
+2026-05-03 03:17:48.811 [info] Connection state: Running
+2026-05-03 03:17:53.897 [info] Waiting for server to respond to `initialize` request...
+2026-05-03 03:17:58.812 [info] Waiting for server to respond to `initialize` request...
+2026-05-03 03:17:59.810 [info] Discovered 2 tools

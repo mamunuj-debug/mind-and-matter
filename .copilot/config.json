@@ -1,0 +1,10 @@
+{
+  "banner": "never",
+  "model": "gpt-4.1",
+  "render_markdown": true,
+  "screen_reader": false,
+  "theme": "auto",
+  "trusted_folders": [
+    "/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17"
+  ]
+}

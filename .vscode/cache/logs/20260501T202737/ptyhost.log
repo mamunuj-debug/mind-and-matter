@@ -1,0 +1,9 @@
+2026-05-01 20:27:44.177 [warning] Shell integration cannot be enabled for executable "/bin/tcsh" and args undefined
+2026-05-01 20:28:11.557 [info] Revived process, old id 2831709b44803294814a984d697ec489-1 -> new id 2
+2026-05-01 20:28:11.557 [info] Revived process, old id 2831709b44803294814a984d697ec489-3 -> new id 3
+2026-05-01 20:28:11.570 [info] Expanding terminal instance, old id 2831709b44803294814a984d697ec489-1 -> new id 2
+2026-05-01 20:28:12.765 [warning] Persistent process "2": Process had no disconnect runners but was an orphan
+2026-05-01 20:28:12.765 [info] Persistent process reconnection "2"
+2026-05-01 20:28:12.767 [warning] Shell integration cannot be enabled for executable "/bin/tcsh" and args undefined
+2026-05-01 20:28:12.775 [info] Persistent process "2": Replaying 5805 chars and 1 size events
+2026-05-01 20:28:14.715 [warning] Shell integration cannot be enabled for executable "/bin/tcsh" and args undefined

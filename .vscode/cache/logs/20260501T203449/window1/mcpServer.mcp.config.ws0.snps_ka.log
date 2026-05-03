@@ -1,0 +1,8 @@
+2026-05-03 03:17:48.119 [info] Starting server snps_ka
+2026-05-03 03:17:48.120 [info] Connection state: Starting
+2026-05-03 03:17:48.257 [info] Starting server from LocalProcess extension host
+2026-05-03 03:17:48.810 [info] Connection state: Starting
+2026-05-03 03:17:48.811 [info] Connection state: Running
+2026-05-03 03:17:53.828 [info] Waiting for server to respond to `initialize` request...
+2026-05-03 03:17:58.812 [info] Waiting for server to respond to `initialize` request...
+2026-05-03 03:17:59.619 [info] Discovered 7 tools

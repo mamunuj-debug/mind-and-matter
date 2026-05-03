@@ -1,0 +1,26 @@
+2026-05-01 20:32:30.384 [info] Starting server crt
+2026-05-01 20:32:30.384 [info] Connection state: Starting
+2026-05-01 20:32:30.637 [info] Starting server from LocalProcess extension host
+2026-05-01 20:32:30.705 [info] Connection state: Starting
+2026-05-01 20:32:30.705 [info] Connection state: Running
+2026-05-01 20:32:33.019 [warning] [server stderr] /p/hdk/pu_tu/prd/autobots_common_agents/latest/autobots/crt/mcp/server.py:46: FutureWarning: The 'autobots_base' module is deprecated and will be removed in v3.0+. Please use 'autobots_sdk.base' instead.
+2026-05-01 20:32:33.019 [warning] [server stderr]   from autobots_base.adk.agents.base_agent import AutobotsADK_LLMAgent
+2026-05-01 20:32:33.019 [warning] [server stderr] /p/hdk/pu_tu/prd/autobots_sdk/2.3.1.p003/autobots_sdk/util/deprecations.py:8: FutureWarning: The 'autobots_base.adk' module is deprecated and will be removed in v3.0+. Please use 'autobots_sdk.base.adk' instead.
+2026-05-01 20:32:33.020 [warning] [server stderr]   warnings.warn(
+2026-05-01 20:32:35.705 [info] Waiting for server to respond to `initialize` request...
+2026-05-01 20:32:40.705 [info] Waiting for server to respond to `initialize` request...
+2026-05-01 20:32:45.705 [info] Waiting for server to respond to `initialize` request...
+2026-05-01 20:32:47.738 [warning] [server stderr] /p/hdk/pu_tu/prd/autobots_sdk/2.3.1/venv_autobots/lib/python3.13/site-packages/google/cloud/aiplatform/models.py:52: FutureWarning: Support for google-cloud-storage < 3.0.0 will be removed in a future version of google-cloud-aiplatform. Please upgrade to google-cloud-storage >= 3.0.0.
+2026-05-01 20:32:47.739 [warning] [server stderr]   from google.cloud.aiplatform.utils import gcs_utils
+2026-05-01 20:32:50.725 [info] Waiting for server to respond to `initialize` request...
+2026-05-01 20:32:55.705 [info] Waiting for server to respond to `initialize` request...
+2026-05-01 20:33:00.705 [info] Waiting for server to respond to `initialize` request...
+2026-05-01 20:33:04.418 [warning] [server stderr] /p/hdk/pu_tu/prd/autobots_sdk/2.3.1.p003/autobots_sdk/util/deprecations.py:8: FutureWarning: The 'autobots_base.mcp' module is deprecated and will be removed in v3.0+. Please use 'autobots_sdk.base.mcp' instead.
+2026-05-01 20:33:04.418 [warning] [server stderr]   warnings.warn(
+2026-05-01 20:33:05.201 [warning] [server stderr] /p/hdk/pu_tu/prd/autobots_sdk/2.3.1.p003/autobots_sdk/util/deprecations.py:8: FutureWarning: The 'autobots_base.models' module is deprecated and will be removed in v3.0+. Please use 'autobots_sdk.base.models' instead.
+2026-05-01 20:33:05.201 [warning] [server stderr]   warnings.warn(
+2026-05-01 20:33:05.705 [info] Waiting for server to respond to `initialize` request...
+2026-05-01 20:33:10.705 [info] Waiting for server to respond to `initialize` request...
+2026-05-01 20:33:12.365 [info] Discovered 7 tools
+2026-05-01 20:34:17.676 [warning] Extension host shut down, server will stop.
+2026-05-01 20:34:17.677 [info] Connection state: Stopped

@@ -1,0 +1,10 @@
+2026-05-03 03:17:48.103 [info] Starting server confluence
+2026-05-03 03:17:48.103 [info] Connection state: Starting
+2026-05-03 03:17:48.255 [info] Starting server from LocalProcess extension host
+2026-05-03 03:17:48.269 [info] Connection state: Starting
+2026-05-03 03:17:48.269 [info] Connection state: Running
+2026-05-03 03:17:48.918 [warning] [server stderr] Traceback (most recent call last):
+2026-05-03 03:17:48.919 [warning] [server stderr]   File "/p/hdk/pu_tu/prd/autobots_common_agents/latest/autobots/confluence/mcp/server.py", line 22, in <module>
+2026-05-03 03:17:48.919 [warning] [server stderr]     from autobots_sdk.base.executors.knowledge_hub.wiki_data import fetch_wiki_page_content
+2026-05-03 03:17:48.919 [warning] [server stderr] ModuleNotFoundError: No module named 'autobots_sdk.base.executors.knowledge_hub.wiki_data'
+2026-05-03 03:17:48.997 [info] Connection state: Error Process exited with code 1

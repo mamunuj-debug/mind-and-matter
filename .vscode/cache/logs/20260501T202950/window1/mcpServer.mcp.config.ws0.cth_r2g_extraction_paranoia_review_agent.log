@@ -1,0 +1,10 @@
+2026-05-01 20:32:30.386 [info] Starting server cth_r2g_extraction_paranoia_review_agent
+2026-05-01 20:32:30.386 [info] Connection state: Starting
+2026-05-01 20:32:30.638 [info] Starting server from LocalProcess extension host
+2026-05-01 20:32:30.707 [info] Connection state: Starting
+2026-05-01 20:32:30.707 [info] Connection state: Running
+2026-05-01 20:32:35.707 [info] Waiting for server to respond to `initialize` request...
+2026-05-01 20:32:40.707 [info] Waiting for server to respond to `initialize` request...
+2026-05-01 20:32:42.402 [info] Discovered 4 tools
+2026-05-01 20:34:17.679 [warning] Extension host shut down, server will stop.
+2026-05-01 20:34:17.679 [info] Connection state: Stopped

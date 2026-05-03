@@ -1,0 +1,6 @@
+{
+    "name": "cth-ai-cth.ai",
+    "description": "CTH.AI plugin for cth.ai",
+    "agents": "agents/",
+    "skills": "skills/"
+}

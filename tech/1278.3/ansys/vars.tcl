@@ -1,0 +1,1 @@
+/p/hdk/cad/eou_tech_modules_1278/2025.06.p2/1278.3/ansys/vars.tcl

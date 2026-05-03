@@ -1,0 +1,12 @@
+# Restore original HOME immediately
+setenv HOME /nfs/site/home/mdmamunu
+# Source user tcshrc / cshrc if present
+if ( -f $HOME/.tcshrc ) then
+    source $HOME/.tcshrc
+else if ( -f $HOME/.cshrc ) then
+    source $HOME/.cshrc
+endif
+# Apply CTH.AI environment variables
+source /nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.cth.ai_plugins/mdmamunu_368_663451128/env.sh
+# Apply CTH.AI prompt
+source /nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.cth.ai_plugins/mdmamunu_368_663451128/prompt.sh

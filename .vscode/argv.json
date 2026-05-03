@@ -1,0 +1,11 @@
+{
+    "password-store": "basic",
+
+	// Allows to disable crash reporting.
+	// Should restart the app if the value is changed.
+	"enable-crash-reporter": true,
+
+	// Unique id used for correlating crash reports sent from this instance.
+	// Do not edit this value.
+	"crash-reporter-id": "485c3384-6693-4272-9849-f201dcd97a5b"
+}

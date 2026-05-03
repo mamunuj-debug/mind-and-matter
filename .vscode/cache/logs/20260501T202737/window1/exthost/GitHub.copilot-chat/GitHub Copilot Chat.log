@@ -1,0 +1,178 @@
+2026-05-01 20:27:43.420 [info] [GitExtensionServiceImpl] Initializing Git extension service.
+2026-05-01 20:27:43.420 [info] [GitExtensionServiceImpl] Successfully activated the vscode.git extension.
+2026-05-01 20:27:43.420 [info] [GitExtensionServiceImpl] Enablement state of the vscode.git extension: true.
+2026-05-01 20:27:43.420 [info] [GitExtensionServiceImpl] Successfully registered Git commit message provider.
+2026-05-01 20:27:43.420 [info] ConversationFeature: Waiting for copilot token to activate conversation feature
+2026-05-01 20:27:43.420 [info] [OTel] Instrumentation enabled — exporter=otlp-http endpoint=https://langfuse-otel-collector.malina.intel.com/ captureContent=true
+2026-05-01 20:27:43.420 [info] Creating node-pty shim: source=/nfs/site/disks/crt_tools_0105/vscode/1.114.0/resources/app/node_modules/node-pty/build/Release, dest=/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/extensions/github.copilot-chat-0.42.2/node_modules/@github/copilot/sdk/prebuilds/linux-x64
+2026-05-01 20:27:43.420 [info] Creating ripgrep shim: source=/nfs/site/disks/crt_tools_0105/vscode/1.114.0/resources/app/node_modules/@vscode/ripgrep/bin, dest=/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/extensions/github.copilot-chat-0.42.2/node_modules/@github/copilot/sdk/ripgrep/bin/linux-x64
+2026-05-01 20:27:43.420 [info] Using the Electron fetcher.
+2026-05-01 20:27:43.460 [error] Failed to create node-pty shim (source dir: /nfs/site/disks/crt_tools_0105/vscode/1.114.0/resources/app/node_modules/node-pty/build/Release, extension dir: /nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/extensions/github.copilot-chat-0.42.2/node_modules/@github/copilot/sdk/prebuilds/linux-x64): Error: ENOENT: no such file or directory, mkdir '/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/extensions/github.copilot-chat-0.42.2/node_modules/@github/copilot/sdk/prebuilds'
+2026-05-01 20:27:43.460 [error] [CopilotCLISession] Failed to load @github/copilot/sdk: Error: ENOENT: no such file or directory, mkdir '/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/extensions/github.copilot-chat-0.42.2/node_modules/@github/copilot/sdk/prebuilds'
+2026-05-01 20:27:43.460 [error] [CopilotCLISession] Failed to load @github/copilot/sdk: Error: ENOENT: no such file or directory, mkdir '/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/extensions/github.copilot-chat-0.42.2/node_modules/@github/copilot/sdk/prebuilds'
+2026-05-01 20:27:43.460 [error] [CopilotCLISession] Failed to load @github/copilot/sdk: Error: ENOENT: no such file or directory, mkdir '/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/extensions/github.copilot-chat-0.42.2/node_modules/@github/copilot/sdk/prebuilds'
+2026-05-01 20:27:43.460 [error] [CopilotCLISession] Failed to load @github/copilot/sdk: Error: ENOENT: no such file or directory, mkdir '/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/extensions/github.copilot-chat-0.42.2/node_modules/@github/copilot/sdk/prebuilds'
+2026-05-01 20:27:43.460 [error] [CopilotCLISDK] Failed to initialize logger: Error: ENOENT: no such file or directory, mkdir '/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/extensions/github.copilot-chat-0.42.2/node_modules/@github/copilot/sdk/prebuilds'
+2026-05-01 20:27:43.461 [error] Failed to initialize Copilot CLI Session Manager: Error: ENOENT: no such file or directory, mkdir '/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/extensions/github.copilot-chat-0.42.2/node_modules/@github/copilot/sdk/prebuilds'
+2026-05-01 20:27:43.462 [error] [CopilotCLIAgents] Failed to fetch custom agents: Error: ENOENT: no such file or directory, mkdir '/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/extensions/github.copilot-chat-0.42.2/node_modules/@github/copilot/sdk/prebuilds'
+2026-05-01 20:27:43.462 [error] [CopilotCLIModels] Failed to fetch available models: Error: ENOENT: no such file or directory, mkdir '/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/extensions/github.copilot-chat-0.42.2/node_modules/@github/copilot/sdk/prebuilds'
+2026-05-01 20:27:43.462 [error] Failed to get all sessions: Error: ENOENT: no such file or directory, mkdir '/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/extensions/github.copilot-chat-0.42.2/node_modules/@github/copilot/sdk/prebuilds'
+2026-05-01 20:27:43.528 [error] Failed to create ripgrep shim (vscode dir: /nfs/site/disks/crt_tools_0105/vscode/1.114.0/resources/app/node_modules/@vscode/ripgrep/bin, extension dir: /nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/extensions/github.copilot-chat-0.42.2/node_modules/@github/copilot/sdk/ripgrep/bin/linux-x64): Error: ENOENT: no such file or directory, mkdir '/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/extensions/github.copilot-chat-0.42.2/node_modules/@github/copilot/sdk/ripgrep'
+2026-05-01 20:27:43.536 [info] [CopilotCLI] MCP server started. Lock file: /nfs/site/home/mdmamunu/.copilot/ide/b7916ad5-c35b-46bc-9c15-603892d50a0d.lock
+2026-05-01 20:27:43.536 [info] [CopilotCLI] Server URI: unix:/tmp/mcp-I67Nfd/mcp.sock#%2Fmcp
+2026-05-01 20:27:43.707 [info] Logged in as mamunuj
+2026-05-01 20:27:43.745 [error] [CopilotCLISession] Failed to load @github/copilot/sdk: Error: ENOENT: no such file or directory, mkdir '/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/extensions/github.copilot-chat-0.42.2/node_modules/@github/copilot/sdk/prebuilds'
+2026-05-01 20:27:43.745 [error] [CopilotCLIAgents] Failed to fetch custom agents: Error: ENOENT: no such file or directory, mkdir '/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/extensions/github.copilot-chat-0.42.2/node_modules/@github/copilot/sdk/prebuilds'
+2026-05-01 20:27:44.180 [info] Got Copilot token for mamunuj
+2026-05-01 20:27:44.180 [info] Copilot Chat: 0.42.2, VS Code: 1.114.0
+2026-05-01 20:27:44.354 [info] [context keys] Setting context key: github.copilot-chat.activated
+2026-05-01 20:27:44.355 [info] activationBlocker from 'languageModelAccess' took for 1227ms
+2026-05-01 20:27:44.535 [error] [CopilotCLISession] Failed to load @github/copilot/sdk: Error: ENOENT: no such file or directory, mkdir '/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/extensions/github.copilot-chat-0.42.2/node_modules/@github/copilot/sdk/prebuilds'
+2026-05-01 20:27:44.535 [error] [CopilotCLIAgents] Failed to fetch custom agents: Error: ENOENT: no such file or directory, mkdir '/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/extensions/github.copilot-chat-0.42.2/node_modules/@github/copilot/sdk/prebuilds'
+2026-05-01 20:27:44.889 [info] AuthenticationService: firing onDidAuthenticationChange from handleAuthChangeEvent. Has token: true
+2026-05-01 20:27:44.889 [info] copilot token sku: copilot_for_business_seat_quota
+2026-05-01 20:27:44.889 [info] ConversationFeature: Activating contributions
+2026-05-01 20:27:44.889 [info] GitHub.vscode-pull-request-github extension is not yet activated.
+2026-05-01 20:27:44.906 [info] Registering default platform agent...
+2026-05-01 20:27:44.906 [info] ConversationFeature: onDidAuthenticationChange has token: true
+2026-05-01 20:27:44.913 [info] activationBlocker from 'conversationFeature' took for 1792ms
+2026-05-01 20:27:45.062 [warning] Copilot preview features are disabled by organizational policy. Learn more: https://aka.ms/github-copilot-org-enable-features
+2026-05-01 20:27:45.062 [info] GithubAvailableEmbeddingTypesManager: Got embeddings. Primary: metis-1024-I16-Binary. Deprecated: 
+2026-05-01 20:27:45.065 [info] WorkspaceChunkSearchService: using embedding type metis-1024-I16-Binary
+2026-05-01 20:27:45.197 [info] Fetched model metadata in 2052ms d8d16cd9-d86c-4ca0-af2f-273ffe72f2e4
+2026-05-01 20:27:45.222 [error] Failed to get all sessions: Error: ENOENT: no such file or directory, mkdir '/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/extensions/github.copilot-chat-0.42.2/node_modules/@github/copilot/sdk/prebuilds'
+2026-05-01 20:27:45.225 [info] Latest entry: ccreq:latest.copilotmd
+2026-05-01 20:27:45.225 [info] ccreq:1abf4d5b.copilotmd | markdown
+2026-05-01 20:27:45.261 [error] Failed to get all sessions: Error: ENOENT: no such file or directory, mkdir '/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/extensions/github.copilot-chat-0.42.2/node_modules/@github/copilot/sdk/prebuilds'
+2026-05-01 20:27:45.842 [error] [CopilotCLISession] Failed to load @github/copilot/sdk: Error: ENOENT: no such file or directory, mkdir '/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/extensions/github.copilot-chat-0.42.2/node_modules/@github/copilot/sdk/prebuilds'
+2026-05-01 20:27:45.842 [error] [CopilotCLIAgents] Failed to fetch custom agents: Error: ENOENT: no such file or directory, mkdir '/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/extensions/github.copilot-chat-0.42.2/node_modules/@github/copilot/sdk/prebuilds'
+2026-05-01 20:27:46.185 [error] [CopilotCLISession] Failed to load @github/copilot/sdk: Error: ENOENT: no such file or directory, mkdir '/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/extensions/github.copilot-chat-0.42.2/node_modules/@github/copilot/sdk/prebuilds'
+2026-05-01 20:27:46.185 [error] [CopilotCLIAgents] Failed to fetch custom agents: Error: ENOENT: no such file or directory, mkdir '/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/extensions/github.copilot-chat-0.42.2/node_modules/@github/copilot/sdk/prebuilds'
+2026-05-01 20:27:46.266 [error] [CopilotCLISession] Failed to load @github/copilot/sdk: Error: ENOENT: no such file or directory, mkdir '/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/extensions/github.copilot-chat-0.42.2/node_modules/@github/copilot/sdk/prebuilds'
+2026-05-01 20:27:46.266 [error] [CopilotCLIAgents] Failed to fetch custom agents: Error: ENOENT: no such file or directory, mkdir '/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/extensions/github.copilot-chat-0.42.2/node_modules/@github/copilot/sdk/prebuilds'
+2026-05-01 20:27:48.509 [info] Fetched content exclusion rules in 775ms
+2026-05-01 20:27:48.509 [info] ccreq:80d3a61e.copilotmd | markdown
+2026-05-01 20:27:56.421 [error] Failed to get all sessions: Error: ENOENT: no such file or directory, mkdir '/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/extensions/github.copilot-chat-0.42.2/node_modules/@github/copilot/sdk/prebuilds'
+2026-05-01 20:28:13.908 [info] [GitExtensionServiceImpl] Initializing Git extension service.
+2026-05-01 20:28:13.983 [info] ConversationFeature: Waiting for copilot token to activate conversation feature
+2026-05-01 20:28:13.990 [info] [OTel] Instrumentation enabled — exporter=otlp-http endpoint=https://langfuse-otel-collector.malina.intel.com/ captureContent=true
+2026-05-01 20:28:14.041 [info] Creating node-pty shim: source=/nfs/site/disks/crt_tools_0105/vscode/1.114.0/resources/app/node_modules/node-pty/build/Release, dest=/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/extensions/github.copilot-chat-0.42.2/node_modules/@github/copilot/sdk/prebuilds/linux-x64
+2026-05-01 20:28:14.041 [info] Creating ripgrep shim: source=/nfs/site/disks/crt_tools_0105/vscode/1.114.0/resources/app/node_modules/@vscode/ripgrep/bin, dest=/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/extensions/github.copilot-chat-0.42.2/node_modules/@github/copilot/sdk/ripgrep/bin/linux-x64
+2026-05-01 20:28:14.085 [info] [GitExtensionServiceImpl] Successfully activated the vscode.git extension.
+2026-05-01 20:28:14.085 [info] [GitExtensionServiceImpl] Enablement state of the vscode.git extension: true.
+2026-05-01 20:28:14.085 [info] [GitExtensionServiceImpl] Successfully registered Git commit message provider.
+2026-05-01 20:28:14.103 [info] Using the Electron fetcher.
+2026-05-01 20:28:14.230 [error] Failed to create node-pty shim (source dir: /nfs/site/disks/crt_tools_0105/vscode/1.114.0/resources/app/node_modules/node-pty/build/Release, extension dir: /nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/extensions/github.copilot-chat-0.42.2/node_modules/@github/copilot/sdk/prebuilds/linux-x64): Error: ENOENT: no such file or directory, mkdir '/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/extensions/github.copilot-chat-0.42.2/node_modules/@github/copilot/sdk/prebuilds'
+2026-05-01 20:28:14.231 [error] [CopilotCLISession] Failed to load @github/copilot/sdk: Error: ENOENT: no such file or directory, mkdir '/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/extensions/github.copilot-chat-0.42.2/node_modules/@github/copilot/sdk/prebuilds'
+2026-05-01 20:28:14.231 [error] [CopilotCLISession] Failed to load @github/copilot/sdk: Error: ENOENT: no such file or directory, mkdir '/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/extensions/github.copilot-chat-0.42.2/node_modules/@github/copilot/sdk/prebuilds'
+2026-05-01 20:28:14.231 [error] [CopilotCLISession] Failed to load @github/copilot/sdk: Error: ENOENT: no such file or directory, mkdir '/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/extensions/github.copilot-chat-0.42.2/node_modules/@github/copilot/sdk/prebuilds'
+2026-05-01 20:28:14.231 [error] [CopilotCLISession] Failed to load @github/copilot/sdk: Error: ENOENT: no such file or directory, mkdir '/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/extensions/github.copilot-chat-0.42.2/node_modules/@github/copilot/sdk/prebuilds'
+2026-05-01 20:28:14.231 [error] [CopilotCLISession] Failed to load @github/copilot/sdk: Error: ENOENT: no such file or directory, mkdir '/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/extensions/github.copilot-chat-0.42.2/node_modules/@github/copilot/sdk/prebuilds'
+2026-05-01 20:28:14.231 [error] [CopilotCLISession] Failed to load @github/copilot/sdk: Error: ENOENT: no such file or directory, mkdir '/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/extensions/github.copilot-chat-0.42.2/node_modules/@github/copilot/sdk/prebuilds'
+2026-05-01 20:28:14.231 [error] [CopilotCLISDK] Failed to initialize logger: Error: ENOENT: no such file or directory, mkdir '/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/extensions/github.copilot-chat-0.42.2/node_modules/@github/copilot/sdk/prebuilds'
+2026-05-01 20:28:14.231 [error] Failed to initialize Copilot CLI Session Manager: Error: ENOENT: no such file or directory, mkdir '/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/extensions/github.copilot-chat-0.42.2/node_modules/@github/copilot/sdk/prebuilds'
+2026-05-01 20:28:14.231 [error] [CopilotCLIAgents] Failed to fetch custom agents: Error: ENOENT: no such file or directory, mkdir '/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/extensions/github.copilot-chat-0.42.2/node_modules/@github/copilot/sdk/prebuilds'
+2026-05-01 20:28:14.231 [error] [CopilotCLIModels] Failed to fetch available models: Error: ENOENT: no such file or directory, mkdir '/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/extensions/github.copilot-chat-0.42.2/node_modules/@github/copilot/sdk/prebuilds'
+2026-05-01 20:28:14.231 [error] [CopilotCLIAgents] Failed to fetch custom agents: Error: ENOENT: no such file or directory, mkdir '/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/extensions/github.copilot-chat-0.42.2/node_modules/@github/copilot/sdk/prebuilds'
+2026-05-01 20:28:14.231 [error] [CopilotCLIAgents] Failed to fetch custom agents: Error: ENOENT: no such file or directory, mkdir '/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/extensions/github.copilot-chat-0.42.2/node_modules/@github/copilot/sdk/prebuilds'
+2026-05-01 20:28:14.231 [error] Failed to get all sessions: Error: ENOENT: no such file or directory, mkdir '/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/extensions/github.copilot-chat-0.42.2/node_modules/@github/copilot/sdk/prebuilds'
+2026-05-01 20:28:14.284 [error] Failed to create ripgrep shim (vscode dir: /nfs/site/disks/crt_tools_0105/vscode/1.114.0/resources/app/node_modules/@vscode/ripgrep/bin, extension dir: /nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/extensions/github.copilot-chat-0.42.2/node_modules/@github/copilot/sdk/ripgrep/bin/linux-x64): Error: ENOENT: no such file or directory, mkdir '/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/extensions/github.copilot-chat-0.42.2/node_modules/@github/copilot/sdk/ripgrep'
+2026-05-01 20:28:14.292 [info] [CopilotCLI] MCP server started. Lock file: /nfs/site/home/mdmamunu/.copilot/ide/d042de08-97a0-4d51-bbb2-b12852f3a117.lock
+2026-05-01 20:28:14.292 [info] [CopilotCLI] Server URI: unix:/tmp/mcp-mAVea7/mcp.sock#%2Fmcp
+2026-05-01 20:28:14.431 [info] Logged in as mamunuj
+2026-05-01 20:28:14.943 [info] Got Copilot token for mamunuj
+2026-05-01 20:28:14.943 [info] Copilot Chat: 0.42.2, VS Code: 1.114.0
+2026-05-01 20:28:15.190 [info] [context keys] Setting context key: github.copilot-chat.activated
+2026-05-01 20:28:15.191 [info] activationBlocker from 'languageModelAccess' took for 1244ms
+2026-05-01 20:28:15.329 [info] Fetched model metadata in 1366ms b47c20a7-3a3e-4d30-a2a3-612ad52d0716
+2026-05-01 20:28:15.349 [error] [CopilotCLISession] Failed to load @github/copilot/sdk: Error: ENOENT: no such file or directory, mkdir '/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/extensions/github.copilot-chat-0.42.2/node_modules/@github/copilot/sdk/prebuilds'
+2026-05-01 20:28:15.349 [error] [CopilotCLIAgents] Failed to fetch custom agents: Error: ENOENT: no such file or directory, mkdir '/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/extensions/github.copilot-chat-0.42.2/node_modules/@github/copilot/sdk/prebuilds'
+2026-05-01 20:28:15.351 [info] Latest entry: ccreq:latest.copilotmd
+2026-05-01 20:28:15.352 [info] ccreq:564c95f9.copilotmd | markdown
+2026-05-01 20:28:15.437 [info] Logged in as mamunuj
+2026-05-01 20:28:15.529 [info] AuthenticationService: firing onDidAuthenticationChange from handleAuthChangeEvent. Has token: true
+2026-05-01 20:28:15.529 [info] copilot token sku: copilot_for_business_seat_quota
+2026-05-01 20:28:15.529 [info] ConversationFeature: Activating contributions
+2026-05-01 20:28:15.529 [info] GitHub.vscode-pull-request-github extension is not yet activated.
+2026-05-01 20:28:15.546 [info] Registering default platform agent...
+2026-05-01 20:28:15.546 [info] ConversationFeature: onDidAuthenticationChange has token: true
+2026-05-01 20:28:15.553 [info] activationBlocker from 'conversationFeature' took for 1611ms
+2026-05-01 20:28:15.607 [warning] Copilot preview features are disabled by organizational policy. Learn more: https://aka.ms/github-copilot-org-enable-features
+2026-05-01 20:28:15.608 [info] GithubAvailableEmbeddingTypesManager: Got embeddings. Primary: metis-1024-I16-Binary. Deprecated: 
+2026-05-01 20:28:15.612 [info] WorkspaceChunkSearchService: using embedding type metis-1024-I16-Binary
+2026-05-01 20:28:15.945 [error] Failed to get all sessions: Error: ENOENT: no such file or directory, mkdir '/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/extensions/github.copilot-chat-0.42.2/node_modules/@github/copilot/sdk/prebuilds'
+2026-05-01 20:28:15.953 [info] Fetched model metadata in 425ms 07c27a71-a38b-49ee-b72b-36841ab27105
+2026-05-01 20:28:16.033 [info] ccreq:4360d83b.copilotmd | markdown
+2026-05-01 20:28:16.042 [info] Got Copilot token for mamunuj
+2026-05-01 20:28:16.042 [info] Copilot Chat: 0.42.2, VS Code: 1.114.0
+2026-05-01 20:28:16.080 [error] Failed to get all sessions: Error: ENOENT: no such file or directory, mkdir '/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/extensions/github.copilot-chat-0.42.2/node_modules/@github/copilot/sdk/prebuilds'
+2026-05-01 20:28:16.124 [info] AuthenticationService: firing onDidAuthenticationChange from handleAuthChangeEvent. Has token: true
+2026-05-01 20:28:16.124 [info] copilot token sku: copilot_for_business_seat_quota
+2026-05-01 20:28:16.124 [info] ConversationFeature: onDidAuthenticationChange has token: true
+2026-05-01 20:28:16.126 [warning] Copilot preview features are disabled by organizational policy. Learn more: https://aka.ms/github-copilot-org-enable-features
+2026-05-01 20:28:16.338 [info] Fetched model metadata in 216ms 2ab5407b-a632-459c-9248-5af32c059880
+2026-05-01 20:28:16.447 [info] ccreq:09e0dffc.copilotmd | markdown
+2026-05-01 20:28:16.463 [error] [CopilotCLISession] Failed to load @github/copilot/sdk: Error: ENOENT: no such file or directory, mkdir '/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/extensions/github.copilot-chat-0.42.2/node_modules/@github/copilot/sdk/prebuilds'
+2026-05-01 20:28:16.463 [error] [CopilotCLIAgents] Failed to fetch custom agents: Error: ENOENT: no such file or directory, mkdir '/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/extensions/github.copilot-chat-0.42.2/node_modules/@github/copilot/sdk/prebuilds'
+2026-05-01 20:28:16.481 [error] [CopilotCLISession] Failed to load @github/copilot/sdk: Error: ENOENT: no such file or directory, mkdir '/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/extensions/github.copilot-chat-0.42.2/node_modules/@github/copilot/sdk/prebuilds'
+2026-05-01 20:28:16.481 [error] [CopilotCLIAgents] Failed to fetch custom agents: Error: ENOENT: no such file or directory, mkdir '/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/extensions/github.copilot-chat-0.42.2/node_modules/@github/copilot/sdk/prebuilds'
+2026-05-01 20:28:16.507 [error] [CopilotCLISession] Failed to load @github/copilot/sdk: Error: ENOENT: no such file or directory, mkdir '/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/extensions/github.copilot-chat-0.42.2/node_modules/@github/copilot/sdk/prebuilds'
+2026-05-01 20:28:16.507 [error] [CopilotCLIAgents] Failed to fetch custom agents: Error: ENOENT: no such file or directory, mkdir '/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/extensions/github.copilot-chat-0.42.2/node_modules/@github/copilot/sdk/prebuilds'
+2026-05-01 20:28:16.518 [error] [CopilotCLISession] Failed to load @github/copilot/sdk: Error: ENOENT: no such file or directory, mkdir '/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/extensions/github.copilot-chat-0.42.2/node_modules/@github/copilot/sdk/prebuilds'
+2026-05-01 20:28:16.518 [error] [CopilotCLIAgents] Failed to fetch custom agents: Error: ENOENT: no such file or directory, mkdir '/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/extensions/github.copilot-chat-0.42.2/node_modules/@github/copilot/sdk/prebuilds'
+2026-05-01 20:28:47.643 [info] [GitExtensionServiceImpl] Initializing Git extension service.
+2026-05-01 20:28:47.665 [info] [GitExtensionServiceImpl] Successfully activated the vscode.git extension.
+2026-05-01 20:28:47.665 [info] [GitExtensionServiceImpl] Enablement state of the vscode.git extension: true.
+2026-05-01 20:28:47.665 [info] [GitExtensionServiceImpl] Successfully registered Git commit message provider.
+2026-05-01 20:28:47.785 [info] ConversationFeature: Waiting for copilot token to activate conversation feature
+2026-05-01 20:28:47.792 [info] [OTel] Instrumentation enabled — exporter=otlp-http endpoint=https://langfuse-otel-collector.malina.intel.com/ captureContent=true
+2026-05-01 20:28:47.797 [info] Creating node-pty shim: source=/nfs/site/disks/crt_tools_0105/vscode/1.114.0/resources/app/node_modules/node-pty/build/Release, dest=/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/extensions/github.copilot-chat-0.42.2/node_modules/@github/copilot/sdk/prebuilds/linux-x64
+2026-05-01 20:28:47.797 [info] Creating ripgrep shim: source=/nfs/site/disks/crt_tools_0105/vscode/1.114.0/resources/app/node_modules/@vscode/ripgrep/bin, dest=/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/extensions/github.copilot-chat-0.42.2/node_modules/@github/copilot/sdk/ripgrep/bin/linux-x64
+2026-05-01 20:28:47.816 [info] Using the Electron fetcher.
+2026-05-01 20:28:47.899 [error] Failed to create node-pty shim (source dir: /nfs/site/disks/crt_tools_0105/vscode/1.114.0/resources/app/node_modules/node-pty/build/Release, extension dir: /nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/extensions/github.copilot-chat-0.42.2/node_modules/@github/copilot/sdk/prebuilds/linux-x64): Error: ENOENT: no such file or directory, mkdir '/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/extensions/github.copilot-chat-0.42.2/node_modules/@github/copilot/sdk/prebuilds'
+2026-05-01 20:28:47.899 [error] [CopilotCLISession] Failed to load @github/copilot/sdk: Error: ENOENT: no such file or directory, mkdir '/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/extensions/github.copilot-chat-0.42.2/node_modules/@github/copilot/sdk/prebuilds'
+2026-05-01 20:28:47.899 [error] [CopilotCLISession] Failed to load @github/copilot/sdk: Error: ENOENT: no such file or directory, mkdir '/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/extensions/github.copilot-chat-0.42.2/node_modules/@github/copilot/sdk/prebuilds'
+2026-05-01 20:28:47.899 [error] [CopilotCLISession] Failed to load @github/copilot/sdk: Error: ENOENT: no such file or directory, mkdir '/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/extensions/github.copilot-chat-0.42.2/node_modules/@github/copilot/sdk/prebuilds'
+2026-05-01 20:28:47.899 [error] [CopilotCLISession] Failed to load @github/copilot/sdk: Error: ENOENT: no such file or directory, mkdir '/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/extensions/github.copilot-chat-0.42.2/node_modules/@github/copilot/sdk/prebuilds'
+2026-05-01 20:28:47.899 [error] [CopilotCLISession] Failed to load @github/copilot/sdk: Error: ENOENT: no such file or directory, mkdir '/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/extensions/github.copilot-chat-0.42.2/node_modules/@github/copilot/sdk/prebuilds'
+2026-05-01 20:28:47.899 [error] [CopilotCLISDK] Failed to initialize logger: Error: ENOENT: no such file or directory, mkdir '/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/extensions/github.copilot-chat-0.42.2/node_modules/@github/copilot/sdk/prebuilds'
+2026-05-01 20:28:47.899 [error] Failed to initialize Copilot CLI Session Manager: Error: ENOENT: no such file or directory, mkdir '/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/extensions/github.copilot-chat-0.42.2/node_modules/@github/copilot/sdk/prebuilds'
+2026-05-01 20:28:47.899 [error] [CopilotCLIAgents] Failed to fetch custom agents: Error: ENOENT: no such file or directory, mkdir '/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/extensions/github.copilot-chat-0.42.2/node_modules/@github/copilot/sdk/prebuilds'
+2026-05-01 20:28:47.899 [error] [CopilotCLIModels] Failed to fetch available models: Error: ENOENT: no such file or directory, mkdir '/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/extensions/github.copilot-chat-0.42.2/node_modules/@github/copilot/sdk/prebuilds'
+2026-05-01 20:28:47.899 [error] [CopilotCLIAgents] Failed to fetch custom agents: Error: ENOENT: no such file or directory, mkdir '/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/extensions/github.copilot-chat-0.42.2/node_modules/@github/copilot/sdk/prebuilds'
+2026-05-01 20:28:47.899 [error] Failed to get all sessions: Error: ENOENT: no such file or directory, mkdir '/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/extensions/github.copilot-chat-0.42.2/node_modules/@github/copilot/sdk/prebuilds'
+2026-05-01 20:28:47.905 [error] Failed to create ripgrep shim (vscode dir: /nfs/site/disks/crt_tools_0105/vscode/1.114.0/resources/app/node_modules/@vscode/ripgrep/bin, extension dir: /nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/extensions/github.copilot-chat-0.42.2/node_modules/@github/copilot/sdk/ripgrep/bin/linux-x64): Error: ENOENT: no such file or directory, mkdir '/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/extensions/github.copilot-chat-0.42.2/node_modules/@github/copilot/sdk/ripgrep'
+2026-05-01 20:28:47.907 [info] [CopilotCLI] MCP server started. Lock file: /nfs/site/home/mdmamunu/.copilot/ide/cec87a22-db28-4447-b01b-5b20535c2371.lock
+2026-05-01 20:28:47.907 [info] [CopilotCLI] Server URI: unix:/tmp/mcp-RxRixm/mcp.sock#%2Fmcp
+2026-05-01 20:28:47.981 [error] [CopilotCLISession] Failed to load @github/copilot/sdk: Error: ENOENT: no such file or directory, mkdir '/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/extensions/github.copilot-chat-0.42.2/node_modules/@github/copilot/sdk/prebuilds'
+2026-05-01 20:28:47.981 [error] [CopilotCLIAgents] Failed to fetch custom agents: Error: ENOENT: no such file or directory, mkdir '/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/extensions/github.copilot-chat-0.42.2/node_modules/@github/copilot/sdk/prebuilds'
+2026-05-01 20:28:47.986 [info] Logged in as mamunuj
+2026-05-01 20:28:48.364 [info] Got Copilot token for mamunuj
+2026-05-01 20:28:48.364 [info] Copilot Chat: 0.42.2, VS Code: 1.114.0
+2026-05-01 20:28:48.826 [info] [context keys] Setting context key: github.copilot-chat.activated
+2026-05-01 20:28:48.827 [info] activationBlocker from 'languageModelAccess' took for 1077ms
+2026-05-01 20:28:48.954 [info] Fetched model metadata in 1189ms abd646b2-8598-42cb-a308-ed554e67477c
+2026-05-01 20:28:49.003 [info] Latest entry: ccreq:latest.copilotmd
+2026-05-01 20:28:49.003 [info] ccreq:bd5ad49f.copilotmd | markdown
+2026-05-01 20:28:49.113 [info] AuthenticationService: firing onDidAuthenticationChange from handleAuthChangeEvent. Has token: true
+2026-05-01 20:28:49.113 [info] copilot token sku: copilot_for_business_seat_quota
+2026-05-01 20:28:49.113 [info] ConversationFeature: Activating contributions
+2026-05-01 20:28:49.113 [info] GitHub.vscode-pull-request-github extension is not yet activated.
+2026-05-01 20:28:49.129 [info] Registering default platform agent...
+2026-05-01 20:28:49.130 [info] ConversationFeature: onDidAuthenticationChange has token: true
+2026-05-01 20:28:49.136 [info] activationBlocker from 'conversationFeature' took for 1391ms
+2026-05-01 20:28:49.188 [warning] Copilot preview features are disabled by organizational policy. Learn more: https://aka.ms/github-copilot-org-enable-features
+2026-05-01 20:28:49.189 [info] GithubAvailableEmbeddingTypesManager: Got embeddings. Primary: metis-1024-I16-Binary. Deprecated: 
+2026-05-01 20:28:49.193 [info] WorkspaceChunkSearchService: using embedding type metis-1024-I16-Binary
+2026-05-01 20:28:49.274 [error] Failed to get all sessions: Error: ENOENT: no such file or directory, mkdir '/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/extensions/github.copilot-chat-0.42.2/node_modules/@github/copilot/sdk/prebuilds'
+2026-05-01 20:28:49.292 [error] Failed to get all sessions: Error: ENOENT: no such file or directory, mkdir '/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/extensions/github.copilot-chat-0.42.2/node_modules/@github/copilot/sdk/prebuilds'
+2026-05-01 20:28:49.293 [info] Fetched model metadata in 181ms e34eb22d-e94f-44c0-be6e-9e94eb95723f
+2026-05-01 20:28:49.334 [info] ccreq:d2650c6e.copilotmd | markdown
+2026-05-01 20:28:49.811 [error] [CopilotCLISession] Failed to load @github/copilot/sdk: Error: ENOENT: no such file or directory, mkdir '/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/extensions/github.copilot-chat-0.42.2/node_modules/@github/copilot/sdk/prebuilds'
+2026-05-01 20:28:49.811 [error] [CopilotCLIAgents] Failed to fetch custom agents: Error: ENOENT: no such file or directory, mkdir '/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/extensions/github.copilot-chat-0.42.2/node_modules/@github/copilot/sdk/prebuilds'
+2026-05-01 20:28:49.839 [error] [CopilotCLISession] Failed to load @github/copilot/sdk: Error: ENOENT: no such file or directory, mkdir '/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/extensions/github.copilot-chat-0.42.2/node_modules/@github/copilot/sdk/prebuilds'
+2026-05-01 20:28:49.839 [error] [CopilotCLIAgents] Failed to fetch custom agents: Error: ENOENT: no such file or directory, mkdir '/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/extensions/github.copilot-chat-0.42.2/node_modules/@github/copilot/sdk/prebuilds'
+2026-05-01 20:28:50.112 [error] [CopilotCLISession] Failed to load @github/copilot/sdk: Error: ENOENT: no such file or directory, mkdir '/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/extensions/github.copilot-chat-0.42.2/node_modules/@github/copilot/sdk/prebuilds'
+2026-05-01 20:28:50.112 [error] [CopilotCLIAgents] Failed to fetch custom agents: Error: ENOENT: no such file or directory, mkdir '/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/extensions/github.copilot-chat-0.42.2/node_modules/@github/copilot/sdk/prebuilds'
+2026-05-01 20:28:50.119 [error] [CopilotCLISession] Failed to load @github/copilot/sdk: Error: ENOENT: no such file or directory, mkdir '/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/extensions/github.copilot-chat-0.42.2/node_modules/@github/copilot/sdk/prebuilds'
+2026-05-01 20:28:50.119 [error] [CopilotCLIAgents] Failed to fetch custom agents: Error: ENOENT: no such file or directory, mkdir '/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.vscode/extensions/github.copilot-chat-0.42.2/node_modules/@github/copilot/sdk/prebuilds'

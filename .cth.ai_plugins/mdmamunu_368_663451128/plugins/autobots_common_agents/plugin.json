@@ -1,0 +1,6 @@
+{
+    "name": "cth-ai-autobots_common_agents",
+    "description": "CTH.AI plugin for autobots_common_agents",
+    "agents": "agents/",
+    "skills": "skills/"
+}

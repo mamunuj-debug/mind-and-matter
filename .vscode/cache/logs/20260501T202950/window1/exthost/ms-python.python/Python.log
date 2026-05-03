@@ -1,0 +1,17 @@
+2026-05-01 20:29:56.140 [info] Environment discovery is managed by the Python Environments extension (ms-python.vscode-python-envs). Check the "Python Environments" output channel for environment-specific logs.
+2026-05-01 20:29:56.316 [info] [test-by-project] Activating project-based testing mode
+2026-05-01 20:29:56.316 [info] [test-by-project] Discovering projects for workspace: /nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17
+2026-05-01 20:29:56.317 [info] Native locator: Refresh started
+2026-05-01 20:29:56.317 [info] [test-by-project] Found 1 total Python projects from API
+2026-05-01 20:29:56.317 [info] [test-by-project] Filtered to 1 projects in workspace
+2026-05-01 20:29:56.317 [info] [test-by-project] Creating adapter for: GHCP_WW17 at file:///nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17
+2026-05-01 20:29:56.318 [info] Native locator: Refresh started
+2026-05-01 20:29:58.541 [info] [test-by-project] Registered 1 project(s) for /nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17
+2026-05-01 20:29:58.541 [info] [test-by-project] Activated 1 project(s) for /nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17
+2026-05-01 20:29:58.541 [info] [test-by-project] Subscribed to Python project changes
+2026-05-01 20:29:59.138 [info] Native locator: Refresh finished in 2821 ms
+2026-05-01 20:29:59.155 [info] > pyenv which python
+2026-05-01 20:29:59.155 [info] cwd: .
+2026-05-01 20:29:59.311 [info] Active interpreter [/nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17]:  /nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.venv/bin/python
+2026-05-01 20:30:01.477 [info] Send text to terminal: source /nfs/site/disks/zsc14.xne_irw.085/mdmamunu/GHCP_WW17/.venv/bin/activate
+2026-05-01 20:30:02.362 [info] Starting Pylance language server.
