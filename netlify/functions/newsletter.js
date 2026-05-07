@@ -1,18 +1,18 @@
 // ── Mind & Matter — Weekly Newsletter (Scheduled) ───────────────────────────
 // Runs every Tuesday at 09:00 UTC via Netlify Scheduled Functions.
-// Configured in netlify.toml: [functions."newsletter"] schedule = "0 9 * * 2"
+// Schedule configured in netlify.toml: [functions."newsletter"] schedule = "0 9 * * 2"
+// Zero npm dependencies — uses Node built-in fetch + Resend REST API.
 //
-// Required environment variables:
-//   RESEND_API_KEY  — from resend.com
-//   FROM_EMAIL      — e.g. "Mind & Matter <hello@yourdomain.com>"
-//   URL             — set automatically by Netlify
+// Required env vars:
+//   RESEND_API_KEY      — from resend.com
+//   RESEND_AUDIENCE_ID  — Resend dashboard → Audiences → copy ID
+//   FROM_EMAIL          — e.g. "Mind & Matter <onboarding@resend.dev>"
 // ────────────────────────────────────────────────────────────────────────────
 
-const { getStore } = require('@netlify/blobs');
-
-const RESEND_API_KEY = process.env.RESEND_API_KEY || 'PASTE_YOUR_RESEND_KEY_HERE';
-const FROM_EMAIL     = process.env.FROM_EMAIL     || 'Mind & Matter <onboarding@resend.dev>';
-const SITE_URL       = (process.env.URL           || 'https://mind-and-matter-mamunuj.netlify.app').replace(/\/$/, '');
+const RESEND_API_KEY     = process.env.RESEND_API_KEY     || '';
+const RESEND_AUDIENCE_ID = process.env.RESEND_AUDIENCE_ID || '';
+const FROM_EMAIL         = process.env.FROM_EMAIL         || 'Mind & Matter <onboarding@resend.dev>';
+const SITE_URL           = (process.env.URL               || 'https://mind-and-matter-mamunuj.netlify.app').replace(/\/$/, '');
 
 exports.handler = async () => {
   if (!RESEND_API_KEY) {
@@ -20,21 +20,27 @@ exports.handler = async () => {
     return { statusCode: 500, body: JSON.stringify({ error: 'Email service not configured' }) };
   }
 
-  // ── Load all active subscribers ──────────────────────────────────────────
-  const store = getStore({ name: 'subscribers', consistency: 'strong' });
-  const { blobs } = await store.list();
+  // ── Load active subscribers from Resend Audience ─────────────────────────
+  if (!RESEND_AUDIENCE_ID) {
+    console.error('RESEND_AUDIENCE_ID not set — newsletter aborted');
+    return { statusCode: 500, body: JSON.stringify({ error: 'Audience not configured' }) };
+  }
 
-  const subscribers = [];
-  for (const blob of blobs) {
-    try {
-      const raw = await store.get(blob.key, { type: 'text' });
-      const sub = JSON.parse(raw);
-      if (sub && sub.active && sub.email) {
-        subscribers.push(sub);
-      }
-    } catch {
-      // skip malformed entries
+  let subscribers = [];
+  try {
+    const audienceRes = await fetch(`https://api.resend.com/audiences/${RESEND_AUDIENCE_ID}/contacts`, {
+      headers: { 'Authorization': `Bearer ${RESEND_API_KEY}` },
+    });
+    if (audienceRes.ok) {
+      const data = await audienceRes.json();
+      subscribers = (data.data || [])
+        .filter(c => !c.unsubscribed)
+        .map(c => ({ name: c.first_name || 'Reader', email: c.email }));
+    } else {
+      console.error('Failed to fetch audience contacts:', await audienceRes.text());
     }
+  } catch (err) {
+    console.error('Audience fetch error:', err.message);
   }
 
   if (!subscribers.length) {

@@ -1,11 +1,11 @@
 // ── Mind & Matter — Unsubscribe Function ────────────────────────────────────
 // GET /.netlify/functions/unsubscribe?t=<base64-encoded-email>
-// Renders a confirmation page and marks the subscriber inactive in Blobs.
+// Renders a confirmation page and marks the contact unsubscribed in Resend.
 // ────────────────────────────────────────────────────────────────────────────
 
-const { getStore } = require('@netlify/blobs');
-
-const SITE_URL = (process.env.URL || 'https://mind-and-matter-mamunuj.netlify.app').replace(/\/$/, '');
+const RESEND_API_KEY     = process.env.RESEND_API_KEY     || '';
+const RESEND_AUDIENCE_ID = process.env.RESEND_AUDIENCE_ID || '';
+const SITE_URL           = (process.env.URL || 'https://mind-and-matter-mamunuj.netlify.app').replace(/\/$/, '');
 
 exports.handler = async (event) => {
   const token = (event.queryStringParameters || {}).t || '';
@@ -23,15 +23,20 @@ exports.handler = async (event) => {
     return htmlResponse(400, page('Invalid Link', 'This unsubscribe link is malformed.', false));
   }
 
+  // ── Mark contact as unsubscribed in Resend Audience ─────────────────────
   try {
-    const store = getStore({ name: 'subscribers', consistency: 'strong' });
-    const raw   = await store.get(email, { type: 'text' }).catch(() => null);
-
-    if (raw) {
-      const sub = JSON.parse(raw);
-      sub.active          = false;
-      sub.unsubscribedAt  = new Date().toISOString();
-      await store.set(email, JSON.stringify(sub));
+    if (RESEND_API_KEY && RESEND_AUDIENCE_ID) {
+      const res = await fetch(`https://api.resend.com/audiences/${RESEND_AUDIENCE_ID}/contacts`, {
+        method:  'POST',
+        headers: {
+          'Authorization': `Bearer ${RESEND_API_KEY}`,
+          'Content-Type':  'application/json',
+        },
+        body: JSON.stringify({ email, unsubscribed: true }),
+      });
+      if (!res.ok) {
+        console.error('Resend unsubscribe error:', await res.text());
+      }
     }
     // Respond the same whether they existed or not (prevents email enumeration)
     return htmlResponse(200, page(

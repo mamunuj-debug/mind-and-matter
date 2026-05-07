@@ -1,18 +1,17 @@
 // ── Mind & Matter — Subscribe Function ──────────────────────────────────────
-// POST /.netlify/functions/subscribe
-// Body: { name: string, email: string }
+// POST /.netlify/functions/subscribe  |  Zero npm dependencies
+// Stores subscribers in Resend Audiences, sends welcome email via Resend API.
 //
-// Required environment variables (set in Netlify dashboard → Site config → Env vars):
-//   RESEND_API_KEY  — from resend.com (free tier: 3 000 emails/month)
-//   FROM_EMAIL      — e.g. "Mind & Matter <hello@yourdomain.com>"
-//   URL             — set automatically by Netlify (your site URL)
+// Required env vars (Netlify → Site → Settings → Environment variables):
+//   RESEND_API_KEY      — from resend.com
+//   RESEND_AUDIENCE_ID  — Resend dashboard → Audiences → create one → copy ID
+//   FROM_EMAIL          — e.g. "Mind & Matter <onboarding@resend.dev>"
 // ────────────────────────────────────────────────────────────────────────────
 
-const { getStore } = require('@netlify/blobs');
-
-const RESEND_API_KEY = process.env.RESEND_API_KEY || 'PASTE_YOUR_RESEND_KEY_HERE';
-const FROM_EMAIL     = process.env.FROM_EMAIL     || 'Mind & Matter <onboarding@resend.dev>';
-const SITE_URL       = (process.env.URL           || 'https://mind-and-matter-mamunuj.netlify.app').replace(/\/$/, '');
+const RESEND_API_KEY     = process.env.RESEND_API_KEY     || '';
+const RESEND_AUDIENCE_ID = process.env.RESEND_AUDIENCE_ID || '';
+const FROM_EMAIL         = process.env.FROM_EMAIL         || 'Mind & Matter <onboarding@resend.dev>';
+const SITE_URL           = (process.env.URL               || 'https://mind-and-matter-mamunuj.netlify.app').replace(/\/$/, '');
 
 const CORS_HEADERS = {
   'Access-Control-Allow-Origin':  '*',
@@ -46,28 +45,20 @@ exports.handler = async (event) => {
     return { statusCode: 400, headers: CORS_HEADERS, body: JSON.stringify({ error: 'Invalid email address' }) };
   }
 
+  // ── Add to Resend Audience (upsert — handles re-subscribes automatically) ─
   try {
-    // ── Duplicate check ───────────────────────────────────────────────────
-    const store = getStore({ name: 'subscribers', consistency: 'strong' });
-    const existing = await store.get(email, { type: 'text' }).catch(() => null);
-
-    if (existing) {
-      const sub = JSON.parse(existing);
-      if (sub.active) {
-        return { statusCode: 200, headers: CORS_HEADERS, body: JSON.stringify({ status: 'already_subscribed' }) };
+    if (RESEND_API_KEY && RESEND_AUDIENCE_ID) {
+      const audienceRes = await fetch(`https://api.resend.com/audiences/${RESEND_AUDIENCE_ID}/contacts`, {
+        method:  'POST',
+        headers: {
+          'Authorization': `Bearer ${RESEND_API_KEY}`,
+          'Content-Type':  'application/json',
+        },
+        body: JSON.stringify({ email, first_name: name, unsubscribed: false }),
+      });
+      if (!audienceRes.ok) {
+        console.error('Resend Audiences error:', await audienceRes.text());
       }
-      // Re-subscribe if they previously unsubscribed
-      sub.active = true;
-      sub.resubscribedAt = new Date().toISOString();
-      await store.set(email, JSON.stringify(sub));
-    } else {
-      // ── Save new subscriber ───────────────────────────────────────────
-      await store.set(email, JSON.stringify({
-        name,
-        email,
-        subscribedAt: new Date().toISOString(),
-        active: true,
-      }));
     }
 
     // ── Send welcome email via Resend ─────────────────────────────────────
