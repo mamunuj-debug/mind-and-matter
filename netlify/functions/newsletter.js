@@ -12,7 +12,7 @@
 const RESEND_API_KEY     = process.env.RESEND_API_KEY     || '';
 const RESEND_AUDIENCE_ID = process.env.RESEND_AUDIENCE_ID || '';
 const FROM_EMAIL         = process.env.FROM_EMAIL         || 'Mind & Matter <onboarding@resend.dev>';
-const SITE_URL           = (process.env.URL               || 'https://mind-and-matter-mamunuj.netlify.app').replace(/\/$/, '');
+const SITE_URL           = (process.env.URL               || 'https://mind-and-matter-blog.netlify.app').replace(//$/, '');
 
 exports.handler = async () => {
   if (!RESEND_API_KEY) {

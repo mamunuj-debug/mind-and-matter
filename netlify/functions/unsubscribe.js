@@ -5,7 +5,7 @@
 
 const RESEND_API_KEY     = process.env.RESEND_API_KEY     || '';
 const RESEND_AUDIENCE_ID = process.env.RESEND_AUDIENCE_ID || '';
-const SITE_URL           = (process.env.URL || 'https://mind-and-matter-mamunuj.netlify.app').replace(/\/$/, '');
+const SITE_URL           = (process.env.URL || 'https://mind-and-matter-blog.netlify.app').replace(/\/$/, '');
 
 exports.handler = async (event) => {
   const token = (event.queryStringParameters || {}).t || '';
