@@ -77,9 +77,11 @@ exports.handler = async (event) => {
           html:    buildWelcomeEmail(name, SITE_URL),
         }),
       });
+      const resText = await res.text();
       emailSent = res.ok;
       if (!res.ok) {
-        console.error('Resend welcome error:', await res.text());
+        console.error('Resend welcome error:', resText);
+        return { statusCode: 200, headers: CORS_HEADERS, body: JSON.stringify({ status: 'subscribed', emailSent: false, debug: resText }) };
       }
     }
 
