@@ -31,5 +31,6 @@ collections:
               - { label: "Emoji", name: "emoji", widget: "string", default: "🧪" }
               - { label: "Tag Color", name: "tagColor", widget: "string", default: "#38bdf8" }
               - { label: "Card Background", name: "background", widget: "string", default: "linear-gradient(135deg,#0d1a2b,#143a62)" }
+              - { label: "Cover Image URL", name: "coverImage", widget: "string", required: false, hint: "Optional. Full https:// URL of a header image. Used on Featured cards and at the top of the article modal." }
               - { label: "Preview", name: "preview", widget: "text" }
-              - { label: "Content", name: "content", widget: "text", hint: "Use a blank line between paragraphs." }
+              - { label: "Content", name: "content", widget: "text", hint: "Use a blank line between paragraphs. Inline images: ![alt text](https://image-url)" }
