@@ -63,45 +63,6 @@
     </div>
   </section>
 
-  <section class="section about-section" id="about">
-    <div class="section-header">
-      <span class="section-tag">About the Author</span>
-      <h2 class="section-title">Hi, I'm <span class="gradient-text">Md Mamunuj Zaman</span></h2>
-    </div>
-    <div class="about-grid">
-      <div class="about-card card-glow">
-        <div class="about-orbit"></div>
-        <div class="about-avatar">M</div>
-        <h3>Md Mamunuj Zaman</h3>
-        <p class="about-role">Science communicator · Semiconductor and advanced technology enthusiast</p>
-        <p>
-          I write about the ideas shaping the next decade: chip design, AI systems, quantum computing,
-          materials, climate tech, and space exploration. My goal is simple — turn difficult technical
-          breakthroughs into clear, engaging stories without losing the engineering depth.
-        </p>
-      </div>
-      <div class="about-panel">
-        <div class="about-highlights">
-          <div class="highlight-box">
-            <span class="highlight-label">Writing lens</span>
-            <h4>Engineer-friendly, reader-first</h4>
-            <p>Concise explainers, visual metaphors, and solid technical context.</p>
-          </div>
-          <div class="highlight-box">
-            <span class="highlight-label">Favorite beats</span>
-            <h4>Semiconductors, AI, energy, space</h4>
-            <p>Especially where deep research becomes practical technology.</p>
-          </div>
-          <div class="highlight-box">
-            <span class="highlight-label">Mission</span>
-            <h4>Make hard science feel exciting</h4>
-            <p>Each post is designed to feel cinematic, useful, and memorable.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- ── TICKER ── -->
   <div class="ticker-wrap">
     <div class="ticker">
@@ -118,53 +79,28 @@
     </div>
   </div>
 
+  <!-- ── LATEST POSTS ── -->
+  <section class="section" id="articles">
+    <div class="section-header">
+      <span class="section-tag">Latest Posts</span>
+      <h2 class="section-title">Fresh from <span class="gradient-text">Mind &amp; Matter</span></h2>
+    </div>
+    <div class="articles-grid" id="articles-grid">
+      <!-- populated by JS -->
+    </div>
+    <div class="load-more-wrap">
+      <button class="btn-primary" id="load-more">Load More Articles</button>
+    </div>
+  </section>
+
   <!-- ── FEATURED ── -->
-  <section class="section" id="featured">
+  <section class="section dark-section" id="featured">
     <div class="section-header">
       <span class="section-tag">Featured Story</span>
       <h2 class="section-title">This Week's <span class="gradient-text">Spotlight</span></h2>
     </div>
-    <div class="featured-grid">
-      <div class="featured-main card-glow" data-article-index="0" role="button" tabindex="0" aria-label="Open featured article about high-NA EUV">
-        <div class="featured-img feat-img-1">
-          <div class="feat-overlay">
-            <span class="feat-tag">Semiconductors</span>
-          </div>
-        </div>
-        <div class="card-body">
-          <h3>High-NA EUV Is Rewriting the Physics and Economics of Advanced Chips</h3>
-          <p>As fabs move below 2 nm, the lithography stack is no longer just a manufacturing detail. It is becoming the main character in how performance, power, and cost are balanced.</p>
-          <div class="card-meta">
-            <span class="author-dot ai"></span> Chips &amp; Manufacturing · 9 min read
-          </div>
-        </div>
-      </div>
-      <div class="featured-side">
-        <div class="side-card card-glow" data-article-index="1" role="button" tabindex="0" aria-label="Open article about photonic interconnects">
-          <div class="side-img feat-img-2"></div>
-          <div class="side-body">
-            <span class="feat-tag sm">AI Infrastructure</span>
-            <h4>Why Photonic Interconnects Could Save the AI Datacenter</h4>
-            <p class="side-meta">Compute Systems · 6 min read</p>
-          </div>
-        </div>
-        <div class="side-card card-glow" data-article-index="2" role="button" tabindex="0" aria-label="Open article about solid-state batteries">
-          <div class="side-img feat-img-3"></div>
-          <div class="side-body">
-            <span class="feat-tag sm">Energy</span>
-            <h4>Solid-State Batteries Are Moving from Lab Curiosity to Product Strategy</h4>
-            <p class="side-meta">Energy Storage · 7 min read</p>
-          </div>
-        </div>
-        <div class="side-card card-glow" data-article-index="3" role="button" tabindex="0" aria-label="Open article about Europa Clipper">
-          <div class="side-img feat-img-4"></div>
-          <div class="side-body">
-            <span class="feat-tag sm">Space Science</span>
-            <h4>Europa Clipper Could Change How We Search for Life Beyond Earth</h4>
-            <p class="side-meta">Planetary Science · 8 min read</p>
-          </div>
-        </div>
-      </div>
+    <div class="featured-grid" id="featured-grid">
+      <!-- populated by JS from the top 4 posts -->
     </div>
   </section>
 
@@ -220,19 +156,47 @@
     </div>
   </section>
 
-  <!-- ── ARTICLES ── -->
-  <section class="section" id="articles">
+  <!-- ── ABOUT ── -->
+  <section class="section about-section" id="about">
     <div class="section-header">
-      <span class="section-tag">Latest Posts</span>
-      <h2 class="section-title">Fresh from <span class="gradient-text">Mind &amp; Matter</span></h2>
+      <span class="section-tag">About the Author</span>
+      <h2 class="section-title">Hi, I'm <span class="gradient-text">Md Mamunuj Zaman</span></h2>
     </div>
-    <div class="articles-grid" id="articles-grid">
-      <!-- populated by JS -->
-    </div>
-    <div class="load-more-wrap">
-      <button class="btn-primary" id="load-more">Load More Articles</button>
+    <div class="about-grid">
+      <div class="about-card card-glow">
+        <div class="about-orbit"></div>
+        <div class="about-avatar">M</div>
+        <h3>Md Mamunuj Zaman</h3>
+        <p class="about-role">Science communicator · Semiconductor and advanced technology enthusiast</p>
+        <p>
+          I write about the ideas shaping the next decade: chip design, AI systems, quantum computing,
+          materials, climate tech, and space exploration. My goal is simple — turn difficult technical
+          breakthroughs into clear, engaging stories without losing the engineering depth.
+        </p>
+      </div>
+      <div class="about-panel">
+        <div class="about-highlights">
+          <div class="highlight-box">
+            <span class="highlight-label">Writing lens</span>
+            <h4>Engineer-friendly, reader-first</h4>
+            <p>Concise explainers, visual metaphors, and solid technical context.</p>
+          </div>
+          <div class="highlight-box">
+            <span class="highlight-label">Favorite beats</span>
+            <h4>Semiconductors, AI, energy, space</h4>
+            <p>Especially where deep research becomes practical technology.</p>
+          </div>
+          <div class="highlight-box">
+            <span class="highlight-label">Mission</span>
+            <h4>Make hard science feel exciting</h4>
+            <p>Each post is designed to feel cinematic, useful, and memorable.</p>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
+
+  <!-- ── ARTICLES (latest grid moved up; legacy section kept empty for any deep links) ── -->
 
   <!-- ── QUOTE ── -->
   <section class="quote-section">

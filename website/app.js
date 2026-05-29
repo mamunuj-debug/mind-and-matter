@@ -77,10 +77,41 @@ function escapeHtml (value) {
     .replaceAll("'", '&#39;');
 }
 
+// Render a paragraph that may contain markdown images: ![alt](https://url)
+// - A paragraph that is ONLY an image becomes a <figure> with caption.
+// - Otherwise inline images are injected after escaping the rest of the text.
+function renderParagraph (paragraph) {
+  const text = String(paragraph).trim();
+  const standalone = text.match(/^!\[([^\]]*)\]\((https?:\/\/[^\s)]+)\)$/);
+  if (standalone) {
+    const alt = escapeHtml(standalone[1]);
+    const src = escapeHtml(standalone[2]);
+    return `<figure class="post-figure"><img src="${src}" alt="${alt}" loading="lazy"/>${alt ? `<figcaption>${alt}</figcaption>` : ''}</figure>`;
+  }
+  // Tokenize images so escapeHtml doesn't mangle their URLs.
+  const parts = [];
+  let lastIndex = 0;
+  const re = /!\[([^\]]*)\]\((https?:\/\/[^\s)]+)\)/g;
+  let match;
+  while ((match = re.exec(text)) !== null) {
+    if (match.index > lastIndex) {
+      parts.push({ type: 'text', value: text.slice(lastIndex, match.index) });
+    }
+    parts.push({ type: 'img', alt: match[1], src: match[2] });
+    lastIndex = match.index + match[0].length;
+  }
+  if (lastIndex < text.length) {
+    parts.push({ type: 'text', value: text.slice(lastIndex) });
+  }
+  const html = parts.map(part => part.type === 'img'
+    ? `<img src="${escapeHtml(part.src)}" alt="${escapeHtml(part.alt)}" loading="lazy" class="post-inline-img"/>`
+    : escapeHtml(part.value)
+  ).join('');
+  return `<p>${html}</p>`;
+}
+
 function buildSafeParagraphs (paragraphs) {
-  return paragraphs
-    .map(paragraph => `<p>${escapeHtml(paragraph)}</p>`)
-    .join('');
+  return paragraphs.map(renderParagraph).join('');
 }
 
 // ── Navbar scroll shadow ──────────────────────────────
@@ -284,6 +315,10 @@ function normalizeManagedPost (post) {
     ? post.preview.trim()
     : (paragraphs[0] || 'New post from Mind & Matter.');
 
+  const coverImage = typeof post.coverImage === 'string' && post.coverImage.trim()
+    ? post.coverImage.trim()
+    : null;
+
   return {
     title: String(post.title).trim(),
     tag: post.tag ? String(post.tag).trim() : 'Science',
@@ -293,6 +328,7 @@ function normalizeManagedPost (post) {
     date: post.date ? String(post.date).trim() : 'Apr 23, 2026',
     readTime: post.readTime ? String(post.readTime).trim() : '5 min',
     preview,
+    coverImage,
     paragraphs,
     body: buildSafeParagraphs(paragraphs.length ? paragraphs : [preview])
   };
@@ -318,8 +354,9 @@ async function loadManagedPosts () {
     }
 
     articleData = [...managedPosts, ...staticArticleData];
-    allArticles = [...featuredArticles, ...articleData];
-    visibleCount = Math.min(Math.max(visibleCount, FEATURED_COUNT), articleData.length);
+    allArticles = articleData;
+    visibleCount = Math.min(Math.max(visibleCount, 3), articleData.length);
+    renderFeatured();
     renderArticles();
   } catch (error) {
     console.error('Unable to load managed posts:', error);
@@ -350,11 +387,11 @@ function renderArticles () {
           <span class="article-read">${escapeHtml(art.readTime)} read →</span>
         </div>
       </div>`;
-    card.addEventListener('click', () => openArticle(i + FEATURED_COUNT));
+    card.addEventListener('click', () => openArticle(i));
     card.addEventListener('keydown', event => {
       if (event.key === 'Enter' || event.key === ' ') {
         event.preventDefault();
-        openArticle(i + FEATURED_COUNT);
+        openArticle(i);
       }
     });
     grid.appendChild(card);
@@ -370,13 +407,68 @@ document.getElementById('load-more').addEventListener('click', () => {
   renderArticles();
 });
 
+// ── Featured story (dynamic from top posts) ─────────
+const featuredGrid = document.getElementById('featured-grid');
+
+function featuredCardImage (art) {
+  if (art.coverImage) {
+    return `background-image:url('${escapeHtml(art.coverImage)}');background-size:cover;background-position:center;`;
+  }
+  return `background:${art.bg};`;
+}
+
+function renderFeatured () {
+  if (!featuredGrid) return;
+  const picks = articleData.slice(0, 4);
+  if (!picks.length) {
+    featuredGrid.innerHTML = '';
+    return;
+  }
+  const [main, ...sides] = picks;
+  const mainHtml = `
+    <div class="featured-main card-glow" data-article-index="0" role="button" tabindex="0" aria-label="Open featured article: ${escapeHtml(main.title)}">
+      <div class="featured-img" style="${featuredCardImage(main)}">
+        <div class="feat-overlay"><span class="feat-tag" style="background:${escapeHtml(main.tagColor)}">${escapeHtml(main.tag)}</span></div>
+      </div>
+      <div class="card-body">
+        <h3>${escapeHtml(main.title)}</h3>
+        <p>${escapeHtml(main.preview || '').slice(0, 200)}</p>
+        <div class="card-meta"><span class="author-dot ai"></span> ${escapeHtml(main.tag)} · ${escapeHtml(main.readTime)} read</div>
+      </div>
+    </div>`;
+  const sidesHtml = sides.map((art, idx) => `
+    <div class="side-card card-glow" data-article-index="${idx + 1}" role="button" tabindex="0" aria-label="Open article: ${escapeHtml(art.title)}">
+      <div class="side-img" style="${featuredCardImage(art)}"></div>
+      <div class="side-body">
+        <span class="feat-tag sm" style="background:${escapeHtml(art.tagColor)}">${escapeHtml(art.tag)}</span>
+        <h4>${escapeHtml(art.title)}</h4>
+        <p class="side-meta">${escapeHtml(art.tag)} · ${escapeHtml(art.readTime)} read</p>
+      </div>
+    </div>`).join('');
+  featuredGrid.innerHTML = `${mainHtml}<div class="featured-side">${sidesHtml}</div>`;
+  featuredGrid.querySelectorAll('[data-article-index]').forEach(card => {
+    const i = Number(card.dataset.articleIndex);
+    card.addEventListener('click', () => openArticle(i));
+    card.addEventListener('keydown', event => {
+      if (event.key === 'Enter' || event.key === ' ') {
+        event.preventDefault();
+        openArticle(i);
+      }
+    });
+  });
+  // apply reveal animations to the new featured cards
+  requestAnimationFrame(() => {
+    addReveal('.featured-main');
+    addReveal('.side-card');
+  });
+}
+
+renderFeatured();
 renderArticles();
 loadManagedPosts();
 
 // apply reveal to static elements
 requestAnimationFrame(() => {
-  addReveal('.featured-main');
-  addReveal('.side-card');
   addReveal('.topic-card');
   addReveal('.section-header');
 });
@@ -396,13 +488,10 @@ function findTopicArticleIndex (topicKey) {
     return -1;
   }
 
-  const offset = FEATURED_COUNT;
-  const localIndex = articleData.findIndex(article => {
+  return articleData.findIndex(article => {
     const haystack = `${article.tag} ${article.title} ${article.preview}`.toLowerCase();
     return terms.some(term => haystack.includes(term));
   });
-
-  return localIndex >= 0 ? localIndex + offset : -1;
 }
 
 function setupTopicCards () {
@@ -432,57 +521,9 @@ function setupTopicCards () {
 }
 
 // ── Article modal ─────────────────────────────────────
-const featuredArticles = [
-  {
-    title: 'High-NA EUV Is Rewriting the Physics and Economics of Advanced Chips',
-    tag: 'Semiconductors', date: 'Apr 23, 2026', readTime: '9 min',
-    body: `<p>The advanced chip race is increasingly decided inside the lithography stack. At sub-2 nm, the question is not just how many transistors can fit on a die. It is how consistently those features can be patterned, how much process complexity can be removed, and how much yield can be protected.</p>
-    <p><strong>High-NA EUV</strong> enters precisely at that pressure point. By improving optical resolution, it can reduce reliance on complex multipatterning in some layers. That matters because every added process step compounds risk across overlay, line-edge roughness, and defectivity.</p>
-    <p>But the upgrade is not free. Tool cost is enormous, resist chemistry remains difficult, and the surrounding ecosystem — masks, metrology, computational lithography, and design rules — has to mature in parallel. This is why the transition is strategic, not merely technical.</p>
-    <p>My view is that the winners will be the organizations that connect device architecture, DTCO, and manufacturing learning loops faster than everyone else. The future of AI hardware, smartphones, automotive compute, and cloud infrastructure all sit downstream of that race.</p>`
-  },
-  {
-    title: 'Why Photonic Interconnects Could Save the AI Datacenter',
-    tag: 'AI Infrastructure', date: 'Apr 22, 2026', readTime: '6 min',
-    body: `<p>AI systems are scaling faster than the infrastructure that feeds them. Compute density is rising, but so is the cost of shuttling tensors between accelerators, memory, and racks. In modern clusters, the network is becoming the machine.</p>
-    <p><strong>Silicon photonics</strong> offers a compelling way out. Optical links can carry more bandwidth with lower energy per bit across the distances that increasingly matter in AI deployments. That directly affects rack architecture, thermal budgets, and cluster economics.</p>
-    <p>The challenge is packaging. The story is no longer just about pretty optical demos. It is about how lasers, modulators, switches, and electronics coexist in the brutal reality of datacenter manufacturing and serviceability.</p>
-    <p>If the integration problem is solved, photonic interconnects may end up being one of the least visible but most important enablers of the next AI wave.</p>`
-  },
-  {
-    title: 'Solid-State Batteries Are Moving from Lab Curiosity to Product Strategy',
-    tag: 'Energy Storage', date: 'Apr 20, 2026', readTime: '7 min',
-    body: `<p>There is a moment in every technology cycle when the central question changes. For solid-state batteries, that moment appears to be here. The chemistry is still hard, but the more important discussion now is which architectures can survive manufacturing, cycling, safety validation, and cost pressure simultaneously.</p>
-    <p><strong>The promise</strong> is obvious: higher energy density, faster charging, and improved thermal behavior. The catch is that every gain has to survive interfaces, dendrite risk, and production variability.</p>
-    <p>What makes the field exciting today is not just the science. It is the growing evidence that engineering teams are learning how to convert materials progress into a real supply chain story. That is when a technology begins to matter.</p>`
-  },
-  {
-    title: 'Europa Clipper Could Change How We Search for Life Beyond Earth',
-    tag: 'Planetary Science', date: 'Apr 18, 2026', readTime: '8 min',
-    body: `<p>Europa is one of the most compelling places in the Solar System because it combines the three ingredients that repeatedly attract scientific attention: water, chemistry, and energy gradients. The ocean is hidden, but the clues may not be.</p>
-    <p><strong>Europa Clipper</strong> is designed to investigate habitability with discipline rather than spectacle. Radar, imaging, magnetic field measurements, and thermal mapping together can reveal ice thickness, subsurface structure, and whether material from the ocean is interacting with the surface.</p>
-    <p>If that link is confirmed, Europa stops being merely an interesting moon. It becomes a near-term laboratory for one of humanity's oldest questions: how common are the conditions for life?</p>`
-  },
-];
-
-let allArticles = [...featuredArticles, ...articleData];
-
-allArticles.forEach(article => {
-  if (!article.body && article.paragraphs) {
-    article.body = buildSafeParagraphs(article.paragraphs);
-  }
-});
-
-document.querySelectorAll('[data-article-index]').forEach(card => {
-  const articleIndex = Number(card.dataset.articleIndex);
-  card.addEventListener('click', () => openArticle(articleIndex));
-  card.addEventListener('keydown', event => {
-    if (event.key === 'Enter' || event.key === ' ') {
-      event.preventDefault();
-      openArticle(articleIndex);
-    }
-  });
-});
+// Featured cards are now rendered dynamically from the top posts of articleData.
+// allArticles is just a reference to articleData; openArticle uses indices into it.
+let allArticles = articleData;
 
 document.getElementById('subscribe-btn').addEventListener('click', subscribe);
 document.getElementById('modal-close').addEventListener('click', closeArticle);
@@ -493,6 +534,9 @@ setupTopicCards();
 function openArticle (i) {
   const art = allArticles[i];
   if (!art) return;
+  const cover = art.coverImage
+    ? `<img class="post-cover" src="${escapeHtml(art.coverImage)}" alt="${escapeHtml(art.title)}" loading="lazy"/>`
+    : '';
   document.getElementById('modal-content').innerHTML = `
     <h2>${escapeHtml(art.title)}</h2>
     <div class="modal-meta">
@@ -500,6 +544,7 @@ function openArticle (i) {
       <span>${escapeHtml(art.date)}</span>
       <span>${escapeHtml(art.readTime)} read</span>
     </div>
+    ${cover}
     ${art.body}`;
   document.getElementById('modal-overlay').classList.add('open');
   document.body.style.overflow = 'hidden';
