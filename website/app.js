@@ -14,17 +14,17 @@
   // Respect users who prefer reduced motion: render once, then stop.
   const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-  // Density scales with viewport area, with sensible caps so big desktops
-  // don't end up doing 130² = ~17k distance checks per frame (the main
-  // cause of janky scroll on desktop).
+  // Density scales with viewport area. We keep a richer canvas now that
+  // the inner loop is squared-distance + the animation pauses off-screen,
+  // so we can afford ~120 particles on a 1080p desktop without scroll jank.
   function targetCount () {
     const area = window.innerWidth * window.innerHeight;
-    const n = Math.round(area / 22000); // ~70 on a 1080p desktop
-    return Math.max(30, Math.min(80, n));
+    const n = Math.round(area / 14000); // ~150 on a 1080p desktop
+    return Math.max(60, Math.min(160, n));
   }
 
   // Squared link distance — avoids sqrt in the inner loop.
-  const LINK_DIST = 110;
+  const LINK_DIST = 130;
   const LINK_DIST_SQ = LINK_DIST * LINK_DIST;
 
   function resize () {
