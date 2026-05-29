@@ -5,8 +5,8 @@ backend:
 media_folder: "website/uploads"
 public_folder: "/uploads"
 
-site_url: "https://mindandmatter.netlify.app"
-display_url: "https://mindandmatter.netlify.app"
+site_url: "https://mindandmatter.co.in"
+display_url: "https://mindandmatter.co.in"
 logo_url: "/favicon.ico"
 
 collections:
