@@ -50,6 +50,17 @@ body {
   background-clip: text;
 }
 
+/* Hero headline: brighter gradient + slight glow so letters with holes
+   (a, e, s, o) remain legible against the dark background. */
+.hero-title .gradient-text {
+  background: linear-gradient(135deg,#7dd3fc 0%,#c084fc 50%,#fde68a 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  filter: drop-shadow(0 1px 8px rgba(124, 58, 237, 0.35));
+  font-weight: 800;
+}
+
 .btn-primary {
   display: inline-flex; align-items: center; gap: .5rem;
   padding: .75rem 1.75rem;
@@ -235,7 +246,7 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  opacity: .7;
+  opacity: .35;
 }
 .glitch::before { animation: glitch-1 4s infinite 1s; clip-path: polygon(0 0,100% 0,100% 35%,0 35%); }
 .glitch::after  { animation: glitch-2 4s infinite 1.3s; clip-path: polygon(0 65%,100% 65%,100% 100%,0 100%); }
