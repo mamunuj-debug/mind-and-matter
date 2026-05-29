@@ -531,6 +531,20 @@ document.getElementById('modal-overlay').addEventListener('click', closeModal);
 setupMobileMenu();
 setupTopicCards();
 
+// ── Netlify Identity: handle invite / recovery tokens on the homepage ──
+// When a user clicks an invite link, Netlify lands them at the site root with
+// '#invite_token=...' in the URL. The Identity widget then needs to open and
+// prompt for a password. After login we send them to the /admin CMS.
+if (window.netlifyIdentity) {
+  window.netlifyIdentity.on('init', user => {
+    if (!user) {
+      window.netlifyIdentity.on('login', () => {
+        document.location.href = '/admin/';
+      });
+    }
+  });
+}
+
 function openArticle (i) {
   const art = allArticles[i];
   if (!art) return;
