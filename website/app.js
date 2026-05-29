@@ -6,16 +6,47 @@
 (function initParticles () {
   const canvas = document.getElementById('particles');
   const ctx = canvas.getContext('2d');
+  const dpr = Math.min(window.devicePixelRatio || 1, 1.5);
   let W, H, particles = [], mouse = { x: -9999, y: -9999 };
+  let running = true;
+  let heroVisible = true;
+
+  // Respect users who prefer reduced motion: render once, then stop.
+  const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  // Density scales with viewport area, with sensible caps so big desktops
+  // don't end up doing 130² = ~17k distance checks per frame (the main
+  // cause of janky scroll on desktop).
+  function targetCount () {
+    const area = window.innerWidth * window.innerHeight;
+    const n = Math.round(area / 22000); // ~70 on a 1080p desktop
+    return Math.max(30, Math.min(80, n));
+  }
+
+  // Squared link distance — avoids sqrt in the inner loop.
+  const LINK_DIST = 110;
+  const LINK_DIST_SQ = LINK_DIST * LINK_DIST;
 
   function resize () {
-    W = canvas.width  = window.innerWidth;
-    H = canvas.height = window.innerHeight;
+    W = window.innerWidth;
+    H = window.innerHeight;
+    canvas.width  = W * dpr;
+    canvas.height = H * dpr;
+    canvas.style.width  = W + 'px';
+    canvas.style.height = H + 'px';
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+
+    const want = targetCount();
+    if (particles.length < want) {
+      for (let i = particles.length; i < want; i++) particles.push(makeParticle());
+    } else if (particles.length > want) {
+      particles.length = want;
+    }
   }
   window.addEventListener('resize', resize);
-  resize();
 
   window.addEventListener('mousemove', e => { mouse.x = e.clientX; mouse.y = e.clientY; });
+  document.addEventListener('visibilitychange', () => { running = !document.hidden; if (running && !reducedMotion) requestAnimationFrame(draw); });
 
   function makeParticle () {
     return {
@@ -28,16 +59,28 @@
     };
   }
 
-  for (let i = 0; i < 130; i++) particles.push(makeParticle());
+  resize();
+
+  // Pause the animation once the hero is scrolled out of view — the canvas
+  // is fixed in the background so there's no point burning frames for it.
+  const hero = document.querySelector('.hero');
+  if (hero && 'IntersectionObserver' in window) {
+    new IntersectionObserver(entries => {
+      heroVisible = entries[0].isIntersecting;
+      if (heroVisible && running && !reducedMotion) requestAnimationFrame(draw);
+    }, { threshold: 0 }).observe(hero);
+  }
 
   function draw () {
+    if (!running || !heroVisible) return;
     ctx.clearRect(0, 0, W, H);
 
-    particles.forEach((p, i) => {
-      // drift toward mouse slightly
-      const dx = mouse.x - p.x, dy = mouse.y - p.y;
-      const dist = Math.sqrt(dx * dx + dy * dy);
-      if (dist < 140) { p.x += dx * .00012; p.y += dy * .00012; }
+    for (let i = 0; i < particles.length; i++) {
+      const p = particles[i];
+      // drift toward mouse slightly (squared distance — no sqrt)
+      const mx = mouse.x - p.x, my = mouse.y - p.y;
+      const md2 = mx * mx + my * my;
+      if (md2 < 140 * 140) { p.x += mx * .00012; p.y += my * .00012; }
 
       p.x += p.dx;  p.y += p.dy;
       if (p.x < 0 || p.x > W) p.dx *= -1;
@@ -47,25 +90,31 @@
       ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
       ctx.fillStyle = `hsla(${p.hue},90%,70%,${p.alpha})`;
       ctx.fill();
+    }
 
-      // draw connecting lines
+    // Links — one pass with squared distance.
+    for (let i = 0; i < particles.length; i++) {
+      const p = particles[i];
       for (let j = i + 1; j < particles.length; j++) {
         const q = particles[j];
-        const d = Math.hypot(p.x - q.x, p.y - q.y);
-        if (d < 110) {
+        const ddx = p.x - q.x, ddy = p.y - q.y;
+        const d2 = ddx * ddx + ddy * ddy;
+        if (d2 < LINK_DIST_SQ) {
+          const d = Math.sqrt(d2);
           ctx.beginPath();
           ctx.moveTo(p.x, p.y);
           ctx.lineTo(q.x, q.y);
-          ctx.strokeStyle = `hsla(${p.hue},80%,65%,${(1 - d / 110) * .12})`;
+          ctx.strokeStyle = `hsla(${p.hue},80%,65%,${(1 - d / LINK_DIST) * .12})`;
           ctx.lineWidth = .6;
           ctx.stroke();
         }
       }
-    });
+    }
 
-    requestAnimationFrame(draw);
+    if (running && heroVisible && !reducedMotion) requestAnimationFrame(draw);
   }
-  draw();
+  if (!reducedMotion) requestAnimationFrame(draw);
+  else { /* draw a single static frame */ draw(); }
 })();
 
 function escapeHtml (value) {
@@ -115,9 +164,19 @@ function buildSafeParagraphs (paragraphs) {
 }
 
 // ── Navbar scroll shadow ──────────────────────────────
-window.addEventListener('scroll', () => {
-  document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 60);
-});
+(function navbarScroll () {
+  const nav = document.getElementById('navbar');
+  if (!nav) return;
+  let ticking = false;
+  window.addEventListener('scroll', () => {
+    if (ticking) return;
+    ticking = true;
+    requestAnimationFrame(() => {
+      nav.classList.toggle('scrolled', window.scrollY > 60);
+      ticking = false;
+    });
+  }, { passive: true });
+})();
 
 function setupMobileMenu () {
   const hamburger = document.getElementById('hamburger');

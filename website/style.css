@@ -38,6 +38,9 @@ body {
   pointer-events: none;
   z-index: 0;
   opacity: .6;
+  will-change: transform;
+  transform: translateZ(0);
+  contain: strict;
 }
 
 /* ===========================
