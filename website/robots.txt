@@ -1,5 +1,4 @@
 User-agent: *
 Allow: /
 
-# Add your final public sitemap URL after setting the production domain.
-# Sitemap: https://your-domain.example/sitemap.xml
+Sitemap: https://mindandmatter.co.in/sitemap.xml

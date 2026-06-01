@@ -636,3 +636,75 @@ cite { font-family: var(--font-mono); font-size: .8rem; color: var(--accent); le
   .footer-grid { grid-template-columns: 1fr; }
   .footer-bottom { flex-direction: column; gap: .5rem; text-align: center; }
 }
+
+/* ===========================
+   STANDALONE POST PAGES (/post/<slug>/)
+   =========================== */
+body.post-page { background: var(--bg); color: var(--text); }
+.post-page .navbar { position: sticky; top: 0; }
+.post-main {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 6rem 1.5rem 4rem;
+  position: relative;
+  z-index: 1;
+}
+.post-back {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: .8rem;
+  color: var(--text-muted);
+  text-decoration: none;
+  margin-bottom: 1.5rem;
+}
+.post-back:hover { color: var(--accent); }
+.post-article h1 {
+  font-family: var(--font-head);
+  font-size: clamp(1.6rem, 3.2vw, 2.4rem);
+  line-height: 1.2;
+  margin: 1rem 0 1.25rem;
+}
+.post-meta-row {
+  font-family: var(--font-mono);
+  font-size: .75rem;
+  color: var(--text-muted);
+  display: flex;
+  flex-wrap: wrap;
+  gap: .6rem;
+  margin-bottom: 2rem;
+}
+.post-article .post-cover {
+  display: block;
+  width: 100%;
+  max-height: 420px;
+  object-fit: cover;
+  border-radius: 14px;
+  margin: 0 0 2rem;
+}
+.post-body { font-size: 1.02rem; line-height: 1.8; color: var(--text-muted); }
+.post-body p { margin: 0 0 1.25rem; }
+.post-body p strong { color: var(--text); }
+.post-body .post-figure { margin: 2rem 0; }
+.post-body .post-figure img { display: block; width: 100%; border-radius: 12px; }
+.post-body .post-figure figcaption {
+  font-family: var(--font-mono);
+  font-size: .7rem;
+  color: var(--text-muted);
+  margin-top: .5rem;
+  text-align: center;
+}
+.post-body .post-inline-img {
+  display: inline-block;
+  max-width: 100%;
+  border-radius: 10px;
+  margin: .5rem 0;
+}
+.post-cta {
+  margin-top: 3rem;
+  padding: 2rem;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  background: rgba(255,255,255,.02);
+}
+.post-cta h3 { font-family: var(--font-head); font-size: 1.2rem; margin: 0 0 .5rem; }
+.post-cta p { color: var(--text-muted); font-size: .95rem; margin: 0 0 1rem; }
