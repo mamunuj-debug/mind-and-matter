@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>What&#x27;s Actually Inside a Modern GPU — Mind &amp; Matter</title>
+  <meta name="description" content="A single Nvidia H100 has 80 billion transistors — more than an entire laptop from a decade ago, packed onto one chip the size of a postage stamp. What are th…" />
+  <meta name="author" content="Md Mamunuj Zaman" />
+  <link rel="canonical" href="https://mindandmatter.co.in/post/what-s-actually-inside-a-modern-gpu/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="Mind &amp; Matter" />
+  <meta property="og:title" content="What&#x27;s Actually Inside a Modern GPU" />
+  <meta property="og:description" content="A single Nvidia H100 has 80 billion transistors — more than an entire laptop from a decade ago, packed onto one chip the size of a postage stamp. What are th…" />
+  <meta property="og:url" content="https://mindandmatter.co.in/post/what-s-actually-inside-a-modern-gpu/" />
+  <meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/a/a4/NVIDIA_H100_%28%E6%9E%81%E5%AE%A2%E6%B9%BEGeekerwan%29_025.png" />
+  <meta property="article:author" content="Md Mamunuj Zaman" />
+  <meta property="article:published_time" content="2026-07-12" />
+  <meta property="article:section" content="Engineering" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="What&#x27;s Actually Inside a Modern GPU" />
+  <meta name="twitter:description" content="A single Nvidia H100 has 80 billion transistors — more than an entire laptop from a decade ago, packed onto one chip the size of a postage stamp. What are th…" />
+  <meta name="twitter:image" content="https://upload.wikimedia.org/wikipedia/commons/a/a4/NVIDIA_H100_%28%E6%9E%81%E5%AE%A2%E6%B9%BEGeekerwan%29_025.png" />
+
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; connect-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: https:; frame-ancestors 'none'; base-uri 'self'; form-action 'self'; object-src 'none'; upgrade-insecure-requests" />
+  <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin" />
+  <meta name="color-scheme" content="dark" />
+
+  <link rel="stylesheet" href="/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500;600&family=Space+Mono&display=swap" rel="stylesheet"/>
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "What's Actually Inside a Modern GPU",
+  "description": "A single Nvidia H100 has 80 billion transistors \u2014 more than an entire laptop from a decade ago, packed onto one chip the size of a postage stamp. What are th\u2026",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/a/a4/NVIDIA_H100_%28%E6%9E%81%E5%AE%A2%E6%B9%BEGeekerwan%29_025.png",
+  "datePublished": "2026-07-12",
+  "author": {
+    "@type": "Person",
+    "name": "Md Mamunuj Zaman"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Mind & Matter",
+    "url": "https://mindandmatter.co.in"
+  },
+  "mainEntityOfPage": "https://mindandmatter.co.in/post/what-s-actually-inside-a-modern-gpu/",
+  "articleSection": "Engineering"
+}
+  </script>
+</head>
+<body class="post-page">
+
+  <nav class="navbar">
+    <div class="nav-logo">
+      <span class="logo-icon">⬡</span>
+      <a href="/" style="text-decoration:none;color:inherit"><strong>Mind &amp; Matter</strong></a>
+    </div>
+    <ul class="nav-links">
+      <li><a href="/">Home</a></li>
+      <li><a href="/#articles">Latest</a></li>
+      <li><a href="/#topics">Topics</a></li>
+      <li><a href="/#about">About</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="/#newsletter" class="btn-primary">Subscribe →</a>
+    </div>
+  </nav>
+
+  <main class="post-main">
+    <article class="post-article">
+      <a href="/" class="post-back">← Back to Mind &amp; Matter</a>
+      <span class="article-tag" style="background:#fb923c">Engineering</span>
+      <h1>What&#x27;s Actually Inside a Modern GPU</h1>
+      <div class="post-meta-row">
+        <span>Md Mamunuj Zaman</span>
+        <span>·</span>
+        <span>Jul 12, 2026</span>
+        <span>·</span>
+        <span>7 min read</span>
+      </div>
+      <img class="post-cover" src="https://upload.wikimedia.org/wikipedia/commons/a/a4/NVIDIA_H100_%28%E6%9E%81%E5%AE%A2%E6%B9%BEGeekerwan%29_025.png" alt="What&#x27;s Actually Inside a Modern GPU" loading="lazy"/>
+      <div class="post-body">
+<p>A single Nvidia H100 GPU has about 80 billion transistors. That is more than 10× what an entire laptop had a decade ago — all packed into one chip the size of a postage stamp. And when Nvidia&#x27;s Blackwell shipped in late 2024, its dual-die B200 package pushed that to 208 billion. What are all those transistors doing?</p>
+<p>CPU vs GPU: Few Big Brains vs Many Small Hands
+A CPU has a handful of very smart cores — 8, maybe 16 — each capable of complex logic, branching, and running an operating system. A GPU has the opposite design: thousands of small, simple arithmetic units that all do the same operation in lockstep. If a CPU is a brilliant chef, a GPU is thousands of line cooks all peeling potatoes at exactly the same time.</p>
+<p>This makes GPUs terrible at web browsing and email — and perfect for anything you can express as &#x27;do the same math on a giant grid of numbers.&#x27; Graphics is one such problem. Neural networks are another.</p>
+<p>The Building Block: The Streaming Multiprocessor
+The unit that repeats over and over inside a modern GPU is called a streaming multiprocessor, or SM (Nvidia&#x27;s term; AMD calls them compute units). Each SM contains dozens of tiny arithmetic units, a chunk of local memory (called shared memory), and a scheduler that hands out work.</p>
+<p>An H100 has 132 enabled SMs (out of 144 physical). Blackwell&#x27;s B200 has roughly 160 SMs total across two dies, connected by a 10 TB/s die-to-die link that lets them act like one huge chip. Each SM runs 128 threads at a time, which means a single B200 is dispatching well over 20,000 parallel workers on any given cycle.</p>
+<p>Memory Is the Real Bottleneck
+Feeding all those workers is a logistical nightmare. Regular computer memory (DDR5 in your laptop) delivers around 50 GB per second. Nowhere near enough. So GPUs use a different kind called HBM — High Bandwidth Memory — which is a stack of memory chips physically bonded to the GPU with thousands of microscopic wires. An H100&#x27;s HBM3 stack delivers about 3 TB/s. B200&#x27;s HBM3e pushes 8 TB/s per package.</p>
+<p>This is why in die-shot photos you see little memory bricks sitting right next to the main die. They have to be that close — millimetres, not centimetres — because moving data is the expensive part, not doing the math.</p>
+<p>Tensor Cores: The AI Twist
+In 2017, with the Volta architecture, Nvidia added a new kind of unit called a Tensor Core. Every SM now contains several of them. They do exactly one operation: multiply two small matrices together and add a third. That is the fundamental math inside every neural network.</p>
+<p>An H100 has 528 Tensor Cores (4 per SM × 132 SMs). At FP8 precision, it delivers roughly 2 PFLOPS of dense matrix math — about 100× a top-end CPU on the same workload. B200 pushes that to about 4.5 PFLOPS at FP8 and roughly 10 PFLOPS at the new FP4 format Blackwell introduced.</p>
+<p>What&#x27;s New in Blackwell (2024) and MI350 (2025)
+Blackwell is Nvidia&#x27;s first datacenter chip built from two dies acting as one. AMD&#x27;s MI350 series does something similar with chiplets, on TSMC&#x27;s 3 nm process. Both add native support for FP4 arithmetic, which halves memory usage for inference workloads and lets you fit larger models into the same chip. Both also crank up HBM capacity — 192 GB per Blackwell package, 288 GB on MI350X — because as models get bigger, memory becomes the wall.</p>
+<p>The industry is running into the physical limits of how much silicon fits in one package. Everyone&#x27;s answer is the same: use multiple dies and pretend they are one.</p>
+<p>The Real Takeaway
+A modern GPU is not really a graphics card anymore. It is a matrix-multiplication factory that happens to have a display connector. And every time a chatbot answers you or a self-driving car sees a pedestrian, tens of thousands of those tiny arithmetic units are firing in perfect unison — doing the same simple math, several trillion times a second.</p>
+      </div>
+      <div class="post-cta">
+        <h3>Enjoyed this piece?</h3>
+        <p>Get fresh deep-dives on science, engineering, and space delivered to your inbox.</p>
+        <a class="btn-primary" href="/#newsletter">Subscribe to the newsletter →</a>
+      </div>
+    </article>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-bottom">
+      <span>© 2026 Mind &amp; Matter · Built with curiosity</span>
+      <span>Made by Md Mamunuj Zaman · Science for all 🔬</span>
+    </div>
+  </footer>
+</body>
+</html>
