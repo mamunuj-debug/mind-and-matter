@@ -230,6 +230,34 @@ function animateCounters () {
     }, 20);
   });
 }
+
+function updatePublishedCount (count) {
+  const publishedCounter = document.querySelector('.hero-stats .stat-num');
+  if (!publishedCounter) return;
+  const safeCount = Number.isFinite(count) ? Math.max(0, Math.floor(count)) : 0;
+  publishedCounter.dataset.target = String(safeCount);
+  publishedCounter.textContent = '0';
+}
+
+function articleKey (article) {
+  return (article && article.title ? String(article.title) : '')
+    .trim()
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-+|-+$/g, '');
+}
+
+function mergeUniqueArticles (primary, secondary) {
+  const seen = new Set();
+  const merged = [];
+  [...primary, ...secondary].forEach(article => {
+    const key = articleKey(article);
+    if (!key || seen.has(key)) return;
+    seen.add(key);
+    merged.push(article);
+  });
+  return merged;
+}
 // trigger once hero is in view
 const heroObs = new IntersectionObserver(entries => {
   if (entries[0].isIntersecting) { animateCounters(); heroObs.disconnect(); }
@@ -355,6 +383,8 @@ staticArticleData.forEach(article => {
 let articleData = [...staticArticleData];
 const FEATURED_COUNT = 4;
 
+updatePublishedCount(articleData.length);
+
 function normalizeManagedPost (post) {
   if (!post || typeof post !== 'object' || !post.title) {
     return null;
@@ -412,9 +442,10 @@ async function loadManagedPosts () {
       return;
     }
 
-    articleData = [...managedPosts, ...staticArticleData];
+    articleData = mergeUniqueArticles(managedPosts, staticArticleData);
     allArticles = articleData;
     visibleCount = Math.min(Math.max(visibleCount, 3), articleData.length);
+    updatePublishedCount(articleData.length);
     renderFeatured();
     renderArticles();
   } catch (error) {
