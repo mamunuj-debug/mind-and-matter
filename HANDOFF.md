@@ -2,7 +2,7 @@
 
 > **Purpose:** Paste this entire file into a fresh Copilot chat (or share the
 > file path) so a new agent can resume work without losing context.
-> Last updated: 2026-06-06
+> Last updated: 2026-07-25
 
 ---
 
@@ -12,11 +12,13 @@
 - **Netlify fallback:** https://mind-and-matter-blog.netlify.app
 - **GitHub repo:** https://github.com/mamunuj-debug/mind-and-matter (branch `main`)
 - **Stack:** Static HTML/CSS/JS in `website/`, no build step. Decap CMS at `/admin/`.
-- **Content:** 11 published posts in `website/data/posts.json`
+- **Content:** 17 published posts in `website/data/posts.json` (Rainbows added 2026-07-22, at index 0)
 - **Hosting:** Netlify auto-deploys on push to `main`
 - **Email/Newsletter:** Resend (domain verified), audience `24f74a41-2f27-4edf-84b5-7fe92b8dada2`
 - **CMS auth:** Netlify Identity + Git Gateway, owner logs in via GitHub
 - **Domain registrar:** GoDaddy (DNS only — Website Builder disconnected)
+- **Active PAT (2026-07-25):** stored in Copilot memory at `/memories/mind-and-matter.md` (never commit to repo — GitHub secret scanning will reject the push)
+  Rotate at https://github.com/settings/tokens — classic, `repo` scope only
 
 ## 2. The single most important workaround
 
@@ -102,16 +104,31 @@ Current `website/_headers` must contain (do not weaken):
 
 ## 7. SEO infrastructure (Week 1 stack — DONE 2026-06-06)
 
-- ✅ Per-post URLs at `/post/<slug>/` (11 pages, pre-rendered)
+- ✅ Per-post URLs at `/post/<slug>/` (17 pages, pre-rendered)
 - ✅ Each page has full Open Graph + Twitter Card + JSON-LD `Article` + canonical
 - ✅ Homepage has OG/Twitter meta + meta description
-- ✅ `sitemap.xml` lists 12 URLs (homepage + 11 posts)
+- ✅ `sitemap.xml` lists 18 URLs (homepage + 17 posts)
 - ✅ `robots.txt` declares sitemap
 - ✅ Google Search Console **Domain property** verified (DNS TXT)
 - 🟡 GSC sitemap submitted as `https://mindandmatter.co.in/sitemap.xml`
   (status may show "could not be read" for hours; auto-flips to Success)
 - ❌ Bing Webmaster Tools — pending (Import from GSC, 60 sec)
 - ❌ Manual indexing requests for top 3 posts — pending (in GSC URL inspection)
+
+## 7b. Homepage content (as of 2026-07-25)
+
+- **Hero headline:** "From atoms to galaxies, / I turn complex science / into stories for everyone"
+- **Hero sub:** "A quiet corner of the internet for people who love science that still feels like wonder."
+- **About Author role:** "Engineer · Science Enthusiast"
+- **About Author paragraph:** rewritten around chip design, bioengineering, climate science, physics, mathematics, space exploration. Goal: "make science more interesting and accessible to everyone."
+- **Social share thumbnail:** `social-share-v3.png` with tagline "From atoms to space." (hand-edited from v2 PNG to preserve original design — do NOT re-render from SVG or colors will shift). OG/Twitter meta in `index.html` point to v3.
+- **Topic cards** on homepage now FILTER the article grid instead of opening a single article. Clicking a topic:
+  - Sets `currentTopicFilter` and re-renders the grid with only matching articles
+  - Shows a colored "Showing: <Topic> (N) ✕" chip above the grid
+  - Uses word-boundary regex matching so `ai` doesn't match `rain`
+- **Topic counts** auto-update from articleData after posts.json loads
+- **Published-essays counter** uses WeakMap-tracked timers to avoid races between the on-scroll animation and async posts.json update. Element gets a `published-count` class so the generic animator skips it.
+- **Static placeholder articles** in `staticArticleData` (8 mock titles like "High-NA EUV", "Europa Clipper") are no longer merged into `articleData`. They remain in the source only as a fallback for the first paint. **6 of them are kept as writing candidates** — see `/memories/repo/mind-and-matter-post-ideas.md`.
 
 ## 8. Pending / planned work
 
@@ -130,8 +147,15 @@ Current `website/_headers` must contain (do not weaken):
 - RSS feed (`feed.xml`) — useful for Feedly/HN distribution
 
 ### Content backlog (suggested next posts)
-- Refer to existing 11 posts for tone calibration
+- Refer to existing 17 posts for tone calibration
 - Cadence target: 4–5 posts/week (per newsletter perks copy)
+- **6 writing candidates kept from the old static scaffold** (see `/memories/repo/mind-and-matter-post-ideas.md`):
+  1. How High-NA EUV Could Decide the Future of Sub-2 nm Chips (Semiconductors)
+  2. Why Advanced Packaging May Matter More Than Moore's Law (Semiconductors)
+  3. Why Photonic Interconnects Could Save the AI Datacenter (AI & Compute)
+  4. Solid-State Batteries Are Finally Facing the Right Question (Energy & Climate)
+  5. Europa Clipper and the Most Important Ocean We Cannot See (Space Systems)
+  6. CRISPR Diagnostics Are Quietly Becoming a Computing Story (Bioengineering)
 
 ## 9. Common gotchas / lessons learned
 
@@ -139,13 +163,20 @@ Current `website/_headers` must contain (do not weaken):
 |---|---|
 | `git push` 403 from Intel proxy | Use `_api_push.py` |
 | Unsplash images 403 on hotlink | Use Wikimedia Commons URLs |
+| Reddit `preview.redd.it` images hotlink-block | Use Wikimedia or Britannica CDN instead |
 | CSP blocks images | Ensure `img-src` has `https:` |
 | Decap CMS won't load at `/admin/` | Need `'unsafe-eval'` + `https://api.github.com` in `/admin/*` CSP |
 | Emoji corruption when writing files | Use HTML entities, e.g. `&#x1F4E1;` |
 | tcsh heredoc (`cat <<'EOF'`) hangs | Don't use heredocs; write a Python helper to `/tmp/` and exec |
+| tcsh doesn't like `>&` for redirect | Use `>& /tmp/log.txt` explicitly with no ambiguous chaining |
 | GoDaddy "Coming Soon" page hijacks domain | Must call GoDaddy support to disconnect Website Builder |
 | GSC Domain property needs full sitemap URL | Submit `https://mindandmatter.co.in/sitemap.xml`, not just `sitemap.xml` |
 | `replace_string_in_file` needs 3+ lines context | Always include surrounding lines for unique match |
+| Substring matching in topic filters (`'ai'.includes` matched `rain`) | Use `\b<term>\b` regex with escapeRegExp |
+| Multiple `setInterval` timers on same counter DOM node | Track timers in WeakMap; cancel previous before starting new |
+| Social share PNG re-render from SVG shifts colors/fonts | Take the good PNG and paint over ONLY the tagline text; don't re-rasterize SVG |
+| Social platforms cache OG image aggressively | Bump filename (v2 → v3) and update all `og:image` + `twitter:image` meta refs |
+| Static articleData in app.js merged with managed posts inflated the count | Merge only `managedPosts` when posts.json loads; keep static array as first-paint fallback only |
 
 ## 10. Environment variables in Netlify
 
@@ -222,6 +253,9 @@ subprocess.check_call([sys.executable, "tools/build_posts.py"])
 
 FILES = [
     "website/_headers", "website/robots.txt", "website/sitemap.xml",
+    "website/social-share.png", "website/social-share-v2.png",
+    "website/social-share-v3.png", "website/social-share.svg",
+    "website/link.html",
     "website/data/posts.json", "website/index.html", "website/style.css",
     "website/app.js", "website/admin/config.yml",
 ]
