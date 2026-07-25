@@ -564,13 +564,26 @@ requestAnimationFrame(() => {
 });
 
 const topicMatcherMap = {
-  'ai-compute': ['ai', 'compute', 'infrastructure'],
-  space: ['space', 'planetary', 'europa'],
-  materials: ['materials', 'physics', 'quantum', 'photonics'],
-  bioengineering: ['bioengineering', 'crispr', 'biology'],
-  energy: ['energy', 'climate', 'battery', 'fusion'],
-  semiconductors: ['semiconductors', 'chip', 'packaging']
+  'ai-compute':    ['ai', 'gpu', 'compute', 'computing', 'infrastructure', 'quantum'],
+  space:           ['space', 'spacecraft', 'rocket', 'voyager', 'telescope', 'cosmology', 'universe', 'planetary', 'europa', 'black hole'],
+  materials:       ['materials', 'physics', 'photonics', 'optics', 'rainbow', 'sky'],
+  bioengineering:  ['bioengineering', 'crispr', 'biology', 'protein', 'genome', 'dna'],
+  energy:          ['energy', 'climate', 'battery', 'fusion', 'nuclear'],
+  semiconductors:  ['semiconductor', 'semiconductors', 'chip', 'chips', 'euv', 'lithography', 'packaging', 'gpu']
 };
+
+// Escape regex special chars in a term
+function escapeRegExp (str) {
+  return str.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+}
+
+// Word-boundary match so 'ai' does NOT match 'rain' or 'again'
+function haystackMatchesAny (haystack, terms) {
+  return terms.some(term => {
+    const re = new RegExp(`\\b${escapeRegExp(term)}\\b`, 'i');
+    return re.test(haystack);
+  });
+}
 
 function findTopicArticleIndex (topicKey) {
   const terms = topicMatcherMap[topicKey] || [];
@@ -579,8 +592,8 @@ function findTopicArticleIndex (topicKey) {
   }
 
   return articleData.findIndex(article => {
-    const haystack = `${article.tag} ${article.title} ${article.preview}`.toLowerCase();
-    return terms.some(term => haystack.includes(term));
+    const haystack = `${article.tag} ${article.title} ${article.preview}`;
+    return haystackMatchesAny(haystack, terms);
   });
 }
 
