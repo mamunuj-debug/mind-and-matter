@@ -236,7 +236,31 @@ function updatePublishedCount (count) {
   if (!publishedCounter) return;
   const safeCount = Number.isFinite(count) ? Math.max(0, Math.floor(count)) : 0;
   publishedCounter.dataset.target = String(safeCount);
-  publishedCounter.textContent = '0';
+  // Re-animate this counter from its current value up to the new target
+  const currentValue = parseInt(publishedCounter.textContent, 10) || 0;
+  animateSingleCounter(publishedCounter, currentValue, safeCount);
+}
+
+function animateSingleCounter (el, start, target) {
+  if (start === target) {
+    el.textContent = String(target);
+    return;
+  }
+  const duration = 900;
+  const stepMs = 20;
+  const steps = Math.max(1, Math.floor(duration / stepMs));
+  const step = (target - start) / steps;
+  let current = start;
+  const timer = setInterval(() => {
+    current += step;
+    if ((step > 0 && current >= target) || (step < 0 && current <= target)) {
+      current = target;
+      clearInterval(timer);
+    }
+    el.textContent = target > 999
+      ? Math.floor(current).toLocaleString()
+      : Math.floor(current);
+  }, stepMs);
 }
 
 function articleKey (article) {
