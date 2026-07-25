@@ -448,6 +448,10 @@ async function loadManagedPosts () {
     updatePublishedCount(articleData.length);
     renderFeatured();
     renderArticles();
+    // Refresh the "N essays" labels on topic cards once the real posts are loaded
+    if (typeof updateTopicCounts === 'function') {
+      updateTopicCounts();
+    }
   } catch (error) {
     console.error('Unable to load managed posts:', error);
   }
@@ -455,11 +459,40 @@ async function loadManagedPosts () {
 
 // ── Render articles ───────────────────────────────────
 let visibleCount = 3;
+let currentTopicFilter = null; // null → show all; otherwise topic key like 'ai-compute'
 const grid = document.getElementById('articles-grid');
+
+function getFilteredArticles () {
+  if (!currentTopicFilter) {
+    return articleData;
+  }
+  const terms = topicMatcherMap[currentTopicFilter] || [];
+  if (!terms.length) {
+    return articleData;
+  }
+  return articleData.filter(article => {
+    const haystack = `${article.tag} ${article.title} ${article.preview}`;
+    return haystackMatchesAny(haystack, terms);
+  });
+}
 
 function renderArticles () {
   grid.innerHTML = '';
-  articleData.slice(0, visibleCount).forEach((art, i) => {
+  const filtered = getFilteredArticles();
+  updateFilterBadge(filtered.length);
+
+  if (!filtered.length) {
+    const empty = document.createElement('p');
+    empty.className = 'articles-empty';
+    empty.style.cssText = 'grid-column:1/-1;text-align:center;color:var(--text-muted);padding:2rem;';
+    empty.textContent = 'No articles in this topic yet. Try another one!';
+    grid.appendChild(empty);
+    document.getElementById('load-more').style.display = 'none';
+    return;
+  }
+
+  filtered.slice(0, visibleCount).forEach((art, i) => {
+    const originalIndex = articleData.indexOf(art);
     const card = document.createElement('div');
     card.className = 'article-card reveal';
     card.style.transitionDelay = (i % 3) * 80 + 'ms';
@@ -477,11 +510,11 @@ function renderArticles () {
           <span class="article-read">${escapeHtml(art.readTime)} read →</span>
         </div>
       </div>`;
-    card.addEventListener('click', () => openArticle(i));
+    card.addEventListener('click', () => openArticle(originalIndex));
     card.addEventListener('keydown', event => {
       if (event.key === 'Enter' || event.key === ' ') {
         event.preventDefault();
-        openArticle(i);
+        openArticle(originalIndex);
       }
     });
     grid.appendChild(card);
@@ -489,11 +522,11 @@ function renderArticles () {
     requestAnimationFrame(() => revealObs.observe(card));
   });
   document.getElementById('load-more').style.display =
-    visibleCount >= articleData.length ? 'none' : 'inline-flex';
+    visibleCount >= filtered.length ? 'none' : 'inline-flex';
 }
 
 document.getElementById('load-more').addEventListener('click', () => {
-  visibleCount = Math.min(visibleCount + 3, articleData.length);
+  visibleCount = Math.min(visibleCount + 3, getFilteredArticles().length);
   renderArticles();
 });
 
@@ -597,6 +630,70 @@ function findTopicArticleIndex (topicKey) {
   });
 }
 
+// Refresh the "N essays" label on every topic card based on real article data
+function updateTopicCounts () {
+  document.querySelectorAll('.topic-card').forEach(card => {
+    const key = card.dataset.topic;
+    const terms = topicMatcherMap[key] || [];
+    if (!terms.length) return;
+    const count = articleData.filter(article => {
+      const haystack = `${article.tag} ${article.title} ${article.preview}`;
+      return haystackMatchesAny(haystack, terms);
+    }).length;
+    const label = card.querySelector('.topic-count');
+    if (label) {
+      label.textContent = `${count} ${count === 1 ? 'essay' : 'essays'}`;
+    }
+  });
+}
+
+// Show / hide the "Showing: <Topic> ✕" chip above the articles grid
+function updateFilterBadge (filteredCount) {
+  const section = document.getElementById('articles');
+  if (!section) return;
+  let badge = document.getElementById('topic-filter-badge');
+
+  if (!currentTopicFilter) {
+    if (badge) badge.remove();
+    return;
+  }
+
+  // Look up display name from the topic card's <h3>
+  const card = document.querySelector(`.topic-card[data-topic="${currentTopicFilter}"]`);
+  const topicName = card ? card.querySelector('h3').textContent.trim() : currentTopicFilter;
+  const color = card ? (card.dataset.color || '#38bdf8') : '#38bdf8';
+
+  if (!badge) {
+    badge = document.createElement('div');
+    badge.id = 'topic-filter-badge';
+    badge.style.cssText = 'display:flex;justify-content:center;align-items:center;gap:.75rem;margin:0 auto 1.5rem;max-width:1200px;padding:0 1rem;flex-wrap:wrap;';
+    const header = section.querySelector('.section-header');
+    if (header && header.nextSibling) {
+      section.insertBefore(badge, header.nextSibling);
+    } else {
+      section.insertBefore(badge, section.firstChild);
+    }
+  }
+
+  const count = typeof filteredCount === 'number' ? filteredCount : getFilteredArticles().length;
+  badge.innerHTML = `
+    <span style="font-size:.85rem;color:var(--text-muted);">Showing:</span>
+    <span style="display:inline-flex;align-items:center;gap:.6rem;padding:.4rem .9rem;border-radius:999px;background:rgba(255,255,255,.06);border:1px solid ${color};color:#fff;font-size:.9rem;font-weight:600;">
+      <span style="width:.5rem;height:.5rem;border-radius:50%;background:${color};"></span>
+      ${escapeHtml(topicName)}
+      <span style="color:var(--text-muted);font-weight:400;font-size:.8rem;">(${count})</span>
+      <button id="topic-filter-clear" aria-label="Clear filter" style="background:none;border:none;color:#fff;cursor:pointer;font-size:1.1rem;line-height:1;padding:0 .1rem;">✕</button>
+    </span>
+  `;
+  document.getElementById('topic-filter-clear').addEventListener('click', clearTopicFilter);
+}
+
+function clearTopicFilter () {
+  currentTopicFilter = null;
+  visibleCount = 3;
+  renderArticles();
+}
+
 function setupTopicCards () {
   const articleSection = document.getElementById('articles');
   if (!articleSection) {
@@ -605,12 +702,12 @@ function setupTopicCards () {
 
   document.querySelectorAll('.topic-card').forEach(card => {
     const openTopic = () => {
-      articleSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
       const topicKey = card.dataset.topic;
-      const articleIndex = findTopicArticleIndex(topicKey);
-      if (articleIndex >= 0) {
-        setTimeout(() => openArticle(articleIndex), 350);
-      }
+      currentTopicFilter = topicKey;
+      // Show all matching articles at once so the user sees the full list
+      visibleCount = articleData.length;
+      renderArticles();
+      articleSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
     };
 
     card.addEventListener('click', openTopic);
@@ -621,6 +718,8 @@ function setupTopicCards () {
       }
     });
   });
+
+  updateTopicCounts();
 }
 
 // ── Article modal ─────────────────────────────────────
