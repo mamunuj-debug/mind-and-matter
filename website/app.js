@@ -466,7 +466,9 @@ async function loadManagedPosts () {
       return;
     }
 
-    articleData = mergeUniqueArticles(managedPosts, staticArticleData);
+    // posts.json is the single source of truth. The staticArticleData array is
+    // kept only as a fallback for the very first paint before the fetch resolves.
+    articleData = mergeUniqueArticles(managedPosts, []);
     allArticles = articleData;
     visibleCount = Math.min(Math.max(visibleCount, 3), articleData.length);
     updatePublishedCount(articleData.length);
