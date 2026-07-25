@@ -217,31 +217,39 @@ function setupMobileMenu () {
 }
 
 // ── Animated counter ─────────────────────────────────
+// Track the active timer per element so multiple triggers (hero-view, async
+// posts.json load, etc.) do not fight over the same DOM node.
+const counterTimers = new WeakMap();
+
 function animateCounters () {
   document.querySelectorAll('.stat-num').forEach(el => {
+    // The published-essays counter is driven explicitly by updatePublishedCount,
+    // which fires again once posts.json arrives. Skip it here so we don't race.
+    if (el.classList.contains('published-count')) return;
     const target = +el.dataset.target;
-    let current = 0, step = target / 80;
-    const timer = setInterval(() => {
-      current = Math.min(current + step, target);
-      el.textContent = target > 999
-        ? Math.floor(current).toLocaleString()
-        : Math.floor(current);
-      if (current >= target) clearInterval(timer);
-    }, 20);
+    animateSingleCounter(el, 0, target);
   });
 }
 
 function updatePublishedCount (count) {
-  const publishedCounter = document.querySelector('.hero-stats .stat-num');
+  const publishedCounter = document.querySelector('.hero-stats .stat-num.published-count')
+    || document.querySelector('.hero-stats .stat-num');
   if (!publishedCounter) return;
+  // Tag it so animateCounters knows to leave it alone
+  publishedCounter.classList.add('published-count');
   const safeCount = Number.isFinite(count) ? Math.max(0, Math.floor(count)) : 0;
   publishedCounter.dataset.target = String(safeCount);
-  // Re-animate this counter from its current value up to the new target
   const currentValue = parseInt(publishedCounter.textContent, 10) || 0;
   animateSingleCounter(publishedCounter, currentValue, safeCount);
 }
 
 function animateSingleCounter (el, start, target) {
+  // Cancel any previous animation on this element
+  const prev = counterTimers.get(el);
+  if (prev) {
+    clearInterval(prev);
+    counterTimers.delete(el);
+  }
   if (start === target) {
     el.textContent = String(target);
     return;
@@ -256,11 +264,13 @@ function animateSingleCounter (el, start, target) {
     if ((step > 0 && current >= target) || (step < 0 && current <= target)) {
       current = target;
       clearInterval(timer);
+      counterTimers.delete(el);
     }
     el.textContent = target > 999
       ? Math.floor(current).toLocaleString()
       : Math.floor(current);
   }, stepMs);
+  counterTimers.set(el, timer);
 }
 
 function articleKey (article) {
