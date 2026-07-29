@@ -249,18 +249,30 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  opacity: .35;
+  opacity: .6;
+  pointer-events: none;
 }
-.glitch::before { animation: glitch-1 4s infinite 1s; clip-path: polygon(0 0,100% 0,100% 35%,0 35%); }
-.glitch::after  { animation: glitch-2 4s infinite 1.3s; clip-path: polygon(0 65%,100% 65%,100% 100%,0 100%); }
+.glitch::before { animation: glitch-1 3s infinite; clip-path: polygon(0 0,100% 0,100% 45%,0 45%); }
+.glitch::after  { animation: glitch-2 3s infinite; clip-path: polygon(0 55%,100% 55%,100% 100%,0 100%); }
 
 /* Inline glitch — used inside a longer gradient headline to glitch just a
    couple of words. Force nowrap so the pseudo-element ghost text always
-   aligns with the real text on every viewport width. */
-.glitch-inline {
+   aligns with the real text on every viewport width. Also re-declare the
+   gradient here so the pseudo-elements' `background: inherit` reliably
+   picks it up (background inheritance through nested spans is unreliable
+   across engines). */
+.hero-title .glitch-inline {
   display: inline-block;
   white-space: nowrap;
-  background: inherit;
+  background: linear-gradient(135deg,#7dd3fc 0%,#c084fc 50%,#fde68a 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  filter: drop-shadow(0 1px 8px rgba(124, 58, 237, 0.35));
+}
+.hero-title .glitch-inline::before,
+.hero-title .glitch-inline::after {
+  background: linear-gradient(135deg,#7dd3fc 0%,#c084fc 50%,#fde68a 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -587,17 +599,25 @@ cite { font-family: var(--font-mono); font-size: .8rem; color: var(--accent); le
 @keyframes ticker     { to { transform: translateX(-50%); } }
 @keyframes pulse-icon { 0%,100% { transform: translate(-50%,-50%) scale(1);   opacity:.35; }
                         50%      { transform: translate(-50%,-50%) scale(1.12); opacity:.55; } }
-@keyframes glitch-1   {
-  0%,94%          { clip-path: polygon(0 0,100% 0,100% 100%,0 100%); transform: none; }
-  95%             { clip-path: polygon(0 10%,100% 10%,100% 30%,0 30%); transform: translateX(-3px); }
-  96%             { clip-path: polygon(0 40%,100% 40%,100% 60%,0 60%); transform: translateX(3px); }
-  97%,100%        { clip-path: polygon(0 0,100% 0,100% 100%,0 100%); transform: none; }
+@keyframes glitch-1 {
+  0%, 40%       { transform: none; }
+  42%           { transform: translate(-4px, -2px); }
+  44%           { transform: translate(3px, 1px); }
+  46%           { transform: translate(-2px, 2px); }
+  48%, 92%      { transform: none; }
+  94%           { transform: translate(-5px, 0); }
+  96%           { transform: translate(4px, -1px); }
+  98%, 100%     { transform: none; }
 }
 @keyframes glitch-2 {
-  0%,96%          { clip-path: polygon(0 0,100% 0,100% 100%,0 100%); transform: none; }
-  97%             { clip-path: polygon(0 60%,100% 60%,100% 75%,0 75%); transform: translateX(3px); }
-  98%             { clip-path: polygon(0 80%,100% 80%,100% 90%,0 90%); transform: translateX(-2px); }
-  99%,100%        { clip-path: polygon(0 0,100% 0,100% 100%,0 100%); transform: none; }
+  0%, 40%       { transform: none; }
+  42%           { transform: translate(3px, 2px); }
+  44%           { transform: translate(-4px, -1px); }
+  46%           { transform: translate(2px, -2px); }
+  48%, 92%      { transform: none; }
+  94%           { transform: translate(5px, 0); }
+  96%           { transform: translate(-4px, 1px); }
+  98%, 100%     { transform: none; }
 }
 
 /* ===========================
