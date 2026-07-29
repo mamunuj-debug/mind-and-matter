@@ -254,6 +254,18 @@ body {
 .glitch::before { animation: glitch-1 4s infinite 1s; clip-path: polygon(0 0,100% 0,100% 35%,0 35%); }
 .glitch::after  { animation: glitch-2 4s infinite 1.3s; clip-path: polygon(0 65%,100% 65%,100% 100%,0 100%); }
 
+/* Inline glitch — used inside a longer gradient headline to glitch just a
+   couple of words. Force nowrap so the pseudo-element ghost text always
+   aligns with the real text on every viewport width. */
+.glitch-inline {
+  display: inline-block;
+  white-space: nowrap;
+  background: inherit;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
 /* ===========================
    ABOUT
    =========================== */
@@ -607,11 +619,6 @@ cite { font-family: var(--font-mono); font-size: .8rem; color: var(--accent); le
   .side-card { grid-template-columns: 100px 1fr; }
   .side-img { width: 100px; height: 100px; }
   .hero { padding: 8rem 2rem 4rem; }
-  /* Below 900px the hero title may wrap to multiple lines. The absolutely-positioned
-     glitch ghost text (::before / ::after) does NOT wrap the same way as the real
-     span text, causing the ghosted words to sit under the wrong lines. Disable the
-     effect here — the clean gradient text remains unchanged. */
-  .glitch::before, .glitch::after { display: none !important; }
 }
 @media (max-width: 600px) {
   .nav-links, .nav-cta { display: none; }
