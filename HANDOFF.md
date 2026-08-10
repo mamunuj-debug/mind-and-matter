@@ -2,7 +2,7 @@
 
 > **Purpose:** Paste this entire file into a fresh Copilot chat (or share the
 > file path) so a new agent can resume work without losing context.
-> Last updated: 2026-07-25
+> Last updated: 2026-07-29
 
 ---
 
@@ -130,6 +130,12 @@ Current `website/_headers` must contain (do not weaken):
 - **Published-essays counter** uses WeakMap-tracked timers to avoid races between the on-scroll animation and async posts.json update. Element gets a `published-count` class so the generic animator skips it.
 - **Static placeholder articles** in `staticArticleData` (8 mock titles like "High-NA EUV", "Europa Clipper") are no longer merged into `articleData`. They remain in the source only as a fallback for the first paint. **6 of them are kept as writing candidates** — see `/memories/repo/mind-and-matter-post-ideas.md`.
 
+### Hero glitch effect (2026-07-29)
+- Originally the whole span "I turn complex science" had `.glitch` on it. On mobile, the span wrapped to 2 lines but the absolutely-positioned `::before` / `::after` pseudo-elements did not wrap the same way — words appeared under the wrong lines.
+- **Current setup:** only the words **"complex science"** are wrapped in `<span class="glitch glitch-inline" data-text="complex science">` (see [index.html](website/index.html)). The `.glitch-inline` class forces `display: inline-block; white-space: nowrap;` so the phrase is always one unbreakable unit — the ghost text stays aligned on every viewport.
+- **Gradient inheritance quirk:** `background: inherit` on the pseudo-elements does NOT reliably propagate the gradient through nested spans across browsers. Solution: `.hero-title .glitch-inline` and its `::before` / `::after` re-declare the gradient explicitly.
+- **Animation:** 3s loop with TWO glitch bursts per cycle (at 42–48% and 94–98%), ±5px XY jitter, opacity `.6`. Definitely visible (much stronger than the original once-per-4s single-frame flash).
+
 ## 8. Pending / planned work
 
 ### Distribution (to drive first traffic)
@@ -177,6 +183,7 @@ Current `website/_headers` must contain (do not weaken):
 | Social share PNG re-render from SVG shifts colors/fonts | Take the good PNG and paint over ONLY the tagline text; don't re-rasterize SVG |
 | Social platforms cache OG image aggressively | Bump filename (v2 → v3) and update all `og:image` + `twitter:image` meta refs |
 | Static articleData in app.js merged with managed posts inflated the count | Merge only `managedPosts` when posts.json loads; keep static array as first-paint fallback only |
+| CSS glitch pseudo-elements misalign on mobile when the real text wraps | Use `.glitch-inline { display: inline-block; white-space: nowrap; }` on a short unbreakable phrase; re-declare gradient on the pseudo-elements (background inheritance is unreliable) |
 
 ## 10. Environment variables in Netlify
 
