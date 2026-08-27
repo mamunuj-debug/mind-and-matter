@@ -90,24 +90,24 @@
       <div class="post-body">
 <p>In 1807, a French mathematician named Joseph Fourier made a wild claim: literally any wave, no matter how complicated, could be built by adding together pure sine waves. His fellow mathematicians thought he was wrong.</p>
 <p>He was not. Two centuries later, his idea underpins JPEG images, MP3 music, MRI scans, noise cancellation, radio, WiFi, 5G, and essentially every wireless call you have ever made.</p>
-<p>The Core Idea in Plain English
-A single sine wave is a pure tone — one note, one frequency. Real signals in the world are messy: a chord on a piano, a human voice, an EEG trace, a radio broadcast. Fourier&#x27;s claim was that any such messy signal is really just many pure sine waves added together — you just cannot see them individually with your ears or eyes.</p>
+<h3 class="post-heading">The Core Idea in Plain English</h3>
+<p>A single sine wave is a pure tone — one note, one frequency. Real signals in the world are messy: a chord on a piano, a human voice, an EEG trace, a radio broadcast. Fourier&#x27;s claim was that any such messy signal is really just many pure sine waves added together — you just cannot see them individually with your ears or eyes.</p>
 <p>The Fourier transform is the mathematical operation that pulls them apart. You feed it a signal in the time domain (a wiggly line on an oscilloscope). It hands you back a recipe in the frequency domain (a chart showing &#x27;this much of this frequency, plus this much of that one&#x27;).</p>
-<p>A Concrete Example: A Musical Chord
-Play a C-major chord on a piano. The sound wave that reaches your ear is a single, complicated wiggly line — not three separate notes. But do a Fourier transform of that signal and you get three tall spikes, at exactly the frequencies of C, E, and G. The transform &#x27;heard&#x27; the three notes, without knowing anything about music.</p>
+<h3 class="post-heading">A Concrete Example: A Musical Chord</h3>
+<p>Play a C-major chord on a piano. The sound wave that reaches your ear is a single, complicated wiggly line — not three separate notes. But do a Fourier transform of that signal and you get three tall spikes, at exactly the frequencies of C, E, and G. The transform &#x27;heard&#x27; the three notes, without knowing anything about music.</p>
 <p>This is exactly what your inner ear does mechanically — the cochlea is a spiral organ that acts like a physical Fourier analyzer, with different frequencies vibrating different tiny hair cells. Your brain does not receive a sound waveform. It receives a live frequency spectrum.</p>
-<p>Why It Matters (a Small Sample)
-Once you can split a signal into its frequencies, you can do things that seem magical.</p>
+<h3 class="post-heading">Why It Matters (a Small Sample)</h3>
+<p>Once you can split a signal into its frequencies, you can do things that seem magical.</p>
 <p>JPEG images work by breaking a photo into blocks, running a Fourier-family transform on each block, and throwing away the high-frequency components your eye cannot really see. That is how a 10-megabyte photo becomes a 300-kilobyte file that still looks fine.</p>
 <p>MP3 (and every modern audio codec) does the same for sound: transform the wave, throw out frequencies your ear does not care about (like sounds masked by louder nearby sounds), keep the rest.</p>
 <p>Noise cancellation in headphones records the outside noise, computes its frequency spectrum, and plays back the exact opposite waveform. The two cancel out in the air near your ear.</p>
 <p>MRI machines measure how hydrogen atoms in your body respond to specific radio frequencies. Reconstructing an image from those responses is an inverse Fourier transform.</p>
 <p>WiFi and 5G split the airwaves into many narrow frequency bands (OFDM), encode different bits of data onto each one, and let the receiver Fourier-transform them back apart. That is why one router can talk to twenty devices at once without them stepping on each other.</p>
-<p>The Algorithm That Made It Practical
-For 150 years the Fourier transform was mostly a theoretical tool because computing it took forever. Then in 1965, two American mathematicians named James Cooley and John Tukey published an algorithm called the Fast Fourier Transform, or FFT. It computes the same result thousands of times faster — the difference between minutes and milliseconds.</p>
+<h3 class="post-heading">The Algorithm That Made It Practical</h3>
+<p>For 150 years the Fourier transform was mostly a theoretical tool because computing it took forever. Then in 1965, two American mathematicians named James Cooley and John Tukey published an algorithm called the Fast Fourier Transform, or FFT. It computes the same result thousands of times faster — the difference between minutes and milliseconds.</p>
 <p>The FFT is on almost every list of &#x27;most important algorithms of the 20th century.&#x27; Without it, essentially none of the applications above would be practical. Every time your phone plays a song, streams a video, or decodes a WiFi packet, it is running FFT operations tens of thousands of times per second.</p>
-<p>The Superpower Hidden in an Equation
-The Fourier transform is a strange kind of superpower — it lets you look at a signal from a completely different perspective. Not what is happening now, but what mixture of frequencies is present. Once you can see that, you can compress it, clean it up, encode it, decode it, or reconstruct it perfectly.</p>
+<h3 class="post-heading">The Superpower Hidden in an Equation</h3>
+<p>The Fourier transform is a strange kind of superpower — it lets you look at a signal from a completely different perspective. Not what is happening now, but what mixture of frequencies is present. Once you can see that, you can compress it, clean it up, encode it, decode it, or reconstruct it perfectly.</p>
 <p>Two centuries later, Joseph Fourier still runs the modern world from the shadows.</p>
       </div>
       <div class="post-cta">

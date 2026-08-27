@@ -128,7 +128,26 @@ function escapeHtml (value) {
 
 // Render a paragraph that may contain markdown images: ![alt](https://url)
 // - A paragraph that is ONLY an image becomes a <figure> with caption.
+// - A short "heading-like" line (no trailing punctuation, < 80 chars) becomes an <h3>.
 // - Otherwise inline images are injected after escaping the rest of the text.
+function looksLikeHeading (line) {
+  const t = line.trim();
+  if (!t || t.length > 80) return false;
+  // Skip images, list markers, quotes, code
+  if (/^[!\-*>#(\d]/.test(t)) return false;
+  // Must start with a capital letter or number-word
+  if (!/^[A-Z0-9]/.test(t)) return false;
+  // Reject if it ends with sentence punctuation OR a colon (colon-ending is a list intro).
+  if (/[.!?,;:]$/.test(t)) return false;
+  // Reject if it contains sentence-internal periods (e.g. "E. coli. It...")
+  if (/\.\s+[A-Z]/.test(t)) return false;
+  return true;
+}
+
+function renderHeading (text) {
+  return `<h3 class="post-heading">${escapeHtml(text.trim())}</h3>`;
+}
+
 function renderParagraph (paragraph) {
   const text = String(paragraph).trim();
   const standalone = text.match(/^!\[([^\]]*)\]\((https?:\/\/[^\s)]+)\)$/);
@@ -136,6 +155,19 @@ function renderParagraph (paragraph) {
     const alt = escapeHtml(standalone[1]);
     const src = escapeHtml(standalone[2]);
     return `<figure class="post-figure"><img src="${src}" alt="${alt}" loading="lazy"/>${alt ? `<figcaption>${alt}</figcaption>` : ''}</figure>`;
+  }
+  // Whole paragraph is a heading?
+  if (looksLikeHeading(text) && !text.includes('\n')) {
+    return renderHeading(text);
+  }
+  // Paragraph begins with a heading-like first line, then body — split them.
+  const nlIndex = text.indexOf('\n');
+  if (nlIndex > 0) {
+    const first = text.slice(0, nlIndex);
+    const rest = text.slice(nlIndex + 1).trim();
+    if (looksLikeHeading(first) && rest) {
+      return renderHeading(first) + renderParagraph(rest);
+    }
   }
   // Tokenize images so escapeHtml doesn't mangle their URLs.
   const parts = [];

@@ -89,18 +89,18 @@
       <img class="post-cover" src="https://upload.wikimedia.org/wikipedia/commons/f/f0/Primes-vs-composites.svg" alt="Why Prime Numbers Quietly Run the Internet" loading="lazy"/>
       <div class="post-body">
 <p>A prime number is a positive integer greater than 1 with no divisors other than 1 and itself: 2, 3, 5, 7, 11, 13, and so on. They look simple. They are not.</p>
-<p>The Building Blocks of Numbers
-The Fundamental Theorem of Arithmetic, proven by Euclid around 300 BCE, says that every positive integer greater than 1 has exactly one prime factorisation. So 60 = 2 × 2 × 3 × 5, and there is no other way to break it apart. Primes are the atoms of multiplication.</p>
+<h3 class="post-heading">The Building Blocks of Numbers</h3>
+<p>The Fundamental Theorem of Arithmetic, proven by Euclid around 300 BCE, says that every positive integer greater than 1 has exactly one prime factorisation. So 60 = 2 × 2 × 3 × 5, and there is no other way to break it apart. Primes are the atoms of multiplication.</p>
 <p>More than 2,000 years ago, Euclid also proved that there are infinitely many primes — using a remarkably clean argument that still appears in modern textbooks.</p>
-<p>The Asymmetry That Powers Encryption
-Multiplying two large primes is fast. A laptop can multiply two 1,000-digit primes in microseconds. Factoring the result back into those two primes is — as far as anyone knows — astronomically slow on any classical computer. There is no known algorithm that does it efficiently. The best methods today would take longer than the age of the universe to factor a well-chosen 2,048-bit number.</p>
+<h3 class="post-heading">The Asymmetry That Powers Encryption</h3>
+<p>Multiplying two large primes is fast. A laptop can multiply two 1,000-digit primes in microseconds. Factoring the result back into those two primes is — as far as anyone knows — astronomically slow on any classical computer. There is no known algorithm that does it efficiently. The best methods today would take longer than the age of the universe to factor a well-chosen 2,048-bit number.</p>
 <p>This gap — easy one way, brutally hard the other — is called a one-way function. It is the foundation of the RSA cryptosystem, published in 1977 by Rivest, Shamir, and Adleman at MIT.</p>
-<p>How RSA Actually Protects You
-When your browser connects to a bank&#x27;s website over HTTPS, the server presents a public key. That public key is essentially a very large number that is the product of two enormous secret primes the server chose privately.</p>
+<h3 class="post-heading">How RSA Actually Protects You</h3>
+<p>When your browser connects to a bank&#x27;s website over HTTPS, the server presents a public key. That public key is essentially a very large number that is the product of two enormous secret primes the server chose privately.</p>
 <p>You use the public key to encrypt a session secret. Only someone who knows the original primes can decrypt it. An attacker who intercepts the public key and the encrypted message would, in principle, have to factor the public key to break in. Practically, they cannot.</p>
 <p>This exact mechanism — and its modern variants like elliptic-curve cryptography — protect banking, messaging apps, software updates, and effectively every secure transaction on the internet.</p>
-<p>The Quantum Threat
-In 1994, mathematician Peter Shor proved that a sufficiently large quantum computer could factor large numbers exponentially faster than classical computers. RSA would collapse.</p>
+<h3 class="post-heading">The Quantum Threat</h3>
+<p>In 1994, mathematician Peter Shor proved that a sufficiently large quantum computer could factor large numbers exponentially faster than classical computers. RSA would collapse.</p>
 <p>No such quantum computer exists yet — current devices are too small and too noisy to factor anything beyond trivial numbers. But governments are not waiting. In 2024, the U.S. National Institute of Standards and Technology (NIST) finalised its first &#x27;post-quantum&#x27; cryptography standards. The migration of the internet to quantum-resistant algorithms has officially begun.</p>
 <p>A branch of mathematics that ancient Greeks studied for fun now decides whether your money stays in your account.</p>
       </div>

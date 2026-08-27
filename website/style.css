@@ -716,6 +716,26 @@ body.post-page { background: var(--bg); color: var(--text); }
 .post-body { font-size: 1.02rem; line-height: 1.8; color: var(--text-muted); }
 .post-body p { margin: 0 0 1.25rem; }
 .post-body p strong { color: var(--text); }
+.post-body .post-heading {
+  font-family: var(--font-head);
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--text);
+  margin: 2.25rem 0 1rem;
+  padding-bottom: .4rem;
+  border-bottom: 1px solid var(--border);
+  letter-spacing: -.01em;
+}
+.post-body .post-heading:first-child { margin-top: 0; }
+.modal-content .post-heading {
+  font-family: var(--font-head);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text);
+  margin: 1.5rem 0 .75rem;
+  padding-bottom: .3rem;
+  border-bottom: 1px solid var(--border);
+}
 .post-body .post-figure { margin: 2rem 0; }
 .post-body .post-figure img { display: block; width: 100%; border-radius: 12px; }
 .post-body .post-figure figcaption {
