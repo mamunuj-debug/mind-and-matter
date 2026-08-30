@@ -493,8 +493,12 @@ body {
   border: 1px solid var(--border);
   cursor: pointer; transition: var(--transition);
   display: flex; flex-direction: column;
+  text-decoration: none; color: inherit;
 }
-.article-card:hover { transform: translateY(-6px); border-color: rgba(56,189,248,.3); box-shadow: 0 20px 60px rgba(0,0,0,.4); }
+.article-card:hover, .article-card:focus-visible { transform: translateY(-6px); border-color: rgba(56,189,248,.3); box-shadow: 0 20px 60px rgba(0,0,0,.4); outline: none; }
+a.featured-main, a.side-card { text-decoration: none; color: inherit; }
+a.featured-main { display: block; }
+a.side-card:focus-visible, a.featured-main:focus-visible { outline: 2px solid rgba(56,189,248,.6); outline-offset: 2px; }
 .article-thumb {
   height: 180px; position: relative; overflow: hidden;
   display: flex; align-items: center; justify-content: center;

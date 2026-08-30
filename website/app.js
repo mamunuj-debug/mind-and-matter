@@ -195,6 +195,19 @@ function buildSafeParagraphs (paragraphs) {
   return paragraphs.map(renderParagraph).join('');
 }
 
+// URL slug that matches tools/build_posts.py:slugify (lowercase, non [a-z0-9] → '-', trim).
+function slugify (value) {
+  return String(value)
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-+|-+$/g, '')
+    .slice(0, 80) || 'post';
+}
+
+function postUrl (art) {
+  return `/post/${slugify(art.title)}/`;
+}
+
 // ── Navbar scroll shadow ──────────────────────────────
 (function navbarScroll () {
   const nav = document.getElementById('navbar');
@@ -560,13 +573,11 @@ function renderArticles () {
   }
 
   filtered.slice(0, visibleCount).forEach((art, i) => {
-    const originalIndex = articleData.indexOf(art);
-    const card = document.createElement('div');
+    const card = document.createElement('a');
     card.className = 'article-card reveal';
+    card.href = postUrl(art);
     card.style.transitionDelay = (i % 3) * 80 + 'ms';
-    card.setAttribute('role', 'button');
-    card.setAttribute('tabindex', '0');
-    card.setAttribute('aria-label', `Open article: ${art.title}`);
+    card.setAttribute('aria-label', `Read article: ${art.title}`);
     card.innerHTML = `
       <div class="article-thumb" style="background:${art.bg}">${art.thumb}</div>
       <div class="article-body">
@@ -578,13 +589,6 @@ function renderArticles () {
           <span class="article-read">${escapeHtml(art.readTime)} read →</span>
         </div>
       </div>`;
-    card.addEventListener('click', () => openArticle(originalIndex));
-    card.addEventListener('keydown', event => {
-      if (event.key === 'Enter' || event.key === ' ') {
-        event.preventDefault();
-        openArticle(originalIndex);
-      }
-    });
     grid.appendChild(card);
     // trigger observer
     requestAnimationFrame(() => revealObs.observe(card));
@@ -617,7 +621,7 @@ function renderFeatured () {
   }
   const [main, ...sides] = picks;
   const mainHtml = `
-    <div class="featured-main card-glow" data-article-index="0" role="button" tabindex="0" aria-label="Open featured article: ${escapeHtml(main.title)}">
+    <a class="featured-main card-glow" href="${escapeHtml(postUrl(main))}" aria-label="Read featured article: ${escapeHtml(main.title)}">
       <div class="featured-img" style="${featuredCardImage(main)}">
         <div class="feat-overlay"><span class="feat-tag" style="background:${escapeHtml(main.tagColor)}">${escapeHtml(main.tag)}</span></div>
       </div>
@@ -626,27 +630,17 @@ function renderFeatured () {
         <p>${escapeHtml(main.preview || '').slice(0, 200)}</p>
         <div class="card-meta"><span class="author-dot ai"></span> ${escapeHtml(main.tag)} · ${escapeHtml(main.readTime)} read</div>
       </div>
-    </div>`;
-  const sidesHtml = sides.map((art, idx) => `
-    <div class="side-card card-glow" data-article-index="${idx + 1}" role="button" tabindex="0" aria-label="Open article: ${escapeHtml(art.title)}">
+    </a>`;
+  const sidesHtml = sides.map((art) => `
+    <a class="side-card card-glow" href="${escapeHtml(postUrl(art))}" aria-label="Read article: ${escapeHtml(art.title)}">
       <div class="side-img" style="${featuredCardImage(art)}"></div>
       <div class="side-body">
         <span class="feat-tag sm" style="background:${escapeHtml(art.tagColor)}">${escapeHtml(art.tag)}</span>
         <h4>${escapeHtml(art.title)}</h4>
         <p class="side-meta">${escapeHtml(art.tag)} · ${escapeHtml(art.readTime)} read</p>
       </div>
-    </div>`).join('');
+    </a>`).join('');
   featuredGrid.innerHTML = `${mainHtml}<div class="featured-side">${sidesHtml}</div>`;
-  featuredGrid.querySelectorAll('[data-article-index]').forEach(card => {
-    const i = Number(card.dataset.articleIndex);
-    card.addEventListener('click', () => openArticle(i));
-    card.addEventListener('keydown', event => {
-      if (event.key === 'Enter' || event.key === ' ') {
-        event.preventDefault();
-        openArticle(i);
-      }
-    });
-  });
   // apply reveal animations to the new featured cards
   requestAnimationFrame(() => {
     addReveal('.featured-main');
